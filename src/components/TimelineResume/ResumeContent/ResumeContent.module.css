@@ -1,0 +1,17 @@
+.position{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.company{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic, oblique;
+}
+
+.description ul{
+    list-style:square;
+    padding-left: 3rem;
+    padding-top: 2rem;
+    font-size: 1.2rem;
+}

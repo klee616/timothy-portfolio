@@ -1,0 +1,10 @@
+
+.menu a{
+    text-decoration: none;
+}
+
+.menu a:hover{
+    text-decoration: underline;
+    color: #7B7B7B;
+}
+

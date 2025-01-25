@@ -1,0 +1,63 @@
+[
+    {
+        "id":1,
+        "title": "Jul,21 - Dec,21",
+        "position": "Software Developer",
+        "company": "Sing Tao Daily",
+        "location": "Hong Kong",
+        "duties": [
+            "Lead a team develop and back-end system, using agile approach, which support mobile application.",
+            "Using the Drupal (Content Management System) to development web application to support company operation."
+        ]
+    },
+    {
+        "id":2,
+        "title": "Aug,17 - Jun,21",
+        "position": "Analysis Solution Developer",
+        "company": "PCCW Solution Company",
+        "location": "Hong Kong",
+        "duties": [
+            "Basic on the requirement developed the large system.",
+            "Communication with client to collect essential information and understand their need.",
+            "Develop a system speciation documentation for maintenance.",
+            "Develop some project which using align approach"
+        ]
+    },
+    {
+        "id":3,
+        "title": "Aug,21 - Jun,21",
+        "position": "Developer",
+        "company": "Social Enterprise Innvoation Limited",
+        "location": "Hong Kong",
+        "duties": [
+            "Assisting the development team with all aspects of coding, software design, and other duties as required.",
+            "Working to analyze  and identify bugs and implementing methods to fix them.",
+            "Testing developed software and programs to ensure the best functionality."
+        ]
+    },
+    {
+        "id":4,
+        "title": "Jul,14 - Jun,17",
+        "position": "IT Engineer",
+        "company": "SN Corporation (HK) Limited",
+        "location": "Hong Kong",
+        "duties": [
+            "Troubleshooter computer technical issue",
+            "Communicate with customer and provide I.T solution.",
+            "Perform system maintenance and updates as appropriate"
+        ]
+    },
+    {
+        "id":5,
+        "title": "Dec,08 - Apr,12",
+        "position": "Web Developer",
+        "company": "Asiatech Telecom Limited",
+        "location": "Hong Kong",
+        "duties": [
+            "Communicate with customer to get the requirement and feedback",
+            "Basic on documentation to develop a web-base software",
+            "monitor and fixed exist software",
+            "Develop a website program based on the design."
+        ]
+    }
+]

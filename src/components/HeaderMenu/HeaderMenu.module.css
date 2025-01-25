@@ -1,0 +1,15 @@
+.menuContainer{
+
+}
+
+.menuContainer ul{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 1rem;
+    list-style: none;
+}
+
+.menuContainer ul li{
+    display: block;
+}

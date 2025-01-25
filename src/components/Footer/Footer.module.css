@@ -1,0 +1,45 @@
+.footerContainer{
+    background-color: var(--second-color);
+    height: 20rem;
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.copyright{
+    color: var(--white);
+    padding: 0 3rem 0.5rem;
+}
+
+.icon{
+    width: 5rem;
+}
+.media{
+    font-size: 2rem;
+    color: var(--white);
+}
+.media ul{
+ display: flex;
+ color: #000;
+ list-style: none;
+ padding-top: 1rem;
+ font-size: 2rem;
+ gap: 1rem;
+}
+.media ul li{ 
+    display: block;
+    height: 50px;
+    width: 50px;
+}
+
+.contantContainer{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 3rem;
+    width: 100vw;
+    max-width: var(--max-width);
+}
