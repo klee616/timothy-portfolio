@@ -18,7 +18,7 @@ interface Props {
 
 const App: React.FC<Props> = (journeyData) => {
     console.log(journeyData);
-    const data = [];
+    const data:any = [];
     journeyData.journeyData.map((d: Record, i: number) => {
         data.push(
             {
