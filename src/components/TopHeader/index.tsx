@@ -10,7 +10,9 @@ const App: React.FC<Props> = () => {
   return (
     <header>
       <div className={`${styles.headerContainer}`}>
-        <div className={`${styles.logo}`}>Logo</div>
+        <div className={`${styles.logo}`}>
+          <img src='/logo.png' />
+        </div>
         <div className={`${styles.menuContainer}`}>
           <HeaderMenu />
         </div>

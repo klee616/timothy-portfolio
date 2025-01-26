@@ -24,7 +24,7 @@ const App: React.FC<Props> = (journeyData) => {
             {
                 title: d.title,
                 content: (
-                    <ResumeContent position={d.position} company={d.company} location={d.location} duties={d.duties} />
+                    <ResumeContent key={i} position={d.position} company={d.company} location={d.location} duties={d.duties} />
                 )
             }
         );
