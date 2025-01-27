@@ -1,0 +1,20 @@
+.sectionContainer{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    background-color: var(--second-color);
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+
+}
+
+.projectContainer {
+    background-color: var(--second-color);
+    padding: 5rem 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1920px;
+}

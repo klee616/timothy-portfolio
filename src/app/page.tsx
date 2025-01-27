@@ -2,8 +2,10 @@ import Image from "next/image";
 import TopHeader from '@/components/TopHeader'
 import Introduction from '@/components/Introduction'
 import TimelineResume from '@/components/TimelineResume'
+import ProjectList from '@/components/ProjectList'
 import Footer from '@/components/Footer'
 import journeyData from '@/data/journey.json'
+import Parallax from '@/components/Parallax'
 
 export default function Home() {
 
@@ -11,7 +13,9 @@ export default function Home() {
     <>
         <TopHeader />
         <Introduction />
+        <ProjectList />
         <TimelineResume journeyData={journeyData}/>
+        <Parallax />
         <Footer />
     </>
   );

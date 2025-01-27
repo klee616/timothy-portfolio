@@ -1,0 +1,221 @@
+/* h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1em;
+    margin-bottom: 3.2rem;
+    margin-top: 3.2rem;
+    text-transform: uppercase;
+}
+
+p {
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+} */
+
+.button {
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    box-shadow: 1px 2px 0 0 rgba(0, 0, 0, 0.15);
+    color: inherit;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+.content {
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    position: relative;
+}
+
+.icon-arrow,
+.iconArrow {
+    display: block;
+    margin: 1em auto;
+}
+
+.animate-up .arrow,
+.animateUp .arrow {
+    animation: arrow-up 3s 2s infinite;
+}
+
+.animate-down .arrow,
+.animateDown .arrow {
+    animation: arrow-down 3s 2s infinite;
+}
+
+@keyframes arrow-up {
+    0% {
+        transform: translateY(0);
+    }
+
+    40%,
+    100% {
+        transform: translateY(-150%);
+    }
+}
+
+@keyframes arrowUp {
+    0% {
+        transform: translateY(0);
+    }
+
+    40%,
+    100% {
+        transform: translateY(-150%);
+    }
+}
+
+@keyframes arrow-down {
+    0% {
+        transform: translateY(0);
+    }
+
+    40%,
+    100% {
+        transform: translateY(150%);
+    }
+}
+@keyframes arrowDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    40%,
+    100% {
+        transform: translateY(150%);
+    }
+}
+
+.line {
+    margin-top: 6.4rem;
+
+    &::before {
+        background: currentColor;
+        content: '';
+        display: block;
+        height: 2px;
+        margin-bottom: 3.2rem;
+        width: 39px;
+
+        @media (min-width: 840px) {
+            width: 69px;
+        }
+    }
+}
+
+.background-text, .backgroundText {
+    color: rgba(51, 53, 54, 0.05);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80rem;
+    font-weight: 700;
+    left: 4%;
+    line-height: 1em;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    transition: transform 0.1s;
+    white-space: nowrap;
+    width: 96%;
+    z-index: 1;
+}
+
+.text {
+    margin-left: 1em;
+    margin-right: 1em;
+    max-width: 560px;
+    width: 40%;
+}
+
+.image-wrap, .imageWrap {
+    margin-left: 1em;
+    margin-right: 1em;
+    max-width: 560px;
+    position: relative;
+    width: 40%;
+
+    &.left {
+        padding-right: 2em;
+
+        .shadow {
+            right: 12%;
+        }
+    }
+
+    &.right {
+        padding-left: 2em;
+
+        .shadow {
+            left: 12%;
+        }
+    }
+
+    &.alt {
+
+        .image {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            max-height: 560px;
+            overflow: hidden;
+
+            /* img {
+                background-color: #556;
+                background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+                    linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+                    linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+                    linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+                    linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a),
+                    linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+                background-size: 80px 140px;
+                background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+                flex-shrink: 0;
+            } */
+        }
+    }
+
+    .shadow {
+        background: rgba(orange, 0.25);
+        content: '';
+        display: block;
+        height: 96%;
+        position: absolute;
+        top: 12%;
+        transition: transform 0.1s;
+        width: 92%;
+        z-index: -1;
+    }
+
+    .image {
+        background: rgba(0, 0, 0, 0.15);
+        transition: transform 0.1s;
+    }
+}
+
+.css-parallax,.cssParallax {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 1px;
+    transform-style: preserve-3d;
+
+    .background-text {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        transform: translateZ(-2px) scale(3);
+    }
+}
