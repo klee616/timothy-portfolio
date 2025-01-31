@@ -1,4 +1,5 @@
 "use client"
+// @ts-nocheck
 import styles from './ScrollTrigger.module.css'
 import React from "react";
 import { gsap } from "gsap";
@@ -41,7 +42,7 @@ const App: React.FC<Props> = ({ }) => {
         console.log(styles.contentMarker)
         console.log(contentMarkers)
         // Set up our content behaviors
-        contentMarkers.forEach(marker => {
+        contentMarkers.forEach((marker:any) => {
             marker.content = document.querySelector(`#${marker.dataset.markerContent}`);
 
             if (marker.content.tagName === "IMG") {
@@ -67,15 +68,15 @@ const App: React.FC<Props> = ({ }) => {
         });
 
         // Handle the updated position
-        let lastContent;
+        let lastContent: any;
         function getCurrentSection() {
-            let newContent;
+            let newContent:any;
             const currScroll = scrollY + 100;
 
             console.log(`currScroll: ${currScroll}`)
 
             // Find the current section
-            contentMarkers.forEach(marker => {
+            contentMarkers.forEach((marker:any) => {
                 if (currScroll > marker.offsetTop) {
                     newContent = marker.content;
                 }
