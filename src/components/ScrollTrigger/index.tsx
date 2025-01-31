@@ -50,7 +50,7 @@ const App: React.FC<Props> = ({ }) => {
 
                 marker.content.enter = function () {
                     //gsap.fromTo(marker.content, { autoAlpha: 0, rotateY: -30 }, { duration: 0.3, autoAlpha: 1, rotateY: 0 });
-                    gsap.fromTo(marker.content, { autoAlpha: 0, rotate: -30 }, { duration: 0.3, autoAlpha: 1, rotate: 0 });
+                    gsap.fromTo(marker.content, {boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', border:'1rem solid #fff' , width:'60%', autoAlpha: 0, rotate: -40 }, { duration: 0.3, autoAlpha: 1, rotate: -10 });
                 }
             } else if (marker.content.tagName === "BLOCKQUOTE") {
                 gsap.set(marker.content, { transformOrigin: "left center" });
@@ -128,6 +128,7 @@ const App: React.FC<Props> = ({ }) => {
                         width={800}
                         height={600}
                         alt='Project 1'
+                        className={styles.image}
                     />
 
                     <Image
@@ -136,6 +137,7 @@ const App: React.FC<Props> = ({ }) => {
                         width={800}
                         height={600}
                         alt=''
+                        className={styles.image}
                     />
                     <Image
                         id='project3'
@@ -143,6 +145,7 @@ const App: React.FC<Props> = ({ }) => {
                         width={800}
                         height={600}
                         alt=''
+                        className={styles.image}
                     />
 
 

@@ -28,6 +28,9 @@
 
 }
 
+.images{}
+
+
 @media screen and (max-width: 800px) {
     .leftContent {
         display: none;
