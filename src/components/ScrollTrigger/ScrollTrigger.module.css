@@ -1,0 +1,44 @@
+.contentContainer {
+    display: flex;
+    background: var(--second-color);
+}
+
+.contentContainer>* {
+    width: 50%;
+}
+
+.rightContent {
+    padding-right: 15px;
+}
+
+.leftContent {
+    height: 100vh;
+    position: relative;
+}
+
+.leftContent>* {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.contentMarker{
+
+}
+
+@media screen and (max-width: 800px) {
+    .leftContent {
+        display: none;
+    }
+
+    .rightContent {
+        padding-left: 15px;
+    }
+}
+
+.headerection {
+    text-align: center;
+    padding: 1rem 6rem;
+}

@@ -1,0 +1,23 @@
+.customBtn {
+    color: #fff;
+    height: 40px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    border: none;
+    background-color: #004945;
+    box-shadow: 0 0 5px #89EFDE;
+    margin-top: 5rem;
+    border-radius: 1rem;
+    float: right;
+}
+
+
+.customBtn:hover {
+    box-shadow: 0 0 10px #89EFDE, 0 0 20px #89EFDE, 0 0 20px #B2DBE2 inset;
+}
