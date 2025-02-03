@@ -10,7 +10,7 @@
 */
 @font-face {
   font-family: 'eleanor';
-  src: url('/fonts/eleanor/Eleanor.ttf') format('ttf');
+  src: url('http://www.thetimothylee.com/fonts/eleanor/Eleanor.ttf') format('ttf');
   font-weight: 400;
   font-style: normal;
 }

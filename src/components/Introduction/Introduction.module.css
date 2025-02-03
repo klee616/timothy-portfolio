@@ -1,13 +1,21 @@
-.introductionContainer{
+@font-face {
+    font-family: 'eleanor';
+    src: url('/fonts/eleanor/Eleanor.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.introductionContainer {
     background-color: var(--primary-color);
     width: 100vw;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    color:white
-
+    color: white
 }
+
 .screen {
     height: 100vh;
     width: 100vw;
@@ -22,7 +30,7 @@
 
 .content {
     color: var(--white);
-    padding:  3rem;
+    padding: 3rem;
 }
 
 .hello,
@@ -34,7 +42,7 @@
 
 .title {
     font-size: 2.5rem;
-    font-family:  eleanor;
+    font-family: eleanor;
     display: contents;
     color: var(--white);
     line-height: 2.5rem;
@@ -55,7 +63,7 @@
 
 }
 
-@media (width <= 600px) {
+@media (width <=600px) {
     .header {
         padding: 30px;
     }
