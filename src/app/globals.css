@@ -7,14 +7,14 @@
   url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("opentype"),
   url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("truetype");
 } 
-
+*/
 @font-face {
   font-family: 'eleanor';
   src: url('/fonts/eleanor/Eleanor.ttf') format('ttf');
   font-weight: 400;
   font-style: normal;
 }
-*/
+
 
 :root {
   --primary-color: #B2DBE2;
