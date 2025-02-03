@@ -1,6 +1,18 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import localFont from 'next/font/local'
+const eleanor = localFont({ src: './fonts/eleanor/Eleanor.ttf', variable: '--font-eleanor' })
+const helvetica = localFont({
+  src: [
+    {path:'./fonts/helvetica/Helvetica.ttf',  weight:'400', style:'normal'},
+    {path:'./fonts/helvetica/Helvetica-Bold.ttf',  weight:'600', style:'normal'},
+    {path:'./fonts/helvetica/Helvetica-BoldOblique.ttf',  weight:'6600', style:'oblique'},
+    {path:'./fonts/helvetica/Helvetica-CE-Bold.otf',  weight:'700', style:'normal'},
+    {path:'./fonts/helvetica/Helvetica-light.ttf',  weight:'300', style:'normal'},
+    {path:'./fonts/helvetica/Helvetica-Oblique.ttf',  weight:'400', style:'oblique'},
+  ], variable: '--font-helvetica'
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${eleanor.variable} ${helvetica.variable} antialiased`}
       >
         {children}
       </body>

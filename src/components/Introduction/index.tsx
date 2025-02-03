@@ -1,6 +1,7 @@
-import styles from './Introduction.module.css'
 import React from "react";
 import { BackgroundLines } from "@/components/ui/background-lines";
+import styles from './Introduction.module.css'
+
 interface Props {
 
 }

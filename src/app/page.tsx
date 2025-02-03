@@ -7,6 +7,7 @@ import Footer from '@/components/Footer'
 import journeyData from '@/data/journey.json'
 import Parallax from '@/components/Parallax'
 import ScrollTrigger from "@/components/ScrollTrigger"
+
 export default function Home() {
 
   return (

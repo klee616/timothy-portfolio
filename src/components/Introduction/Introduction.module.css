@@ -1,10 +1,11 @@
+/* 
 @font-face {
-    font-family: 'eleanor';
-    src: url('/fonts/eleanor/Eleanor.ttf') format('ttf');
+    font-family: 'Eleanor';
+    src: local('/fonts/eleanor/Eleanor.ttf') format('ttf');
     font-weight: 400;
     font-style: normal;
-}
-
+  }
+   */
 
 .introductionContainer {
     background-color: var(--primary-color);
@@ -42,7 +43,7 @@
 
 .title {
     font-size: 2.5rem;
-    font-family: eleanor;
+    font-family: var(--font-eleanor);
     display: contents;
     color: var(--white);
     line-height: 2.5rem;
