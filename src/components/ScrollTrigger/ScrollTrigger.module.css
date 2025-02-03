@@ -30,6 +30,11 @@
 
 .images{}
 
+.rightContent img{
+    display: none;
+    transform: rotate(5deg);
+}
+
 
 @media screen and (max-width: 800px) {
     .leftContent {
@@ -38,7 +43,22 @@
 
     .rightContent {
         padding-left: 15px;
+        width: 100vw;
     }
+
+    .rightContent img{
+        display: unset;
+        border: 0.25rem solid #Fff;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        align-items: center;
+        align-self: center;
+        width: 80vw;
+        display: block;
+        margin-left: 7vw;
+
+    }
+
 }
 
 .headerection {

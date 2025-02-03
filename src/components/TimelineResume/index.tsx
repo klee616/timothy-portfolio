@@ -31,7 +31,7 @@ const App: React.FC<Props> = (journeyData) => {
     })
 
     return (
-        <div className="w-full">
+        <div className="w-full" id="about">
             <Timeline data={data} />
         </div>
     );

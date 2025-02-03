@@ -9,6 +9,7 @@
     max-width: var(--max-width);
     font-size: 2rem;
     align-items: center;
+    z-index: 99;
 }
 .headerContainer img {
     width: 8rem;

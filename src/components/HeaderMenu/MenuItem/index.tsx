@@ -8,7 +8,7 @@ interface Props {
 
 const App: React.FC<Props> = ({name, href}) => {
     return (
-        <li className={`${styles.menu}`}><Link href={`${href}`}>{name}</Link></li>
+        <li className={`${styles.menu}`}><Link href={`${href}`} scroll={true}>{name}</Link></li>
     );
 };
 

@@ -28,6 +28,8 @@ const App: React.FC<Props> = ({ }) => {
         //gsap.set(".left-content > *", { xPercent: -50, yPercent: -50 });
         gsap.set(`.${styles.leftContent}`, { xPercent: -25, yPercent: -25 });
 
+        gsap.set(`.#{styles.images}`)
+
 
         // Set up our scroll trigger
         const ST = ScrollTrigger.create({
@@ -42,7 +44,7 @@ const App: React.FC<Props> = ({ }) => {
         console.log(styles.contentMarker)
         console.log(contentMarkers)
         // Set up our content behaviors
-        contentMarkers.forEach((marker:any) => {
+        contentMarkers.forEach((marker: any) => {
             marker.content = document.querySelector(`#${marker.dataset.markerContent}`);
 
             if (marker.content.tagName === "IMG") {
@@ -50,7 +52,7 @@ const App: React.FC<Props> = ({ }) => {
 
                 marker.content.enter = function () {
                     //gsap.fromTo(marker.content, { autoAlpha: 0, rotateY: -30 }, { duration: 0.3, autoAlpha: 1, rotateY: 0 });
-                    gsap.fromTo(marker.content, {boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', border:'1rem solid #fff' , width:'60%', autoAlpha: 0, rotate: -40 }, { duration: 0.3, autoAlpha: 1, rotate: -10 });
+                    gsap.fromTo(marker.content, { boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', border: '1rem solid #fff', width: '60%', autoAlpha: 0, rotate: -40 }, { duration: 0.3, autoAlpha: 1, rotate: -10 });
                 }
             } else if (marker.content.tagName === "BLOCKQUOTE") {
                 gsap.set(marker.content, { transformOrigin: "left center" });
@@ -70,13 +72,13 @@ const App: React.FC<Props> = ({ }) => {
         // Handle the updated position
         let lastContent: any;
         function getCurrentSection() {
-            let newContent:any;
+            let newContent: any;
             const currScroll = scrollY + 100;
 
             console.log(`currScroll: ${currScroll}`)
 
             // Find the current section
-            contentMarkers.forEach((marker:any) => {
+            contentMarkers.forEach((marker: any) => {
                 if (currScroll > marker.offsetTop) {
                     newContent = marker.content;
                 }
@@ -119,7 +121,7 @@ const App: React.FC<Props> = ({ }) => {
 
     return (
         <>
-            <div className={styles.contentContainer}>
+            <div className={styles.contentContainer} id="project">
                 <div className={styles.leftContent} >
 
                     <Image
@@ -152,8 +154,16 @@ const App: React.FC<Props> = ({ }) => {
                 </div>
 
                 <div className={`${styles.rightContent}`} >
-                    <div className={`min-h-screen flex content-center items-center  max-w-lg text-white ${styles.contentMarker}`} data-marker-content="project1">
+                    <div className={`min-h-screen flex content-center items-center w-full  max-w-lg text-white ${styles.contentMarker}`} data-marker-content="project1">
                         <div>
+                            <Image
+                                id='project1'
+                                src="/project/project1/cover.png"
+                                width={800}
+                                height={600}
+                                alt='Project 1'
+                                className={styles.image}
+                            />
                             <h3 className='text-2xl mb-8'>The Poster Design for The Exhibition of Space Technology - James Webb Space Telescope</h3>
                             <p className='text-lg'>The project involves designing a poster to engage the audience for the James Webb Space Telescope exhibition. The poster is required to be adaptable for display on various devices, accommodating both portrait and landscape orientations while maintaining a consistent style.</p>
 
@@ -164,6 +174,15 @@ const App: React.FC<Props> = ({ }) => {
 
                     <div className={`min-h-screen flex content-center items-center  max-w-lg text-white ${styles.contentMarker}`} data-marker-content="project2">
                         <div>
+
+                            <Image
+                                id='project2'
+                                src="/project/project2/cover.png"
+                                width={800}
+                                height={600}
+                                alt=''
+                                className={styles.image}
+                            />
                             <h3 className='text-2xl mb-8'>Man City Poster Design</h3>
                             <p className='text-lg'>Manchester City has been recognized as one of the most popular football clubs in the world, with fans spanning across the globe. The purpose of this project is to create a template that promotes the team's energy and dynamism, designed for display on signboards and as a poster available for purchase on their website.</p>
 
@@ -174,6 +193,14 @@ const App: React.FC<Props> = ({ }) => {
 
                     <div className={`min-h-screen flex content-center items-center  max-w-lg text-white ${styles.contentMarker}`} data-marker-content="project3">
                         <div>
+                            <Image
+                                id='project3'
+                                src="/project/project3/cover.png"
+                                width={800}
+                                height={600}
+                                alt=''
+                                className={styles.image}
+                            />
                             <h3 className='text-2xl mb-8'> Caffi Go's Can Mockup</h3>
                             <p className='text-lg'>GaffiGo is a new brand that offers a variety of beverages aimed at young people. This project involves creating a template for a series of real coffee beverages, including Caramel Latte, Black Coffee, and Vanilla Latte flavors.</p>
 

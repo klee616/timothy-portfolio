@@ -10,6 +10,7 @@
 .introductionContainer {
     background-color: var(--primary-color);
     width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;

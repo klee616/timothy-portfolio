@@ -10,9 +10,9 @@ const App: React.FC<Props> = () => {
     return (
         <div className={`${styles.menuContainer}`}>
             <ul>
-                <MenuItem href='/About' name='About' />
-                <MenuItem href='/Portfolio' name='Portfolio' />
-                <MenuItem href='/Content' name='Content' />
+                <MenuItem href='#about' name='About' />
+                <MenuItem href='#project' name='Project' />
+                {/* <MenuItem href='/Content' name='Content' /> */}
             </ul>
         </div>
     );
