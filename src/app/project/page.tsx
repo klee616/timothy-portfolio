@@ -8,9 +8,17 @@ import Footer from "@/components/Footer";
 const App: React.FC = () => {
     return (
         <>
-
             <TopHeader />
-            <section className={`${styles.sectionContainer}`}>
+            {/* 
+    background-color: var(--primary-color);
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+     */}
+            <section className={`bg-[var(--primary-color)] h-full w-full flext align-center`}>
             <div className={styles.projectContainer}>
 
                 <h1>The Poster Design for The Exhibition of Space Technology - James Webb Space Telescope</h1>

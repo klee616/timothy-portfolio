@@ -9,7 +9,7 @@ const helvetica = localFont({
     {path:'./fonts/helvetica/Helvetica-Bold.ttf',  weight:'700', style:'normal'},
     {path:'./fonts/helvetica/Helvetica-BoldOblique.ttf',  weight:'700', style:'oblique'},
     {path:'./fonts/helvetica/Helvetica-CE-Bold.otf',  weight:'800', style:'normal'},
-    {path:'./fonts/helvetica/Helvetica-light.ttf',  weight:'300', style:'normal'},
+    // {path:'./fonts/helvetica/Helvetica-light.ttf',  weight:'300', style:'normal'},
     {path:'./fonts/helvetica/Helvetica-Oblique.ttf',  weight:'400', style:'oblique'},
   ], variable: '--font-helvetica'
 });
