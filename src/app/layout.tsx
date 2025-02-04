@@ -6,9 +6,9 @@ const eleanor = localFont({ src: './fonts/eleanor/Eleanor.ttf', variable: '--fon
 const helvetica = localFont({
   src: [
     {path:'./fonts/helvetica/Helvetica.ttf',  weight:'400', style:'normal'},
-    {path:'./fonts/helvetica/Helvetica-Bold.ttf',  weight:'600', style:'normal'},
-    {path:'./fonts/helvetica/Helvetica-BoldOblique.ttf',  weight:'6600', style:'oblique'},
-    {path:'./fonts/helvetica/Helvetica-CE-Bold.otf',  weight:'700', style:'normal'},
+    {path:'./fonts/helvetica/Helvetica-Bold.ttf',  weight:'700', style:'normal'},
+    {path:'./fonts/helvetica/Helvetica-BoldOblique.ttf',  weight:'700', style:'oblique'},
+    {path:'./fonts/helvetica/Helvetica-CE-Bold.otf',  weight:'800', style:'normal'},
     {path:'./fonts/helvetica/Helvetica-light.ttf',  weight:'300', style:'normal'},
     {path:'./fonts/helvetica/Helvetica-Oblique.ttf',  weight:'400', style:'oblique'},
   ], variable: '--font-helvetica'

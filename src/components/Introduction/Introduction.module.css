@@ -72,11 +72,14 @@
 
     .hello,
     .name {
-        font-size: 1.5rem;
+        font-size: 3rem;
+        line-height: 4rem;
+        text-align: left;
     }
 
     .title {
-        font-size: 1rem;
+        font-size: 3rem;
+        text-align: left;
     }
 
 }

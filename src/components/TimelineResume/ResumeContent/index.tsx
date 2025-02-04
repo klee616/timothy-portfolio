@@ -11,9 +11,9 @@ interface Props {
 const App: React.FC<Props> = ({ position, company, location, duties }) => {
     return (<>
         <div>
-            <h3 className={`${styles.position}`}>{position}</h3>
-            <p className={`${styles.company}`}>{company}, {location}</p>
-            <div className={`${styles.description}`}>
+            <h3 className={`${styles.position} text-2xl leading-10`}>{position}</h3>
+            <p className={`${styles.company}  text-xl`}>{company}, {location}</p>
+            <div className={`${styles.description}  text-base`}>
                 <ul>
                     {
                         duties && duties.map((duty: String, index: number) => {

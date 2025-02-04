@@ -28,7 +28,6 @@ const App: React.FC<Props> = ({ }) => {
         //gsap.set(".left-content > *", { xPercent: -50, yPercent: -50 });
         gsap.set(`.${styles.leftContent}`, { xPercent: -25, yPercent: -25 });
 
-        gsap.set(`.#{styles.images}`)
 
 
         // Set up our scroll trigger
