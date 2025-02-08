@@ -3,7 +3,7 @@ import styles from './LearnMoreButton.module.css'
 
 interface Porps {
     label?: string,
-    callback?: React.FC
+    callback?: any
 }
 
 const LearnMoreButton: React.FC<Porps> = ({ label ="Learn More~", callback = ()=>{console.log('Press me')} }) => {
