@@ -45,6 +45,7 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   font-family: var(--font-helvetica), sans-serif;
+
 }
 
 body {
@@ -81,7 +82,7 @@ header{
   align-content: center;
   justify-content: flex-start;
   align-items: center;
-  position: absolute;
+  position: absolute; 
 }
 
 

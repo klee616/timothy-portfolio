@@ -24,7 +24,7 @@ export const metadata = {
   title: {
     absolute: 'Timothy Lee\'s Portfilio ',
   },
-  keywords: ['Next.js', 'React', 'JavaScript'],
+  keywords: ['bcit d3 portfolio', 'd3 portfolio showcase', 'bcit student portfolio'],
   authors: [{ name: 'Kam Shing Lee, Timothy', url: 'https://www.thetimothylee.com' }],
   creator: 'Timothy Lee',
   publisher: 'Timothy Lee',

@@ -10,6 +10,7 @@ import { onMount } from 'svelte'
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import LearnMoreButton from '@/components/Element/Button/LearnMoreButton/LearnMoreButton';
+import { useRouter } from 'next/navigation'
 
 
 gsap.registerPlugin(ScrollTrigger, Observer);
@@ -19,7 +20,7 @@ interface Props {
 }
 
 const App: React.FC<Props> = ({ }) => {
-
+    const router = useRouter()
 
     useEffect(() => {
 
@@ -166,7 +167,7 @@ const App: React.FC<Props> = ({ }) => {
                             <h3 className='text-2xl mb-8'>The Poster Design for The Exhibition of Space Technology - James Webb Space Telescope</h3>
                             <p className='text-lg'>The project involves designing a poster to engage the audience for the James Webb Space Telescope exhibition. The poster is required to be adaptable for display on various devices, accommodating both portrait and landscape orientations while maintaining a consistent style.</p>
 
-                            <LearnMoreButton />
+                            <LearnMoreButton callback={()=>router.push('/project/The-Poster-Design-For-The-Exhibition-Of-Space-Technology-James-Webb-Space-Telescope')} />
                         </div>
                     </div>
 
