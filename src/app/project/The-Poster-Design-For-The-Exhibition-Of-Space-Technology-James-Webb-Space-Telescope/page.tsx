@@ -8,9 +8,10 @@ const App: React.FC = () => {
     return (
         <>
             <TopHeader />
-                     <section className='w-screen min-h-screen bg-[var(--primary-color)] flex pt-20 z-50'>
-                <div className='bg-[var(--primary-color)] max-w-7xl w-screen m-auto flex flex-row flex-nowrap mt-20 z-50 gap-10 p-5'>
-                    <div className='flex-auto max-w-xl text-white'>
+            <section className='w-screen min-h-screen bg-[var(--primary-color)] flex pt-20 z-50'>
+                <div className='bg-[var(--primary-color)]  w-screen m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl justify-center md:flex-row'>
+                    <div className='flex-auto text-white basis-md min-h-screen  md:basis-1/3 xl:basis-1/3'>
+
                         <h1 className='text-2xl mb-2 font-bold'>The Poster Design for The Exhibition of Space Technology - James Webb Space Telescope</h1>
                         <p className='text-base mb-10'>The project involves designing a poster to engage the audience for the James Webb Space Telescope exhibition. The poster is required to be adaptable for display on various devices, accommodating both portrait and landscape orientations while maintaining a consistent style.</p>
                         <p className='text-base mb-10'>The poster uses black as the main color to align the space topic. also, the white font color with a black background has a strong contrast to accentuate the topic, catching the audience's attention.</p>
@@ -31,14 +32,14 @@ const App: React.FC = () => {
                         </div>
 
                     </div>
-                    <div className='flex-auto flex flex-col gap-5'>
+                    <div className='flex-auto flex flex-col gap-5 min-h-screen basis-5xl min-w-screen  md:basis-1/3  xl:basis-2/3'>
                         <Image
                             src="/project/project1/image1.jpg"
-                            width={600}
-                            height={800}
+                            width={1536}
+                            height={2048}
                             layout='responsive'
                             alt="The Poster Design for The Exhibition of Space Technology - James Webb Space Telescope"
-                            className='max-h-screen'
+                            className='max-h-screen object-contain'
                         />
                         <Image
                             src="/project/project1/image4.png"
@@ -46,6 +47,7 @@ const App: React.FC = () => {
                             height={400}
                             layout='responsive'
                             alt="Image 1 Mockup"
+                            className='max-h-screen object-contain'
                         />
                         <Image
                             src="/project/project1/image2.jpg"
@@ -53,6 +55,7 @@ const App: React.FC = () => {
                             height={400}
                             layout='responsive'
                             alt="The Poster Design for The Exhibition of Space Technology - James Webb Space Telescope"
+                            className='max-h-screen object-contain'
                         />
                         <Image
                             src="/project/project1/image3.png"
@@ -60,6 +63,7 @@ const App: React.FC = () => {
                             height={400}
                             layout='responsive'
                             alt="Image 1 Mockup"
+                            className='max-h-screen object-contain'
                         />
                     </div>
                 </div>
