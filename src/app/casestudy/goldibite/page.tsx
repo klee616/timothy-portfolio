@@ -8,7 +8,7 @@ const App: React.FC = () => {
     return (
         <>
             <TopHeader />
-            <section className='w-screen min-h-screen bg-[var(--primary-color)] flex pt-20 z-50 flex-auto flex flex-col '>
+            <section className='w-screen min-h-screen bg-[var(--primary-color)] flex pt-20 z-50 flex-auto flex flex-col pb-10'>
                 <div className='bg-[var(--primary-color)]  w-screen m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl justify-center md:flex-row  text-gray-950'>
                     <div className='flex-auto  basis-md  md:basis-1/3 xl:basis-1/3'>
                         <h1 className='text-2xl mb-2 font-bold'>Goldibite - The right bite every time</h1>
@@ -57,9 +57,6 @@ const App: React.FC = () => {
 
                     <div className='flex-auto basis-md md:basis-1/3 xl:basis-1/2 text-gray-950'>
                         <h2 className='text-xl font-bold mb-5'>GoldiBite was designed to solve this problem</h2>
-                        <p className='text-base mb-5'>
-                            Our app empowers travelers by:
-                        </p>
                         <ul className='text-base mb-5'>
                             <li>Providing a database of food products with allergen information.</li>
                             <li>Translating menus and food labels for safe choices.</li>

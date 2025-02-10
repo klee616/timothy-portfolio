@@ -15,7 +15,6 @@
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    color: white
 }
 
 .screen {
@@ -31,7 +30,6 @@
 }
 
 .content {
-    color: var(--white);
     padding: 3rem;
 }
 
@@ -39,14 +37,12 @@
 .name {
     display: block;
     font-size: 3rem;
-    color: var(--white);
 }
 
 .title {
     font-size: 2.5rem;
     font-family: var(--font-eleanor);
     display: contents;
-    color: var(--white);
     line-height: 2.5rem;
 }
 

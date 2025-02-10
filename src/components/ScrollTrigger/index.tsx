@@ -123,6 +123,14 @@ const App: React.FC<Props> = ({ }) => {
         <>
             <div className={styles.contentContainer} id="project">
                 <div className={styles.leftContent} >
+                    <Image
+                        id='Godibite'
+                        src="/casestudy/goldibite/cover.png"
+                        width={1200}
+                        height={900}
+                        alt='Goldibite'
+                        className={styles.image}
+                    />
 
                     <Image
                         id='project1'
@@ -154,10 +162,28 @@ const App: React.FC<Props> = ({ }) => {
                 </div>
 
                 <div className={`${styles.rightContent}`} >
+
+
+                    <div className={`min-h-screen flex content-center items-center w-full  max-w-lg text-white ${styles.contentMarker}`} data-marker-content="Godibite">
+                        <div>
+                            <Image
+                                src="/casestudy/goldibite/cover.png"
+                                width={800}
+                                height={600}
+                                alt='Goldibite'
+                                className={styles.image}
+                            />
+                            <h3 className='text-2xl mb-8'>Goldibite - The right bite every time</h3>
+                            <p className='text-lg'>GoldiBite is an AI-powered app designed to assist individuals with food allergies and sensitivities by providing a comprehensive database to manage food safety concerns while travelling. It aims to eliminate the inconvenience and potential safety risks associated with varying ingredient information and regulations worldwide.</p>
+
+                            <LearnMoreButton callback={() => router.push('/casestudy/goldibite')} />
+                        </div>
+                    </div>
+
+
                     <div className={`min-h-screen flex content-center items-center w-full  max-w-lg text-white ${styles.contentMarker}`} data-marker-content="project1">
                         <div>
                             <Image
-                                id='project1'
                                 src="/project/project1/cover.png"
                                 width={800}
                                 height={600}
@@ -167,7 +193,7 @@ const App: React.FC<Props> = ({ }) => {
                             <h3 className='text-2xl mb-8'>The Poster Design for The Exhibition of Space Technology - James Webb Space Telescope</h3>
                             <p className='text-lg'>The project involves designing a poster to engage the audience for the James Webb Space Telescope exhibition. The poster is required to be adaptable for display on various devices, accommodating both portrait and landscape orientations while maintaining a consistent style.</p>
 
-                            <LearnMoreButton callback={()=>router.push('/project/The-Poster-Design-For-The-Exhibition-Of-Space-Technology-James-Webb-Space-Telescope')} />
+                            <LearnMoreButton callback={() => router.push('/project/The-Poster-Design-For-The-Exhibition-Of-Space-Technology-James-Webb-Space-Telescope')} />
                         </div>
                     </div>
 
@@ -176,7 +202,6 @@ const App: React.FC<Props> = ({ }) => {
                         <div>
 
                             <Image
-                                id='project2'
                                 src="/project/project2/cover.png"
                                 width={800}
                                 height={600}
@@ -194,7 +219,6 @@ const App: React.FC<Props> = ({ }) => {
                     <div className={`min-h-screen flex content-center items-center  max-w-lg text-white ${styles.contentMarker}`} data-marker-content="project3">
                         <div>
                             <Image
-                                id='project3'
                                 src="/project/project3/cover.png"
                                 width={800}
                                 height={600}

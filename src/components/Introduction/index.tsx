@@ -29,11 +29,11 @@ const App: React.FC<Props> = () => {
     color: white
         
         */}
-        <BackgroundLines className={`${styles.introductionContainer} h-full flex items-center justify-center w-full  flex-col px-4 text-white bg-[var(--primary-color)]`}>
-            <h2 className={`${styles.name} bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-4xl lg:text-7xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight`}>
+        <BackgroundLines className={`${styles.introductionContainer} h-full flex items-center justify-center w-full  flex-col px-4  text-gray-950 bg-[var(--primary-color)]`}>
+            <h2 className={`${styles.name} bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-4xl lg:text-7xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight  text-gray-950`}>
                 Hello, I am <br />Kam Shing Lee, Timothy
             </h2>
-            <p className={`${styles.title}  max-w-xl mx-auto text-sm md:text-lg text-neutral-700 dark:text-neutral-400 text-center`}>
+            <p className={`${styles.title}  max-w-xl mx-auto text-sm md:text-lg text-neutral-700 dark:text-neutral-400 text-center  text-gray-950`}>
                 Full Stack Developer and Graphic Designer
             </p>
         </BackgroundLines>
