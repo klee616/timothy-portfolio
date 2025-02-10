@@ -4,11 +4,10 @@ import Image from "next/image";
 interface Props {
     content: string[],
     title: string,
-    images: Array<any>,
     rightSide?: boolean
 }
 
-const App: React.FC<Props> = ({ content, title, images, rightSide = true }) => {
+const App: React.FC<Props> = ({ content, title, rightSide = true }) => {
     return (<>
 
         <div className='bg-[var(--primary-color)]  w-screen m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl justify-center md:flex-row-reverse  text-gray-950'>
@@ -24,22 +23,6 @@ const App: React.FC<Props> = ({ content, title, images, rightSide = true }) => {
                 <p className='text-base mb-10'>Jackson is an international student who currently studies digital design at an institution. He enjoys food and strives to find options that cater to his chronic illness. Jackson enjoys nature and socializing with friends striving to live a happy and full life.</p>
             </div>
 
-            <div className='flex-auto flex flex-col gap-5 basis-5xl min-w-screen  md:basis-1/3  xl:basis-2/3'>
-                {images && images.map((image, index) => {
-                    return (<>
-                        <Image key={index}
-                            src={image.src}
-                            width={image.width}
-                            height={image.height}
-                            layout="responsive"
-                            alt={image.alt}
-                            className='max-h-screen object-contain shadow-xl'
-                        />
-                    </>);
-                })
-
-                }
-            </div>
         </div>
 
     </>);
