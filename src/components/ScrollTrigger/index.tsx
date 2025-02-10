@@ -211,7 +211,7 @@ const App: React.FC<Props> = ({ }) => {
                             <h3 className='text-2xl mb-8'>Man City Poster Design</h3>
                             <p className='text-lg'>Manchester City has been recognized as one of the most popular football clubs in the world, with fans spanning across the globe. The purpose of this project is to create a template that promotes the team's energy and dynamism, designed for display on signboards and as a poster available for purchase on their website.</p>
 
-                            <LearnMoreButton />
+                            <LearnMoreButton callback={()=> router.push('/project/School-project-man-city-poster')} />
                         </div>
                     </div>
 
@@ -228,7 +228,7 @@ const App: React.FC<Props> = ({ }) => {
                             <h3 className='text-2xl mb-8'> Caffi Go's Can Mockup</h3>
                             <p className='text-lg'>GaffiGo is a new brand that offers a variety of beverages aimed at young people. This project involves creating a template for a series of real coffee beverages, including Caramel Latte, Black Coffee, and Vanilla Latte flavors.</p>
 
-                            <LearnMoreButton />
+                            <LearnMoreButton callback={()=>{router.push('/project/can-mockup')}} />
                         </div>
                     </div>
 

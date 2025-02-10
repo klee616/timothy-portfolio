@@ -8,14 +8,14 @@ const App: React.FC = () => {
     return (
         <>
             <TopHeader />
-                     <section className='w-screen min-h-screen bg-[var(--primary-color)] flex pt-20 z-50'>
-                <div className='bg-[var(--primary-color)] max-w-7xl w-screen m-auto flex flex-row flex-nowrap mt-20 z-50 gap-10 p-5'>
-                    <div className='flex-auto max-w-xl text-white'>
+                     <section className='w-screen min-h-screen bg-[var(--primary-color)] flex pt-20 z-50 text-gray-950'>
+                <div className='bg-[var(--primary-color)] max-w-7xl w-screen m-auto flex flex-row flex-nowrap mt-20 z-50 gap-10 p-5 text-gray-950'>
+                    <div className='flex-auto max-w-xl text-gray-950'>
                         <h1 className='text-2xl mb-2 font-bold'>Man City Football Club Team’s Poster Design</h1>
                         <p className='text-base mb-10'>Manchester City has been recognized as one of the most popular football clubs in the world, with fans spanning across the globe. The purpose of this project is to create a template that promotes the team's energy and dynamism, designed for display on signboards and as a poster available for purchase on their website.
                         </p>
                         <p className='text-base mb-10'>The design concept centers around using the brand's signature color as the primary element to reinforce its identity, while the boat symbol represents its rich history. Curved elements add a sense of movement and energy to the poster. The images are carefully selected from in-game captures and enhanced with filters to ensure a cohesive and visually appealing design.</p>
-                        <div className='flex-col flex justify-around gap-2 p-3 w-full max-w-xs border-2 rounded-md border-[var(--second-color)] bg-[#457b9d]'>
+                        <div className='flex-col flex justify-around gap-2 p-3 w-full max-w-xs border-2 rounded-md border-[var(--second-color)] bg-[#457b9d]  text-white'>
                             <div className='flex-row flex justify-between'>
                                 <span className='font-bold'>Type: </span>
                                 <span>Individual</span>
@@ -58,11 +58,11 @@ const App: React.FC = () => {
                             className='max-h-screen'
                         />
                         <Image
-                            src="/project/project1/image3.png"
-                            width={600}
-                            height={400}
+                            src="/project/project2/poster-mockup.png"
+                            width={3134}
+                            height={1912}
                             layout='responsive'
-                            alt="Man City Team Project"
+                            alt="Poster mockup"
                             className='max-h-screen'
                         />
                     </div>
