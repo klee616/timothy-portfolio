@@ -1,16 +1,12 @@
 import React from "react";
 import Image from "next/image";
 
-interface
-
 interface Props {
     content: string[],
     title: string,
     images: Array<any>,
     rightSide?: boolean
 }
-
-
 
 const App: React.FC<Props> = ({ content, title, images, rightSide = true }) => {
     return (<>

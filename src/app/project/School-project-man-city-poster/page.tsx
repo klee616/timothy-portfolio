@@ -11,9 +11,10 @@ const App: React.FC = () => {
                      <section className='w-screen min-h-screen bg-[var(--primary-color)] flex pt-20 z-50'>
                 <div className='bg-[var(--primary-color)] max-w-7xl w-screen m-auto flex flex-row flex-nowrap mt-20 z-50 gap-10 p-5'>
                     <div className='flex-auto max-w-xl text-white'>
-                        <h1 className='text-2xl mb-2 font-bold'>The Poster Design for The Exhibition of Space Technology - James Webb Space Telescope</h1>
-                        <p className='text-base mb-10'>The project involves designing a poster to engage the audience for the James Webb Space Telescope exhibition. The poster is required to be adaptable for display on various devices, accommodating both portrait and landscape orientations while maintaining a consistent style.</p>
-                        <p className='text-base mb-10'>The poster uses black as the main color to align the space topic. also, the white font color with a black background has a strong contrast to accentuate the topic, catching the audience's attention.</p>
+                        <h1 className='text-2xl mb-2 font-bold'>Man City Football Club Team’s Poster Design</h1>
+                        <p className='text-base mb-10'>Manchester City has been recognized as one of the most popular football clubs in the world, with fans spanning across the globe. The purpose of this project is to create a template that promotes the team's energy and dynamism, designed for display on signboards and as a poster available for purchase on their website.
+                        </p>
+                        <p className='text-base mb-10'>The design concept centers around using the brand's signature color as the primary element to reinforce its identity, while the boat symbol represents its rich history. Curved elements add a sense of movement and energy to the poster. The images are carefully selected from in-game captures and enhanced with filters to ensure a cohesive and visually appealing design.</p>
                         <div className='flex-col flex justify-around gap-2 p-3 w-full max-w-xs border-2 rounded-md border-[var(--second-color)] bg-[#457b9d]'>
                             <div className='flex-row flex justify-between'>
                                 <span className='font-bold'>Type: </span>
@@ -33,33 +34,36 @@ const App: React.FC = () => {
                     </div>
                     <div className='flex-auto flex flex-col gap-5'>
                         <Image
-                            src="/project/project1/image1.jpg"
-                            width={600}
-                            height={800}
+                            src="/project/project2/poster-1.png"
+                            width={2635}
+                            height={3375}
                             layout='responsive'
-                            alt="The Poster Design for The Exhibition of Space Technology - James Webb Space Telescope"
+                            alt="Man City Team Project"
                             className='max-h-screen'
                         />
                         <Image
-                            src="/project/project1/image4.png"
-                            width={600}
-                            height={400}
+                            src="/project/project2/poster-2.png"
+                            width={2635}
+                            height={3375}
                             layout='responsive'
-                            alt="Image 1 Mockup"
+                            alt="Man City - John Stones"
+                            className='max-h-screen'
                         />
                         <Image
-                            src="/project/project1/image2.jpg"
-                            width={600}
-                            height={400}
+                            src="/project/project2/poster-3.png"
+                            width={2635}
+                            height={3375}
                             layout='responsive'
-                            alt="The Poster Design for The Exhibition of Space Technology - James Webb Space Telescope"
+                            alt="Man City - Erling Haaland"
+                            className='max-h-screen'
                         />
                         <Image
                             src="/project/project1/image3.png"
                             width={600}
                             height={400}
                             layout='responsive'
-                            alt="Image 1 Mockup"
+                            alt="Man City Team Project"
+                            className='max-h-screen'
                         />
                     </div>
                 </div>
