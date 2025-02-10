@@ -412,7 +412,7 @@ export const metadata = {
     title: {
         absolute: 'Goldibite',
     },
-    keywords: ['Showcase of Adobe Photoshop\' CC ', 'Adobe Indesign\'s Showcase', 'Poster Showcase', 'BCIT D3'],
+    keywords: ['D3 BCIT Showcase', 'BCIT Showcase', 'Goldibite', 'BCIT D3'],
     authors: [{ name: 'Kam Shing Lee, Timothy', url: 'https://www.thetimothylee.com' }],
     creator: 'Timothy Lee',
     publisher: 'Timothy Lee',
