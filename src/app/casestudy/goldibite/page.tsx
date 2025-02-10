@@ -8,8 +8,8 @@ const App: React.FC = () => {
     return (
         <>
             <TopHeader />
-            <section className='w-screen min-h-screen bg-[var(--primary-color)] flex pt-20 z-50 flex-auto flex flex-col pb-10'>
-                <div className='bg-[var(--primary-color)]  w-screen m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl justify-center md:flex-row  text-gray-950'>
+            <section className='w-screen min-h-screen bg-[var(--primary-color)] flex pt-20 z-50 flex-auto flex flex-col p-20  pb-10 '>
+                <div className='bg-[var(--primary-color)]  w-full m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl justify-center md:flex-row  text-gray-950'>
                     <div className='flex-auto  basis-md  md:basis-1/3 xl:basis-1/3'>
                         <h1 className='text-2xl mb-2 font-bold'>Goldibite - The right bite every time</h1>
                         <p className='text-base mb-10'>GoldiBite is an AI-powered app designed to assist individuals with food allergies and sensitivities by providing a comprehensive database to manage food safety concerns while travelling. It aims to eliminate the inconvenience and potential safety risks associated with varying ingredient information and regulations worldwide.</p>
@@ -47,7 +47,7 @@ const App: React.FC = () => {
                     </div>
                 </div>
                 {/* Problem and solution */}
-                <div className='bg-[var(--primary-color)]  w-screen m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl justify-center md:flex-row  text-gray-950'>
+                <div className='bg-[var(--primary-color)]  w-full m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl justify-center md:flex-row  text-gray-950'>
 
 
                     <div className='flex-auto basis-md md:basis-1/3 xl:basis-1/2 text-gray-950'>
@@ -68,7 +68,7 @@ const App: React.FC = () => {
                     </div>
                 </div>
 
-                <div className='bg-[var(--primary-color)]  w-screen m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl justify-center md:flex-row-reverse  text-gray-950'>
+                <div className='bg-[var(--primary-color)]  w-full m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl justify-center md:flex-row-reverse  text-gray-950'>
 
                     <div className='flex-auto basis-md md:basis-1/3 xl:basis-1/3 text-gray-950'>
                         <h2 className='text-xl font-bold mb-5'>User Personar</h2>
@@ -101,7 +101,7 @@ const App: React.FC = () => {
                     </div>
                 </div>
 
-                <div className='bg-[var(--primary-color)]  w-screen m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl justify-center md:flex-row  text-gray-950'>
+                <div className='bg-[var(--primary-color)]  w-full m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl justify-center md:flex-row  text-gray-950'>
                     <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
                         <h2 className='text-xl font-bold mb-5'>Brand and Logo Design</h2>
                         <p className='text-base mb-5'>The name GoldiBite is inspired by the Goldilocks story, specifically the famous line, “This porridge is too hot, this porridge is too cold, this porridge is just right.” Our app is designed to eliminate the inconvenience and potential safety risks of travelling for people with food allergies and sensitivities. Just as Goldilocks searched for the ideal porridge, we aim to help travellers find “the right bite, every time.”</p>
@@ -140,7 +140,7 @@ const App: React.FC = () => {
 
                     </div>
                 </div>
-                <div className='bg-[var(--primary-color)]  w-screen m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row-reverse  text-gray-950'>
+                <div className='bg-[var(--primary-color)]  w-full m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row-reverse  text-gray-950'>
 
                     <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
                         <h2 className='text-xl font-bold mb-5'>Colour Palette</h2>
@@ -186,7 +186,7 @@ const App: React.FC = () => {
                 </div>
 
 
-                <div className='bg-[var(--primary-color)]  w-screen m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row text-gray-950'>
+                <div className='bg-[var(--primary-color)]  w-full m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row text-gray-950'>
 
                     <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
                         <h2 className='text-xl font-bold mb-5'>Colour Contrast Checker</h2>
@@ -206,7 +206,7 @@ const App: React.FC = () => {
                     </div>
                 </div>
 
-                <div className='bg-[var(--primary-color)]  w-screen m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row-reverse text-gray-950'>
+                <div className='bg-[var(--primary-color)]  w-full m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row-reverse text-gray-950'>
 
                     <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
                         <h2 className='text-xl font-bold mb-5'>System flow Design (Happy path)</h2>
@@ -227,7 +227,7 @@ const App: React.FC = () => {
                 </div>
 
 
-                <div className='bg-[var(--primary-color)]  w-screen m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row text-gray-950'>
+                <div className='bg-[var(--primary-color)]  w-full m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row text-gray-950'>
                     <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
                         <h2 className='text-xl font-bold mb-5'>Hi-Fi Wireframes</h2>
                         <p className='text-base mb-5'>As our team move forward in developing GoldiBite, we’re excited to share our latest progress through hi-fi wireframes. These designs represent our commitment to solving real problems faced by travellers with food allergies or sensitivities.</p>
