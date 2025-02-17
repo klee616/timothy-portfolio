@@ -25,7 +25,7 @@ const App: React.FC<Props> = ({ }) => {
     useEffect(() => {
 
 
-        const bgColor = {goldibite:"#f3a405", project1:"#000000", project2:"#7AB2E1", project3:"#880016"}
+        const bgColor:any = {goldibite:"#f3a405", project1:"#000000", project2:"#7AB2E1", project3:"#880016"}
 
         gsap.defaults({ overwrite: 'auto' });
 

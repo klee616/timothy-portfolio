@@ -11,6 +11,184 @@ import { ImgComparison } from "@/components/ui/imgComparison";
 
 const App: React.FC = () => {
 
+    const products:{title:string, link:string, thumbnail:string}[] = [
+        {
+            title: "Login Process",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/login/login-1.png",
+        },
+        {
+            title: "Login Process",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/login/login-2.png",
+        },
+        {
+            title: "Login Process",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/login/login-3.png",
+        },
+    
+        {
+            title: "Login Process",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/login/login-4.png",
+        },
+        {
+            title: "Login Process",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/login/login-5.png",
+        },
+        {
+            title: "Login Process",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/login/login-6.png",
+        },
+    
+        {
+            title: "Analysis Process",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/analysis/barcodescanner.jpg",
+        },
+        {
+            title: "Home Page",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/analysis/homepage.jpg",
+        },
+        {
+            title: "Menu Result",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/analysis/menuresult.png",
+        },
+        {
+            title: "Restaurant menu",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/analysis/resturantmenu.png",
+        },
+        {
+            title: "Restaurant menu",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/analysis/resturantmenuresultdetail.png",
+        },
+    
+        {
+            title: "Scanner Result",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/analysis/scannerresult.png",
+        },
+        {
+            title: "Login",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/login/login-2.png",
+        },
+        {
+            title: "Login",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/login/login-3.png",
+        },
+        {
+            title: "Login",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/login/login-4.png",
+        },
+        {
+            title: "Login",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/login/login-5.png",
+        },
+        {
+            title: "Login",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/login/login-6.png",
+        },
+        {
+            title: "Login Process",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/login/login-1.png",
+        },
+        {
+            title: "Login Process",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/login/login-2.png",
+        },
+        {
+            title: "Login Process",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/login/login-3.png",
+        },
+    
+        {
+            title: "Login Process",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/login/login-4.png",
+        },
+        {
+            title: "Login Process",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/login/login-5.png",
+        },
+        {
+            title: "Login Process",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/login/login-6.png",
+        },
+    
+        {
+            title: "Analysis Process",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/analysis/barcodescanner.jpg",
+        },
+        {
+            title: "Home Page",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/analysis/homepage.jpg",
+        },
+        {
+            title: "Menu Result",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/analysis/menuresult.png",
+        },
+        {
+            title: "Restaurant menu",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/analysis/resturantmenu.png",
+        },
+        {
+            title: "Restaurant menu",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/analysis/resturantmenuresultdetail.png",
+        },
+    
+        {
+            title: "Scanner Result",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/analysis/scannerresult.png",
+        },
+        {
+            title: "Login",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/login/login-2.png",
+        },
+        {
+            title: "Login",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/login/login-3.png",
+        },
+        {
+            title: "Login",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/login/login-4.png",
+        },
+        {
+            title: "Login",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/login/login-5.png",
+        },
+        {
+            title: "Login",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/login/login-6.png",
+        },
+    ];
     return (
         <>
             <TopHeader />
@@ -332,182 +510,3 @@ const App: React.FC = () => {
 }
 
 export default App;
-
-export const products = [
-    {
-        title: "Login Process",
-        link: "",
-        thumbnail: "/casestudy/goldibite/wireframe/login/login-1.png",
-    },
-    {
-        title: "Login Process",
-        link: "",
-        thumbnail: "/casestudy/goldibite/wireframe/login/login-2.png",
-    },
-    {
-        title: "Login Process",
-        link: "",
-        thumbnail: "/casestudy/goldibite/wireframe/login/login-3.png",
-    },
-
-    {
-        title: "Login Process",
-        link: "",
-        thumbnail: "/casestudy/goldibite/wireframe/login/login-4.png",
-    },
-    {
-        title: "Login Process",
-        link: "",
-        thumbnail: "/casestudy/goldibite/wireframe/login/login-5.png",
-    },
-    {
-        title: "Login Process",
-        link: "",
-        thumbnail: "/casestudy/goldibite/wireframe/login/login-6.png",
-    },
-
-    {
-        title: "Analysis Process",
-        link: "",
-        thumbnail: "/casestudy/goldibite/wireframe/analysis/barcodescanner.jpg",
-    },
-    {
-        title: "Home Page",
-        link: "",
-        thumbnail: "/casestudy/goldibite/wireframe/analysis/homepage.jpg",
-    },
-    {
-        title: "Menu Result",
-        link: "",
-        thumbnail: "/casestudy/goldibite/wireframe/analysis/menuresult.png",
-    },
-    {
-        title: "Restaurant menu",
-        link: "",
-        thumbnail: "/casestudy/goldibite/wireframe/analysis/resturantmenu.png",
-    },
-    {
-        title: "Restaurant menu",
-        link: "",
-        thumbnail: "/casestudy/goldibite/wireframe/analysis/resturantmenuresultdetail.png",
-    },
-
-    {
-        title: "Scanner Result",
-        link: "",
-        thumbnail: "/casestudy/goldibite/wireframe/analysis/scannerresult.png",
-    },
-    {
-        title: "Login",
-        link: "",
-        thumbnail: "/casestudy/goldibite/wireframe/login/login-2.png",
-    },
-    {
-        title: "Login",
-        link: "",
-        thumbnail: "/casestudy/goldibite/wireframe/login/login-3.png",
-    },
-    {
-        title: "Login",
-        link: "",
-        thumbnail: "/casestudy/goldibite/wireframe/login/login-4.png",
-    },
-    {
-        title: "Login",
-        link: "",
-        thumbnail: "/casestudy/goldibite/wireframe/login/login-5.png",
-    },
-    {
-        title: "Login",
-        link: "",
-        thumbnail: "/casestudy/goldibite/wireframe/login/login-6.png",
-    },
-    {
-        title: "Login Process",
-        link: "",
-        thumbnail: "/casestudy/goldibite/wireframe/login/login-1.png",
-    },
-    {
-        title: "Login Process",
-        link: "",
-        thumbnail: "/casestudy/goldibite/wireframe/login/login-2.png",
-    },
-    {
-        title: "Login Process",
-        link: "",
-        thumbnail: "/casestudy/goldibite/wireframe/login/login-3.png",
-    },
-
-    {
-        title: "Login Process",
-        link: "",
-        thumbnail: "/casestudy/goldibite/wireframe/login/login-4.png",
-    },
-    {
-        title: "Login Process",
-        link: "",
-        thumbnail: "/casestudy/goldibite/wireframe/login/login-5.png",
-    },
-    {
-        title: "Login Process",
-        link: "",
-        thumbnail: "/casestudy/goldibite/wireframe/login/login-6.png",
-    },
-
-    {
-        title: "Analysis Process",
-        link: "",
-        thumbnail: "/casestudy/goldibite/wireframe/analysis/barcodescanner.jpg",
-    },
-    {
-        title: "Home Page",
-        link: "",
-        thumbnail: "/casestudy/goldibite/wireframe/analysis/homepage.jpg",
-    },
-    {
-        title: "Menu Result",
-        link: "",
-        thumbnail: "/casestudy/goldibite/wireframe/analysis/menuresult.png",
-    },
-    {
-        title: "Restaurant menu",
-        link: "",
-        thumbnail: "/casestudy/goldibite/wireframe/analysis/resturantmenu.png",
-    },
-    {
-        title: "Restaurant menu",
-        link: "",
-        thumbnail: "/casestudy/goldibite/wireframe/analysis/resturantmenuresultdetail.png",
-    },
-
-    {
-        title: "Scanner Result",
-        link: "",
-        thumbnail: "/casestudy/goldibite/wireframe/analysis/scannerresult.png",
-    },
-    {
-        title: "Login",
-        link: "",
-        thumbnail: "/casestudy/goldibite/wireframe/login/login-2.png",
-    },
-    {
-        title: "Login",
-        link: "",
-        thumbnail: "/casestudy/goldibite/wireframe/login/login-3.png",
-    },
-    {
-        title: "Login",
-        link: "",
-        thumbnail: "/casestudy/goldibite/wireframe/login/login-4.png",
-    },
-    {
-        title: "Login",
-        link: "",
-        thumbnail: "/casestudy/goldibite/wireframe/login/login-5.png",
-    },
-    {
-        title: "Login",
-        link: "",
-        thumbnail: "/casestudy/goldibite/wireframe/login/login-6.png",
-    },
-];

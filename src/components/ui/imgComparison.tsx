@@ -21,7 +21,8 @@ import React from "react";
                 <img src={image2} />
                 <figcaption className='bg-white border border-gray-400 rounded-xl text-[#2e3452] opacity-80 p-3 absolute top-1/2 transform -translate-y-1/2 leading-none right-3'>LoFi</figcaption>
             </figure>
-            <svg slot="handle" className="custom-animated-handle transition-transform duration-200 hover:scale-120 border-[#999]" xmlns="http://www.w3.org/2000/svg" width="100" viewBox="-8 -3 16 6">
+           
+            <svg  {...({ slot: "handle" } as any)}  className="custom-animated-handle transition-transform duration-200 hover:scale-120 border-[#999]" xmlns="http://www.w3.org/2000/svg" width="100" viewBox="-8 -3 16 6">
                 <path stroke="#fff" d="M -5 -2 L -7 0 L -5 2 M -5 -2 L -5 2 M 5 -2 L 7 0 L 5 2 M 5 -2 L 5 2" stroke-width="1" fill="#999" vector-effect="non-scaling-stroke"></path>
             </svg>
         </ImgComparisonSlider>
