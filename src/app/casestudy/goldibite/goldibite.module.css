@@ -1,0 +1,4 @@
+.colouredSlider {
+    --divider-color: rgba(0, 0, 0, 0.5);
+    --default-handle-color: rgba(0, 0, 0, 0.5);
+  }

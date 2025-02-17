@@ -1,12 +1,16 @@
+"use client"
 import React from 'react';
 
+import styles from "./goldibite.module.css"
 import Image from "next/image";
 import TopHeader from "@/components/TopHeader"
 import Footer from "@/components/Footer";
 import { HeroParallax } from "@/components/ui/hero-parallax";
+import { ImgComparisonSlider } from '@img-comparison-slider/react';
+import { ImgComparison } from "@/components/ui/imgComparison";
 
 const App: React.FC = () => {
-    
+
     return (
         <>
             <TopHeader />
@@ -241,51 +245,9 @@ const App: React.FC = () => {
                     </div>
 
                     <div className='flex-auto flex flex-row flex-wrap gap-10 n basis-5xl md:basis-1/3  xl:basis-2/3 justify-end items-start'>
-                        <Image
-                            src="/casestudy/goldibite/wireframe/analysis/homepage.jpg"
-                            width={180}
-                            height={400}
-                            alt="Goldibite -Home page"
-                            className=' object-contain shadow-xl max-h-screen '
-                        />
-                        <Image
-                            src="/casestudy/goldibite/wireframe/analysis/barcodescanner.jpg"
-                            width={180}
-                            height={400}
-                            alt="Goldibite -barcode scanner"
-                            className=' object-contain shadow-xl max-h-screen '
-                        />
-                        <Image
-                            src="/casestudy/goldibite/wireframe/analysis/scannerresult.png"
-                            width={180}
-                            height={400}
-                            alt="Goldibite - Scanner Result"
-                            className=' object-contain shadow-xl max-h-screen '
-                        />
 
-                        <Image
-                            src="/casestudy/goldibite/wireframe/analysis/resturantmenu.png"
-                            width={180}
-                            height={400}
-                            alt="Goldibite -menu analysis"
-                            className=' object-contain shadow-xl max-h-screen '
-                        />
+                        <ImgComparison image1='/casestudy/goldibite/wireframe/analysis/hifi-analysis.png' image2='/casestudy/goldibite/wireframe/analysis/lofi-analysis.png' />
 
-                        <Image
-                            src="/casestudy/goldibite/wireframe/analysis/menuresult.png"
-                            width={180}
-                            height={400}
-                            alt="Goldibite -menu analysis Result"
-                            className=' object-contain shadow-xl max-h-screen '
-                        />
-
-                        <Image
-                            src="/casestudy/goldibite/wireframe/analysis/resturantmenuresultdetail.png"
-                            width={180}
-                            height={400}
-                            alt="Goldibite -menu analysis page (Detail)"
-                            className=' object-contain shadow-xl max-h-screen '
-                        />
                     </div>
                 </div>
 
@@ -299,50 +261,11 @@ const App: React.FC = () => {
                     </div>
 
                     <div className='flex-auto flex flex-row flex-wrap gap-10 n basis-5xl md:basis-1/3  xl:basis-2/3 justify-start'>
-                        <Image
-                            src="/casestudy/goldibite/wireframe/onboranding/Onboarding-1.jpg"
-                            width={180}
-                            height={400}
-                            alt="Goldibite - Onboarding 1"
-                            className=' object-contain shadow-xl max-h-screen '
-                        />
+                    <ImgComparison 
+                    image1='/casestudy/goldibite/wireframe/onbroading/hifi-onbroading.png' 
+                    image2='/casestudy/goldibite/wireframe/onbroading/lofi-onbroading.png' />
 
-                        <Image
-                            src="/casestudy/goldibite/wireframe/onboranding/Onboarding-2.png"
-                            width={180}
-                            height={400}
-                            alt="Goldibite - Onboarding 2"
-                            className=' object-contain shadow-xl max-h-screen '
-                        />
-
-                        <Image
-                            src="/casestudy/goldibite/wireframe/onboranding/Onboarding-3.png"
-                            width={180}
-                            height={400}
-                            alt="Goldibite - Onboarding 3"
-                            className=' object-contain shadow-xl max-h-screen '
-                        />
-                        <Image
-                            src="/casestudy/goldibite/wireframe/onboranding/Onboarding-4.png"
-                            width={180}
-                            height={400}
-                            alt="Goldibite - Onboarding 4"
-                            className=' object-contain shadow-xl max-h-screen '
-                        />
-                        <Image
-                            src="/casestudy/goldibite/wireframe/onboranding/Onboarding-5.png"
-                            width={180}
-                            height={400}
-                            alt="Goldibite - Onboarding 5"
-                            className=' object-contain shadow-xl max-h-screen '
-                        />
-                        <Image
-                            src="/casestudy/goldibite/wireframe/onboranding/Onboarding-6.png"
-                            width={180}
-                            height={400}
-                            alt="Goldibite - Onboarding 6"
-                            className=' object-contain shadow-xl max-h-screen '
-                        />
+                       
                     </div>
                 </div>
 
@@ -410,197 +333,181 @@ const App: React.FC = () => {
 
 export default App;
 
-
-export const metadata = {
-    title: {
-        absolute: 'Goldibite',
-    },
-    keywords: ['D3 BCIT Showcase', 'BCIT Showcase', 'Goldibite', 'BCIT D3'],
-    authors: [{ name: 'Kam Shing Lee, Timothy', url: 'https://www.thetimothylee.com' }],
-    creator: 'Timothy Lee',
-    publisher: 'Timothy Lee',
-    formatDetection: {
-        email: false,
-        address: false,
-        telephone: false,
-    },
-}
-
 export const products = [
     {
-      title: "Login Process",
-      link:"",
-      thumbnail: "/casestudy/goldibite/wireframe/login/login-1.jpg",
+        title: "Login Process",
+        link: "",
+        thumbnail: "/casestudy/goldibite/wireframe/login/login-1.png",
     },
     {
         title: "Login Process",
-        link:"",
+        link: "",
         thumbnail: "/casestudy/goldibite/wireframe/login/login-2.png",
     },
     {
         title: "Login Process",
-        link:"",
+        link: "",
         thumbnail: "/casestudy/goldibite/wireframe/login/login-3.png",
     },
-   
+
     {
         title: "Login Process",
-        link:"",
+        link: "",
         thumbnail: "/casestudy/goldibite/wireframe/login/login-4.png",
     },
     {
         title: "Login Process",
-        link:"",
+        link: "",
         thumbnail: "/casestudy/goldibite/wireframe/login/login-5.png",
     },
     {
         title: "Login Process",
-        link:"",
+        link: "",
         thumbnail: "/casestudy/goldibite/wireframe/login/login-6.png",
     },
-   
+
     {
         title: "Analysis Process",
-        link:"",
+        link: "",
         thumbnail: "/casestudy/goldibite/wireframe/analysis/barcodescanner.jpg",
     },
     {
         title: "Home Page",
-        link:"",
+        link: "",
         thumbnail: "/casestudy/goldibite/wireframe/analysis/homepage.jpg",
     },
     {
         title: "Menu Result",
-        link:"",
+        link: "",
         thumbnail: "/casestudy/goldibite/wireframe/analysis/menuresult.png",
     },
     {
-      title: "Restaurant menu",
-      link:"",
-      thumbnail: "/casestudy/goldibite/wireframe/analysis/resturantmenu.png",
+        title: "Restaurant menu",
+        link: "",
+        thumbnail: "/casestudy/goldibite/wireframe/analysis/resturantmenu.png",
     },
     {
         title: "Restaurant menu",
-        link:"",
+        link: "",
         thumbnail: "/casestudy/goldibite/wireframe/analysis/resturantmenuresultdetail.png",
     },
-   
+
     {
         title: "Scanner Result",
-        link:"",
+        link: "",
         thumbnail: "/casestudy/goldibite/wireframe/analysis/scannerresult.png",
     },
     {
         title: "Login",
-        link:"",
+        link: "",
         thumbnail: "/casestudy/goldibite/wireframe/login/login-2.png",
     },
     {
         title: "Login",
-        link:"",
+        link: "",
         thumbnail: "/casestudy/goldibite/wireframe/login/login-3.png",
     },
     {
         title: "Login",
-        link:"",
+        link: "",
         thumbnail: "/casestudy/goldibite/wireframe/login/login-4.png",
     },
     {
         title: "Login",
-        link:"",
+        link: "",
         thumbnail: "/casestudy/goldibite/wireframe/login/login-5.png",
     },
     {
         title: "Login",
-        link:"",
+        link: "",
         thumbnail: "/casestudy/goldibite/wireframe/login/login-6.png",
     },
     {
-      title: "Login Process",
-      link:"",
-      thumbnail: "/casestudy/goldibite/wireframe/login/login-1.png",
+        title: "Login Process",
+        link: "",
+        thumbnail: "/casestudy/goldibite/wireframe/login/login-1.png",
     },
     {
         title: "Login Process",
-        link:"",
+        link: "",
         thumbnail: "/casestudy/goldibite/wireframe/login/login-2.png",
     },
     {
         title: "Login Process",
-        link:"",
+        link: "",
         thumbnail: "/casestudy/goldibite/wireframe/login/login-3.png",
     },
-   
+
     {
         title: "Login Process",
-        link:"",
+        link: "",
         thumbnail: "/casestudy/goldibite/wireframe/login/login-4.png",
     },
     {
         title: "Login Process",
-        link:"",
+        link: "",
         thumbnail: "/casestudy/goldibite/wireframe/login/login-5.png",
     },
     {
         title: "Login Process",
-        link:"",
+        link: "",
         thumbnail: "/casestudy/goldibite/wireframe/login/login-6.png",
     },
-   
+
     {
         title: "Analysis Process",
-        link:"",
+        link: "",
         thumbnail: "/casestudy/goldibite/wireframe/analysis/barcodescanner.jpg",
     },
     {
         title: "Home Page",
-        link:"",
+        link: "",
         thumbnail: "/casestudy/goldibite/wireframe/analysis/homepage.jpg",
     },
     {
         title: "Menu Result",
-        link:"",
+        link: "",
         thumbnail: "/casestudy/goldibite/wireframe/analysis/menuresult.png",
     },
     {
-      title: "Restaurant menu",
-      link:"",
-      thumbnail: "/casestudy/goldibite/wireframe/analysis/resturantmenu.png",
+        title: "Restaurant menu",
+        link: "",
+        thumbnail: "/casestudy/goldibite/wireframe/analysis/resturantmenu.png",
     },
     {
         title: "Restaurant menu",
-        link:"",
+        link: "",
         thumbnail: "/casestudy/goldibite/wireframe/analysis/resturantmenuresultdetail.png",
     },
-   
+
     {
         title: "Scanner Result",
-        link:"",
+        link: "",
         thumbnail: "/casestudy/goldibite/wireframe/analysis/scannerresult.png",
     },
     {
         title: "Login",
-        link:"",
+        link: "",
         thumbnail: "/casestudy/goldibite/wireframe/login/login-2.png",
     },
     {
         title: "Login",
-        link:"",
+        link: "",
         thumbnail: "/casestudy/goldibite/wireframe/login/login-3.png",
     },
     {
         title: "Login",
-        link:"",
+        link: "",
         thumbnail: "/casestudy/goldibite/wireframe/login/login-4.png",
     },
     {
         title: "Login",
-        link:"",
+        link: "",
         thumbnail: "/casestudy/goldibite/wireframe/login/login-5.png",
     },
     {
         title: "Login",
-        link:"",
+        link: "",
         thumbnail: "/casestudy/goldibite/wireframe/login/login-6.png",
     },
-  ];
+];
