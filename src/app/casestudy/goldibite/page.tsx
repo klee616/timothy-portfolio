@@ -193,7 +193,7 @@ const App: React.FC = () => {
         <>
             <TopHeader />
             <HeroParallax products={products} />;
-            <section className='w-screen min-h-screen bg-[var(--primary-color)] flex pt-20 z-50 flex-auto flex flex-col p-20  pb-10 -mt-[130vh]'>
+            <section className='w-screen min-h-screen bg-[var(--primary-color)] flex pt-20 z-50 flex-auto flex flex-col p-20  pb-10'>
                 <div className='bg-[var(--primary-color)]  w-full m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl justify-center md:flex-row  text-gray-950'>
                     <div className='flex-auto  basis-md  md:basis-1/3 xl:basis-1/3'>
                         <h1 className='text-2xl mb-2 font-bold'>Goldibite - The right bite every time</h1>
