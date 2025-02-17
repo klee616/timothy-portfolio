@@ -62,7 +62,7 @@ const App: React.FC = () => {
                             className='max-h-screen'
                         />
                         <Image
-                            src="/project/project3/VanillaLatteFlavour.png"
+                            src="/project/project3/vanillaLatteFlavour.png"
                             width={1924}
                             height={1020}
                             layout='responsive'
