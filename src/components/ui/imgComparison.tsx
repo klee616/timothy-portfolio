@@ -23,7 +23,7 @@ import React from "react";
             </figure>
            
             <svg  {...({ slot: "handle" } as any)}  className="custom-animated-handle transition-transform duration-200 hover:scale-120 border-[#999]" xmlns="http://www.w3.org/2000/svg" width="100" viewBox="-8 -3 16 6">
-                <path stroke="#fff" d="M -5 -2 L -7 0 L -5 2 M -5 -2 L -5 2 M 5 -2 L 7 0 L 5 2 M 5 -2 L 5 2" stroke-width="1" fill="#999" vector-effect="non-scaling-stroke"></path>
+                <path stroke="#fff" d="M -5 -2 L -7 0 L -5 2 M -5 -2 L -5 2 M 5 -2 L 7 0 L 5 2 M 5 -2 L 5 2" strokeWidth="1" fill="#999" vectorEffect="non-scaling-stroke"></path>
             </svg>
         </ImgComparisonSlider>
     </>

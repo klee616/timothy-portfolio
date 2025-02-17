@@ -1,4 +1,3 @@
-"use client"
 import React from 'react';
 
 import styles from "./goldibite.module.css"
@@ -13,39 +12,39 @@ const App: React.FC = () => {
 
     const products:{title:string, link:string, thumbnail:string}[] = [
         {
-            title: "Login Process",
+            title: "Login Process 1 ",
             link: "",
             thumbnail: "/casestudy/goldibite/wireframe/login/login-1.png",
         },
         {
-            title: "Login Process",
+            title: "Login Process 2",
             link: "",
             thumbnail: "/casestudy/goldibite/wireframe/login/login-2.png",
         },
         {
-            title: "Login Process",
+            title: "Login Process 3",
             link: "",
             thumbnail: "/casestudy/goldibite/wireframe/login/login-3.png",
         },
     
         {
-            title: "Login Process",
+            title: "Login Process 4",
             link: "",
             thumbnail: "/casestudy/goldibite/wireframe/login/login-4.png",
         },
         {
-            title: "Login Process",
+            title: "Login Process 5",
             link: "",
             thumbnail: "/casestudy/goldibite/wireframe/login/login-5.png",
         },
         {
-            title: "Login Process",
+            title: "Login Process 6",
             link: "",
             thumbnail: "/casestudy/goldibite/wireframe/login/login-6.png",
         },
     
         {
-            title: "Analysis Process",
+            title: "Analysis Process 1",
             link: "",
             thumbnail: "/casestudy/goldibite/wireframe/analysis/barcodescanner.jpg",
         },
@@ -60,12 +59,12 @@ const App: React.FC = () => {
             thumbnail: "/casestudy/goldibite/wireframe/analysis/menuresult.png",
         },
         {
-            title: "Restaurant menu",
+            title: "Restaurant menu 1 ",
             link: "",
             thumbnail: "/casestudy/goldibite/wireframe/analysis/resturantmenu.png",
         },
         {
-            title: "Restaurant menu",
+            title: "Restaurant menu 2",
             link: "",
             thumbnail: "/casestudy/goldibite/wireframe/analysis/resturantmenuresultdetail.png",
         },
@@ -76,118 +75,77 @@ const App: React.FC = () => {
             thumbnail: "/casestudy/goldibite/wireframe/analysis/scannerresult.png",
         },
         {
-            title: "Login",
+            title: "Guide 1",
             link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/login/login-2.png",
+            thumbnail: "/casestudy/goldibite/wireframe/guide/guide-1.png",
         },
         {
-            title: "Login",
+            title: "Guide 2",
             link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/login/login-3.png",
+            thumbnail: "/casestudy/goldibite/wireframe/guide/guide-2.png",
         },
         {
-            title: "Login",
+            title: "Guide 3",
             link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/login/login-4.png",
+            thumbnail: "/casestudy/goldibite/wireframe/guide/guide-3.png",
         },
         {
-            title: "Login",
+            title: "Guide 4",
             link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/login/login-5.png",
+            thumbnail: "/casestudy/goldibite/wireframe/guide/guide-4.png",
         },
         {
-            title: "Login",
+            title: "Guide 5",
             link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/login/login-6.png",
+            thumbnail: "/casestudy/goldibite/wireframe/guide/guide-5.png",
         },
         {
-            title: "Login Process",
+            title: "Guide 6",
             link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/login/login-1.png",
+            thumbnail: "/casestudy/goldibite/wireframe/guide/guide-6.png",
         },
         {
-            title: "Login Process",
+            title: "Guide 7",
             link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/login/login-2.png",
+            thumbnail: "/casestudy/goldibite/wireframe/guide/guide-7.png",
         },
         {
-            title: "Login Process",
+            title: "Guide 8",
             link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/login/login-3.png",
+            thumbnail: "/casestudy/goldibite/wireframe/guide/guide-8.png",
         },
     
         {
-            title: "Login Process",
+            title: "Guide 9",
             link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/login/login-4.png",
+            thumbnail: "/casestudy/goldibite/wireframe/guide/guide-9.png",
         },
         {
-            title: "Login Process",
+            title: "Guide 10",
             link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/login/login-5.png",
+            thumbnail: "/casestudy/goldibite/wireframe/guide/guide-10.png",
         },
         {
-            title: "Login Process",
+            title: "Guide 11",
             link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/login/login-6.png",
+            thumbnail: "/casestudy/goldibite/wireframe/guide/guide-11.png",
         },
     
         {
-            title: "Analysis Process",
+            title: "Guide 12",
             link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/analysis/barcodescanner.jpg",
+            thumbnail: "/casestudy/goldibite/wireframe/guide/guide-12.png",
         },
         {
-            title: "Home Page",
+            title: "Guide 13",
             link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/analysis/homepage.jpg",
+            thumbnail: "/casestudy/goldibite/wireframe/guide/guide-13.png",
         },
         {
-            title: "Menu Result",
+            title: "Guide 14",
             link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/analysis/menuresult.png",
-        },
-        {
-            title: "Restaurant menu",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/analysis/resturantmenu.png",
-        },
-        {
-            title: "Restaurant menu",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/analysis/resturantmenuresultdetail.png",
-        },
-    
-        {
-            title: "Scanner Result",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/analysis/scannerresult.png",
-        },
-        {
-            title: "Login",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/login/login-2.png",
-        },
-        {
-            title: "Login",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/login/login-3.png",
-        },
-        {
-            title: "Login",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/login/login-4.png",
-        },
-        {
-            title: "Login",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/login/login-5.png",
-        },
-        {
-            title: "Login",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/login/login-6.png",
-        },
+            thumbnail: "/casestudy/goldibite/wireframe/guide/guide-14.png",
+        }
     ];
     return (
         <>
@@ -459,10 +417,84 @@ const App: React.FC = () => {
                     <div className='flex-auto flex flex-row flex-wrap gap-10 n basis-5xl md:basis-1/3  xl:basis-2/3 justify-end'>
                     <ImgComparison 
                     image1='/casestudy/goldibite/wireframe/login/hifi-login.png' 
-                    image2='/casestudy/goldibite/wireframe/login/lofi-login.png' />
-                       
+                    image2='/casestudy/goldibite/wireframe/login/lofi-login.png' />                       
                     </div>
                 </div>
+
+                
+
+                <div className='bg-[var(--primary-color)]  w-screen m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row-reverse text-gray-950'>
+                    <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
+                        <h3 className='text-xl font-bold  mb-5'>Guides Section</h3>
+                        <p>
+                        The guides section provides travellers with essential information on managing allergies, offering tailored tips for both adults and children. The guides have a variety of tips and information to help travellers prevent potential allergic situations and educate them about accidental ingestion of allergens. In each guide, Goldibite included clear, step-by-step instructions to help travellers act confidently and appropriately based on their specific needs.
+                        </p>
+                    </div>
+
+                    <div className='flex-auto flex flex-row flex-wrap gap-10 n basis-5xl md:basis-1/3  xl:basis-2/3 justify-end'>
+                    <ImgComparison 
+                    image1='/casestudy/goldibite/wireframe/guide/hifi-guide.png' 
+                    image2='/casestudy/goldibite/wireframe/guide/lofi-guide.png' />                       
+                    </div>
+                </div>
+
+                
+                <div className='bg-[var(--primary-color)]  w-screen m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row text-gray-950'>
+                    <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
+                        <h3 className='text-xl font-bold  mb-5'>Setting Section</h3>
+                        <p>
+                        It enables travellers to personalize their app experience, including options for profile management, language, location, notifications, and allergy preferences. These settings allow users to tailor the app to their specific needs, enhancing usability, accessibility, and safety.
+                        </p>
+                    </div>
+
+                    <div className='flex-auto flex flex-row flex-wrap gap-10 n basis-5xl md:basis-1/3  xl:basis-2/3 justify-end'>
+                    <ImgComparison 
+                    image1='/casestudy/goldibite/wireframe/setting/hifi-setting.png' 
+                    image2='/casestudy/goldibite/wireframe/setting/lofi-setting.png' />                       
+                    </div>
+                </div>
+
+
+                
+                <div className='bg-[var(--primary-color)]  w-screen m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row-reverse text-gray-950'>
+                    <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
+                        <h3 className='text-xl font-bold  mb-5'>Testing Progress</h3>
+                        <p>
+                        Testing stage is significant to ensure Goldibite functionality stable and enhance user experience. GitHub issue is a task manager used in Goldibite project for reporting and requesting new features.
+                        </p>
+                    </div>
+
+                    <div className='flex-auto flex flex-row flex-wrap gap-10 n basis-5xl md:basis-1/3  xl:basis-2/3 justify-end'>
+                    <Image
+                            src="/casestudy/goldibite/Debug-workflow.png"
+                            width={3312}
+                            height={2016}
+                            alt="Color contrast checker"
+                            className=' object-contain shadow-xl max-h-screen '
+                        />            
+                    </div>
+                </div>
+
+{/*                 
+                <div className='bg-[var(--primary-color)]  w-screen m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row text-gray-950'>
+                    <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
+                        <h3 className='text-xl font-bold  mb-5'>Promotional Story Video</h3>
+                        <p> </p>
+                    </div>
+
+                    <div className='flex-auto flex flex-row flex-wrap gap-10 n basis-5xl md:basis-1/3  xl:basis-2/3 justify-end'>
+                    <Image
+                            src="/casestudy/goldibite/Debug-workflow.png"
+                            width={3312}
+                            height={2016}
+                            alt="Color contrast checker"
+                            className=' object-contain shadow-xl max-h-screen '
+                        />            
+                    </div>
+                </div> */}
+
+
+                
             </section>
             <Footer />
         </>
