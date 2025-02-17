@@ -24,6 +24,9 @@ const App: React.FC<Props> = ({ }) => {
 
     useEffect(() => {
 
+
+        const bgColor = {goldibite:"#f3a405", project1:"#000000", project2:"#7AB2E1", project3:"#880016"}
+
         gsap.defaults({ overwrite: 'auto' });
 
         //gsap.set(".left-content > *", { xPercent: -50, yPercent: -50 });
@@ -41,6 +44,8 @@ const App: React.FC<Props> = ({ }) => {
         });
 
         const contentMarkers = gsap.utils.toArray(`.${styles.contentMarker}`);
+
+
         console.log(styles.contentMarker)
         console.log(contentMarkers)
         // Set up our content behaviors
@@ -49,8 +54,10 @@ const App: React.FC<Props> = ({ }) => {
 
             if (marker.content.tagName === "IMG") {
                 gsap.set(marker.content, { transformOrigin: "center" });
-
+              
+        console.log(marker.content.id)
                 marker.content.enter = function () {
+                    gsap.to(`.${styles.contentContainer}`, { duration: 0.3, autoAlpha: 1, backgroundColor: bgColor[marker.content.id]} )
                     //gsap.fromTo(marker.content, { autoAlpha: 0, rotateY: -30 }, { duration: 0.3, autoAlpha: 1, rotateY: 0 });
                     gsap.fromTo(marker.content, { boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', border: '1rem solid #fff', width: '60%', autoAlpha: 0, rotate: -40 }, { duration: 0.3, autoAlpha: 1, rotate: -10 });
                 }
@@ -75,10 +82,10 @@ const App: React.FC<Props> = ({ }) => {
             let newContent: any;
             const currScroll = scrollY + 100;
 
-            console.log(`currScroll: ${currScroll}`)
 
             // Find the current section
             contentMarkers.forEach((marker: any) => {
+                console.log(`currScroll: ${marker.content}`)
                 if (currScroll > marker.offsetTop) {
                     newContent = marker.content;
                 }
@@ -124,7 +131,7 @@ const App: React.FC<Props> = ({ }) => {
             <div className={styles.contentContainer} id="project">
                 <div className={styles.leftContent} >
                     <Image
-                        id='Godibite'
+                        id='goldibite'
                         src="/casestudy/goldibite/cover.png"
                         width={1200}
                         height={900}
@@ -164,7 +171,7 @@ const App: React.FC<Props> = ({ }) => {
                 <div className={`${styles.rightContent}`} >
 
 
-                    <div className={`min-h-screen flex content-center items-center w-full  max-w-lg text-white ${styles.contentMarker}`} data-marker-content="Godibite">
+                    <div className={`min-h-screen flex content-center items-center w-full  max-w-lg text-white ${styles.contentMarker}`} data-marker-content="goldibite">
                         <div>
                             <Image
                                 src="/casestudy/goldibite/cover.png"
@@ -216,7 +223,7 @@ const App: React.FC<Props> = ({ }) => {
                     </div>
 
 
-                    <div className={`min-h-screen flex content-center items-center  max-w-lg text-white ${styles.contentMarker}`} data-marker-content="project3">
+                    <div className={`min-h-screen flex content-center items-center  max-w-lg text-white ${styles.contentMarker} -translate-y-[120px]`} data-marker-content="project3">
                         <div>
                             <Image
                                 src="/project/project3/cover.png"

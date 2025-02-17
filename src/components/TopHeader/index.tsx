@@ -9,26 +9,37 @@ interface Props {
 
 }
 
+
 const App: React.FC<Props> = () => {
-  const router =  useRouter();
+  const router = useRouter();
   return (
-    <header className='sticky top-0 left-0 z-10 '>
-      <div className={`${styles.headerContainer}  w-screen max-w-7xl pl-5 pr-5`}>
-        <div className={`${styles.logo}`}>
+    <>
+      <header className=' z-[999] w-full md:fixed md:flex md:justify-between md:top-4 md:bg-transparent md:pl-10 md:pr-10'>
+        <div className='w-full md:max-w-7xl md:w-full flex justify-between items-center md:shadow-xl pl-5 pr-5  md:pl-10 md:pr-10 md:border-white md:border-4 md:rounded-full md:bg-[var(--second-color)]'>
           <Image
             src='/logo.png'
-            width={50}
-            height={50}
+            width={75}
+            height={75}
             alt="Timothy's portfilio"
-            onClick={()=>router.push('/')} 
-            className='cursor-pointer'
+            onClick={() => router.push('/')}
+            className='cursor-pointer object-contain size-[100px] mr-2 md:mr-0 md:size-[100px]'
           />
+          <div className={`${styles.menuContainer} hidden md:block`}>
+            <HeaderMenu />
+          </div>
+
+          <div className='block md:hidden flex flex-col-reverse divide-y-4 divide-y-reverse divide-[var(--second-color)] w-[60px] h-[60px] justify-around'>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
         </div>
-        <div className={`${styles.menuContainer}`}>
-          <HeaderMenu />
-        </div>
-      </div> 
-    </header>
+      </header>
+     
+    </>
+
+
   );
 };
 

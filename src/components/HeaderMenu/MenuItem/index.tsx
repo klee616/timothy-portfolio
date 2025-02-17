@@ -8,7 +8,7 @@ interface Props {
 
 const App: React.FC<Props> = ({name, href}) => {
     return (
-        <li className={`${styles.menu}   text-gray-950`}><Link href={`${href}`} scroll={true}>{name}</Link></li>
+        <li className={`${styles.menu}   text-white`}><Link href={`${href}`} scroll={true} className=' uppercase no-underline hover:underline hover:text-gray-900'>{name}</Link></li>
     );
 };
 

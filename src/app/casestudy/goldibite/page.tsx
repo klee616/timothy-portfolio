@@ -3,11 +3,14 @@ import React from 'react';
 import Image from "next/image";
 import TopHeader from "@/components/TopHeader"
 import Footer from "@/components/Footer";
+import { HeroParallax } from "@/components/ui/hero-parallax";
 
 const App: React.FC = () => {
+    
     return (
         <>
             <TopHeader />
+            <HeroParallax products={products} />;
             <section className='w-screen min-h-screen bg-[var(--primary-color)] flex pt-20 z-50 flex-auto flex flex-col p-20  pb-10 '>
                 <div className='bg-[var(--primary-color)]  w-full m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl justify-center md:flex-row  text-gray-950'>
                     <div className='flex-auto  basis-md  md:basis-1/3 xl:basis-1/3'>
@@ -72,8 +75,8 @@ const App: React.FC = () => {
 
                     <div className='flex-auto basis-md md:basis-1/3 xl:basis-1/3 text-gray-950'>
                         <h2 className='text-xl font-bold mb-5'>User Personar</h2>
-                        <p className='text-base mb-5'>An effective design starts with understanding our travellers. Below, we've developed two key user personas: Claire and Jackson.</p>
-                        <p className='text-base mb-10'>Using detailed surveys and in-depth research, our team developed user personas that capture the needs, goals, and challenges of our target audience. This deeper understanding allows us to create more targeted solutions that effectively address their specific concerns.</p>
+                        <p className='text-base mb-5'>An effective design starts with understanding travellers. Below, we've developed two key user personas: Claire and Jackson.</p>
+                        <p className='text-base mb-10'>Using detailed surveys and in-depth research, user personas was developed for capturing the needs, goals, and challenges of target audience. This deeper understanding target audience allows to create more specific solutions effectively address their specific concerns.</p>
                         <h3 className='text-xl font-bold  mb-5'>Primary Persona: Claire</h3>
                         <p className='text-base mb-10'>Claire Martin is a 28-year-old marketing coordinator from Lyon, France. She is a passionate traveller with a taste for exploring new foods. With a gluten-free diet, Claire faces the constant challenge of navigating menus and food labels, especially in foreign countries due to language barriers. Whether double-checking ingredients or asking servers for gluten-free alternatives, Claire is always searching for ways to enjoy her meals.</p>
 
@@ -104,7 +107,7 @@ const App: React.FC = () => {
                 <div className='bg-[var(--primary-color)]  w-full m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl justify-center md:flex-row  text-gray-950'>
                     <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
                         <h2 className='text-xl font-bold mb-5'>Brand and Logo Design</h2>
-                        <p className='text-base mb-5'>The name GoldiBite is inspired by the Goldilocks story, specifically the famous line, “This porridge is too hot, this porridge is too cold, this porridge is just right.” Our app is designed to eliminate the inconvenience and potential safety risks of travelling for people with food allergies and sensitivities. Just as Goldilocks searched for the ideal porridge, we aim to help travellers find “the right bite, every time.”</p>
+                        <p className='text-base mb-5'>The name GoldiBite is inspired by the Goldilocks story, specifically the famous line, “This porridge is too hot, this porridge is too cold, this porridge is just right.” Goldibite is designed to eliminate the inconvenience and potential safety risks of travelling for people with food allergies and sensitivities. Just as Goldilocks searched for the ideal porridge, Goldibite aim to help travellers find “the right bite, every time.”</p>
 
                     </div>
 
@@ -144,15 +147,15 @@ const App: React.FC = () => {
 
                     <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
                         <h2 className='text-xl font-bold mb-5'>Colour Palette</h2>
-                        <p className='text-base mb-5'>The name GoldiBite is inspired by the Goldilocks story, specifically the famous line, “This porridge is too hot, this porridge is too cold, this porridge is just right.” Our app is designed to eliminate the inconvenience and potential safety risks of travelling for people with food allergies and sensitivities. Just as Goldilocks searched for the ideal porridge, we aim to help travellers find “the right bite, every time.”</p>
+                        <p className='text-base mb-5'>The name GoldiBite is inspired by the Goldilocks story, specifically the famous line, “This porridge is too hot, this porridge is too cold, this porridge is just right.” Goldibite is designed to eliminate the inconvenience and potential safety risks of travelling for people with food allergies and sensitivities. Just as Goldilocks searched for the ideal porridge, Goldibite aim to help travellers find “the right bite, every time.”</p>
 
                         <p className='text-base mb-5'>
                             Urgency and Quick Assistance:
-                            GoldiBites offers rapid alerts and support during food reaction, ensuring users have the information and tools needed to act swiftly in critical situation.
+                            GoldiBite offers rapid alerts and support during food reaction, ensuring users have the information and tools needed to act swiftly in critical situation.
                         </p>
                         <p className='text-base mb-5'>
                             Balance and Awareness:
-                            We integrate safety into every aspect, from allergen warnings to emergency instructions, ensuring users can make healthy choices without compromise.
+                            GoldiBite integrate safety into every aspect, from allergen warnings to emergency instructions, ensuring users can make healthy choices without compromise.
 
                         </p>
                         <p className='text-base mb-5'>
@@ -161,7 +164,7 @@ const App: React.FC = () => {
 
                         </p>
                         <p className='text-base mb-5'>
-                            These green colours represents health, vitality, and wellness. It suggests fresh, natural ingredients and wholes some living aligning with the values of our brand. Evokes "natural" and "fresh" foods encouraging users to explore healthier options while staying mindful of allergens.
+                            These green colours represents health, vitality, and wellness. It suggests fresh, natural ingredients and wholes some living aligning with the values of GoldiBite. Evokes "natural" and "fresh" foods encouraging users to explore healthier options while staying mindful of allergens.
 
                         </p>
                         <p className='text-base mb-5'>
@@ -169,7 +172,7 @@ const App: React.FC = () => {
 
                         </p>
                         <p className='text-base mb-5'>
-                            Also represent that our app is safe space for people with such allergies and bring calmness and reassurance.
+                            Also represent that GoldiBite is safe space for people with such allergies and bring calmness and reassurance.
                         </p>
 
                     </div>
@@ -190,7 +193,7 @@ const App: React.FC = () => {
 
                     <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
                         <h2 className='text-xl font-bold mb-5'>Colour Contrast Checker</h2>
-                        <p className='text-base mb-5'>By prioritizing accessibility and colour contrast in our design, we’re fostering an inclusive environment where everyone can safely navigate their food options.</p>
+                        <p className='text-base mb-5'>By prioritizing accessibility and colour contrast in GoldiBite design, GoldiBite fostering an inclusive environment where everyone can safely navigate their food options.</p>
 
 
                     </div>
@@ -210,7 +213,7 @@ const App: React.FC = () => {
 
                     <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
                         <h2 className='text-xl font-bold mb-5'>System flow Design (Happy path)</h2>
-                        <p className='text-base mb-5'>This happy path was created based on our finding, and this happy path includes 2 marjo functionalities, there are food screener, and resturant menu analysis.</p>
+                        <p className='text-base mb-5'>This happy path was created based on the finding, and this happy path includes 2 marjo functionalities, there are food screener, and resturant menu analysis.</p>
 
 
                     </div>
@@ -422,3 +425,182 @@ export const metadata = {
         telephone: false,
     },
 }
+
+export const products = [
+    {
+      title: "Login Process",
+      link:"",
+      thumbnail: "/casestudy/goldibite/wireframe/login/login-1.jpg",
+    },
+    {
+        title: "Login Process",
+        link:"",
+        thumbnail: "/casestudy/goldibite/wireframe/login/login-2.png",
+    },
+    {
+        title: "Login Process",
+        link:"",
+        thumbnail: "/casestudy/goldibite/wireframe/login/login-3.png",
+    },
+   
+    {
+        title: "Login Process",
+        link:"",
+        thumbnail: "/casestudy/goldibite/wireframe/login/login-4.png",
+    },
+    {
+        title: "Login Process",
+        link:"",
+        thumbnail: "/casestudy/goldibite/wireframe/login/login-5.png",
+    },
+    {
+        title: "Login Process",
+        link:"",
+        thumbnail: "/casestudy/goldibite/wireframe/login/login-6.png",
+    },
+   
+    {
+        title: "Analysis Process",
+        link:"",
+        thumbnail: "/casestudy/goldibite/wireframe/analysis/barcodescanner.jpg",
+    },
+    {
+        title: "Home Page",
+        link:"",
+        thumbnail: "/casestudy/goldibite/wireframe/analysis/homepage.jpg",
+    },
+    {
+        title: "Menu Result",
+        link:"",
+        thumbnail: "/casestudy/goldibite/wireframe/analysis/menuresult.png",
+    },
+    {
+      title: "Restaurant menu",
+      link:"",
+      thumbnail: "/casestudy/goldibite/wireframe/analysis/resturantmenu.png",
+    },
+    {
+        title: "Restaurant menu",
+        link:"",
+        thumbnail: "/casestudy/goldibite/wireframe/analysis/resturantmenuresultdetail.png",
+    },
+   
+    {
+        title: "Scanner Result",
+        link:"",
+        thumbnail: "/casestudy/goldibite/wireframe/analysis/scannerresult.png",
+    },
+    {
+        title: "Login",
+        link:"",
+        thumbnail: "/casestudy/goldibite/wireframe/login/login-2.png",
+    },
+    {
+        title: "Login",
+        link:"",
+        thumbnail: "/casestudy/goldibite/wireframe/login/login-3.png",
+    },
+    {
+        title: "Login",
+        link:"",
+        thumbnail: "/casestudy/goldibite/wireframe/login/login-4.png",
+    },
+    {
+        title: "Login",
+        link:"",
+        thumbnail: "/casestudy/goldibite/wireframe/login/login-5.png",
+    },
+    {
+        title: "Login",
+        link:"",
+        thumbnail: "/casestudy/goldibite/wireframe/login/login-6.png",
+    },
+    {
+      title: "Login Process",
+      link:"",
+      thumbnail: "/casestudy/goldibite/wireframe/login/login-1.png",
+    },
+    {
+        title: "Login Process",
+        link:"",
+        thumbnail: "/casestudy/goldibite/wireframe/login/login-2.png",
+    },
+    {
+        title: "Login Process",
+        link:"",
+        thumbnail: "/casestudy/goldibite/wireframe/login/login-3.png",
+    },
+   
+    {
+        title: "Login Process",
+        link:"",
+        thumbnail: "/casestudy/goldibite/wireframe/login/login-4.png",
+    },
+    {
+        title: "Login Process",
+        link:"",
+        thumbnail: "/casestudy/goldibite/wireframe/login/login-5.png",
+    },
+    {
+        title: "Login Process",
+        link:"",
+        thumbnail: "/casestudy/goldibite/wireframe/login/login-6.png",
+    },
+   
+    {
+        title: "Analysis Process",
+        link:"",
+        thumbnail: "/casestudy/goldibite/wireframe/analysis/barcodescanner.jpg",
+    },
+    {
+        title: "Home Page",
+        link:"",
+        thumbnail: "/casestudy/goldibite/wireframe/analysis/homepage.jpg",
+    },
+    {
+        title: "Menu Result",
+        link:"",
+        thumbnail: "/casestudy/goldibite/wireframe/analysis/menuresult.png",
+    },
+    {
+      title: "Restaurant menu",
+      link:"",
+      thumbnail: "/casestudy/goldibite/wireframe/analysis/resturantmenu.png",
+    },
+    {
+        title: "Restaurant menu",
+        link:"",
+        thumbnail: "/casestudy/goldibite/wireframe/analysis/resturantmenuresultdetail.png",
+    },
+   
+    {
+        title: "Scanner Result",
+        link:"",
+        thumbnail: "/casestudy/goldibite/wireframe/analysis/scannerresult.png",
+    },
+    {
+        title: "Login",
+        link:"",
+        thumbnail: "/casestudy/goldibite/wireframe/login/login-2.png",
+    },
+    {
+        title: "Login",
+        link:"",
+        thumbnail: "/casestudy/goldibite/wireframe/login/login-3.png",
+    },
+    {
+        title: "Login",
+        link:"",
+        thumbnail: "/casestudy/goldibite/wireframe/login/login-4.png",
+    },
+    {
+        title: "Login",
+        link:"",
+        thumbnail: "/casestudy/goldibite/wireframe/login/login-5.png",
+    },
+    {
+        title: "Login",
+        link:"",
+        thumbnail: "/casestudy/goldibite/wireframe/login/login-6.png",
+    },
+  ];

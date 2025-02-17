@@ -9,8 +9,8 @@ const App: React.FC = () => {
         <>
             <TopHeader />
                      <section className='w-screen min-h-screen bg-[var(--primary-color)] flex pt-20 z-50 text-gray-950'>
-                <div className='bg-[var(--primary-color)] max-w-7xl w-screen m-auto flex flex-row flex-nowrap mt-20 z-50 gap-10 p-5 text-gray-950'>
-                    <div className='flex-auto max-w-xl text-gray-950'>
+                <div className='bg-[var(--primary-color)] max-w-[1920px] w-screen m-auto flex flex-row flex-nowrap mt-20 z-50 gap-10 p-5 text-gray-950'>
+                    <div className='flex-auto max-w-md text-gray-950'>
                         <h1 className='text-2xl mb-2 font-bold'>Man City Football Club Team’s Poster Design</h1>
                         <p className='text-base mb-10'>Manchester City has been recognized as one of the most popular football clubs in the world, with fans spanning across the globe. The purpose of this project is to create a template that promotes the team's energy and dynamism, designed for display on signboards and as a poster available for purchase on their website.
                         </p>
@@ -34,12 +34,20 @@ const App: React.FC = () => {
                     </div>
                     <div className='flex-auto flex flex-col gap-5'>
                         <Image
+                            src="/project/project2/poster-mockup.png"
+                            width={3134}
+                            height={1912}
+                            layout='responsive'
+                            alt="Poster mockup"
+                            className='max-h-screen object-contain'
+                        />
+                        <Image
                             src="/project/project2/poster-1.png"
                             width={2635}
                             height={3375}
                             layout='responsive'
                             alt="Man City Team Project"
-                            className='max-h-screen'
+                            className='max-h-screen object-contain '
                         />
                         <Image
                             src="/project/project2/poster-2.png"
@@ -47,7 +55,7 @@ const App: React.FC = () => {
                             height={3375}
                             layout='responsive'
                             alt="Man City - John Stones"
-                            className='max-h-screen'
+                            className='max-h-screen object-contain '
                         />
                         <Image
                             src="/project/project2/poster-3.png"
@@ -55,15 +63,7 @@ const App: React.FC = () => {
                             height={3375}
                             layout='responsive'
                             alt="Man City - Erling Haaland"
-                            className='max-h-screen'
-                        />
-                        <Image
-                            src="/project/project2/poster-mockup.png"
-                            width={3134}
-                            height={1912}
-                            layout='responsive'
-                            alt="Poster mockup"
-                            className='max-h-screen'
+                            className='max-h-screen object-contain '
                         />
                     </div>
                 </div>
