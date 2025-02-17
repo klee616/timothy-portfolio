@@ -193,7 +193,7 @@ const App: React.FC = () => {
         <>
             <TopHeader />
             <HeroParallax products={products} />;
-            <section className='w-screen min-h-screen bg-[var(--primary-color)] flex pt-20 z-50 flex-auto flex flex-col p-20  pb-10 '>
+            <section className='w-screen min-h-screen bg-[var(--primary-color)] flex pt-20 z-50 flex-auto flex flex-col p-20  pb-10 -mt-[130vh]'>
                 <div className='bg-[var(--primary-color)]  w-full m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl justify-center md:flex-row  text-gray-950'>
                     <div className='flex-auto  basis-md  md:basis-1/3 xl:basis-1/3'>
                         <h1 className='text-2xl mb-2 font-bold'>Goldibite - The right bite every time</h1>
@@ -273,7 +273,7 @@ const App: React.FC = () => {
                             height={792}
                             layout='responsive'
                             alt="User Personar - Claire"
-                            className='max-h-screen object-contain shadow-xl'
+                            className='max-h-screen object-contain'
                         />
                         <Image
                             src="/casestudy/goldibite/persona-2.svg"
@@ -281,7 +281,7 @@ const App: React.FC = () => {
                             height={792}
                             layout='responsive'
                             alt="User Personar - Jackson"
-                            className='max-h-screen object-contain shadow-xl'
+                            className='max-h-screen object-contain '
                         />
                     </div>
                 </div>
@@ -457,50 +457,10 @@ const App: React.FC = () => {
                     </div>
 
                     <div className='flex-auto flex flex-row flex-wrap gap-10 n basis-5xl md:basis-1/3  xl:basis-2/3 justify-end'>
-                        <Image
-                            src="/casestudy/goldibite/wireframe/login/login-1.png"
-                            width={180}
-                            height={400}
-                            alt="Goldibite - login wireframe 1"
-                            className=' object-contain shadow-xl max-h-screen '
-                        />
-
-                        <Image
-                            src="/casestudy/goldibite/wireframe/login/login-2.png"
-                            width={180}
-                            height={400}
-                            alt="Goldibite - login wireframe 2"
-                            className=' object-contain shadow-xl max-h-screen '
-                        />
-
-                        <Image
-                            src="/casestudy/goldibite/wireframe/login/login-3.png"
-                            width={180}
-                            height={400}
-                            alt="Goldibite - login wireframe 3"
-                            className=' object-contain shadow-xl max-h-screen '
-                        />
-                        <Image
-                            src="/casestudy/goldibite/wireframe/login/login-4.png"
-                            width={180}
-                            height={400}
-                            alt="Goldibite - login wireframe 4"
-                            className=' object-contain shadow-xl max-h-screen '
-                        />
-                        <Image
-                            src="/casestudy/goldibite/wireframe/login/login-5.png"
-                            width={180}
-                            height={400}
-                            alt="Goldibite - login wireframe 5"
-                            className=' object-contain shadow-xl max-h-screen '
-                        />
-                        <Image
-                            src="/casestudy/goldibite/wireframe/login/login-6.png"
-                            width={180}
-                            height={400}
-                            alt="Goldibite - login wireframe 6"
-                            className=' object-contain shadow-xl max-h-screen '
-                        />
+                    <ImgComparison 
+                    image1='/casestudy/goldibite/wireframe/login/hifi-login.png' 
+                    image2='/casestudy/goldibite/wireframe/login/lofi-login.png' />
+                       
                     </div>
                 </div>
             </section>
