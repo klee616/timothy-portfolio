@@ -145,7 +145,40 @@ const App: React.FC = () => {
             title: "Guide 14",
             link: "",
             thumbnail: "/casestudy/goldibite/wireframe/guide/guide-14.png",
-        }
+        },
+
+        {
+            title: "Login Process 7 ",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/login/login-1.png",
+        },
+        {
+            title: "Login Process 8",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/login/login-2.png",
+        },
+        {
+            title: "Login Process 9",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/login/login-3.png",
+        },
+    
+        {
+            title: "Login Process 10",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/login/login-4.png",
+        },
+        {
+            title: "Login Process 11",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/login/login-5.png",
+        },
+        {
+            title: "Login Process 12",
+            link: "",
+            thumbnail: "/casestudy/goldibite/wireframe/login/login-6.png",
+        },
+    
     ];
     return (
         <>
@@ -502,3 +535,18 @@ const App: React.FC = () => {
 }
 
 export default App;
+
+export const metadata = {
+    title: {
+      absolute: 'Project - Goldibite ',
+    },
+    keywords: ['bcit d3 showcase', 'Goldibite', 'BCIT showcase'],
+    authors: [{ name: 'Kam Shing Lee, Timothy', url: 'https://www.thetimothylee.com' }],
+    creator: 'Timothy Lee',
+    publisher: 'Timothy Lee',
+    formatDetection: {
+      email: false,
+      address: false,
+      telephone: false,
+    },
+  }
