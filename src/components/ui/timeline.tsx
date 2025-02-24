@@ -42,8 +42,11 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           More About Me
         </h2>
         <p className="text-neutral-700 dark:text-neutral-300 text-lg  md:text-base max-w-sm">
-        I am an experienced software developer with well application development skills and experience in a team. I have excellent time management and self management skills because I able accomplish my work based on instruction even in the high pressure.
+        I am an experienced software developer with proven application development skills and a successful track record of contributing to team projects.  Possess excellent time management and self-management skills, consistently delivering results even under pressure.
         </p>
+
+
+
       </div>
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">

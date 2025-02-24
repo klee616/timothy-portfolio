@@ -33,7 +33,6 @@ const Index = () => {
           </h1>
           <p className="font-normal text-sm text-gray-50 relative z-10 my-4">
             Project Type: Individual 
-            d
           </p>
         </div>
       </div>

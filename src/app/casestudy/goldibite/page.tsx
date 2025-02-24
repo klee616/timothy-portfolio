@@ -257,28 +257,28 @@ const App: React.FC = () => {
                             width={250}
                             height={250}
                             alt="Goldibite - logo variations 1"
-                            className=' object-contain bg-white border-2 border-black shadow-xl w-50 '
+                            className=' object-contain bg-white border-2 border-black shadow-xl size-40 '
                         />
                         <Image
                             src="/casestudy/goldibite/logo/variations/logo-variation-2.png"
                             width={250}
                             height={250}
                             alt="Goldibite - logo variations 2"
-                            className=' object-contain bg-white border-2 border-black shadow-xl w-50 '
+                            className=' object-contain bg-white border-2 border-black shadow-xl size-40'
                         />
                         <Image
                             src="/casestudy/goldibite/logo/variations/logo-variation-3.png"
                             width={250}
                             height={250}
                             alt="Goldibite - logo variations 3"
-                            className=' object-contain bg-white border-2 border-black shadow-xl w-50  '
+                            className=' object-contain bg-white border-2 border-black shadow-xl size-40 '
                         />
                         <Image
                             src="/casestudy/goldibite/logo/variations/logo-variation-4.png"
                             width={250}
                             height={250}
                             alt="Goldibite - logo variations 4"
-                            className=' object-contain bg-white border-2 border-black shadow-xl w-50 '
+                            className=' object-contain bg-white border-2 border-black shadow-xl size-40'
                         />
 
                     </div>
@@ -323,7 +323,7 @@ const App: React.FC = () => {
                             width={901}
                             height={1000}
                             alt="Goldibite - logo variations 1"
-                            className=' object-contain shadow-xl max-h-screen '
+                            className=' object-contain  max-h-screen '
                         />
                     </div>
                 </div>
