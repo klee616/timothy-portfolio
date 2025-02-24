@@ -10,6 +10,7 @@ interface Record {
     company: string;
     location: string;
     duties: string[];
+    logo: string;
 }
 
 interface Props {
@@ -24,7 +25,7 @@ const App: React.FC<Props> = (journeyData) => {
             {
                 title: d.title,
                 content: (
-                    <ResumeContent key={i} position={d.position} company={d.company} location={d.location} duties={d.duties} />
+                    <ResumeContent key={i} position={d.position} company={d.company} location={d.location} duties={d.duties} logo={d.logo}/>
                 )
             }
         );
