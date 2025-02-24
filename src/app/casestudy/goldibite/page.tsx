@@ -508,7 +508,6 @@ const App: React.FC = () => {
                     </div>
                 </div>
 
-{/*                 
                 <div className='bg-[var(--primary-color)]  w-screen m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row text-gray-950'>
                     <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
                         <h3 className='text-xl font-bold  mb-5'>Promotional Story Video</h3>
@@ -516,15 +515,10 @@ const App: React.FC = () => {
                     </div>
 
                     <div className='flex-auto flex flex-row flex-wrap gap-10 n basis-5xl md:basis-1/3  xl:basis-2/3 justify-end'>
-                    <Image
-                            src="/casestudy/goldibite/Debug-workflow.png"
-                            width={3312}
-                            height={2016}
-                            alt="Color contrast checker"
-                            className=' object-contain shadow-xl max-h-screen '
-                        />            
+                   
+                    <iframe width="960" height="540" src="https://www.youtube.com/embed/uf32iSEPRRA?si=YKrmegtn_NO3w1Y-" title="Goldibite promotional video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
-                </div> */}
+                </div> 
 
 
                 
