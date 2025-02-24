@@ -1,3 +1,4 @@
+//@ts-ignore
 import React from 'react';
 
 import styles from "./goldibite.module.css"
@@ -515,9 +516,19 @@ const App: React.FC = () => {
                     </div>
 
                     <div className='flex-auto flex flex-row flex-wrap gap-10 n basis-5xl md:basis-1/3  xl:basis-2/3 justify-end'>
-                   
-                    <iframe width="960" height="540" src="https://www.youtube.com/embed/uf32iSEPRRA?si=YKrmegtn_NO3w1Y-" title="Goldibite promotional video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
+                    <iframe 
+    width="960" 
+    height="540" 
+    src="https://www.youtube.com/embed/uf32iSEPRRA?si=YKrmegtn_NO3w1Y-" 
+    title="Goldibite promotional video" 
+    frameBorder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerPolicy="strict-origin-when-cross-origin" 
+    allowFullScreen
+></iframe>
+
+                    
+                      </div>
                 </div> 
 
 
