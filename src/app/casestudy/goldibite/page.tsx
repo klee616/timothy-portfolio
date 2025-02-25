@@ -200,7 +200,6 @@ const App: React.FC = () => {
                             <div className='flex-row flex justify-between'><span className='font-bold'>Technologies:</span>
                                 <span className='flex-col flex text-right gap-2'>
                                     Adobe Photoshop<br />
-                                    Adobe Indesign<br />
                                     Figma<br />
                                     Design Thinking<br />
                                     Research<br />
@@ -233,7 +232,7 @@ const App: React.FC = () => {
                     </div>
 
                     <div className='flex-auto basis-md md:basis-1/3 xl:basis-1/2 text-gray-950'>
-                        <h2 className='text-xl font-bold mb-5'>GoldiBite was designed to solve this problem</h2>
+                        <h2 className='text-xl font-bold mb-5'>GoldiBite designed to address this problem</h2>
                         <ul className='text-base mb-5'>
                             <li>Providing a database of food products with allergen information.</li>
                             <li>Translating menus and food labels for safe choices.</li>
@@ -248,14 +247,15 @@ const App: React.FC = () => {
                 <div className='bg-[var(--primary-color)]  w-full m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl justify-center md:flex-row-reverse  text-gray-950'>
 
                     <div className='flex-auto basis-md md:basis-1/3 xl:basis-1/3 text-gray-950'>
-                        <h2 className='text-xl font-bold mb-5'>User Personar</h2>
+                        <h2 className='text-xl font-bold mb-5'>User Persona</h2>
                         <p className='text-base mb-5'>An effective design starts with understanding travellers. Below, we've developed two key user personas: Claire and Jackson.</p>
-                        <p className='text-base mb-10'>Using detailed surveys and in-depth research, user personas was developed for capturing the needs, goals, and challenges of target audience. This deeper understanding target audience allows to create more specific solutions effectively address their specific concerns.</p>
+                        <p className='text-base mb-10'>Using detailed surveys and in-depth research, user personas were developed to capture the needs, goals, and challenges of the target audience. This deeper understanding of the target audience allows for the creation of more specific solutions that effectively address their specific concerns.</p>
                         <h3 className='text-xl font-bold  mb-5'>Primary Persona: Claire</h3>
                         <p className='text-base mb-10'>Claire Martin is a 28-year-old marketing coordinator from Lyon, France. She is a passionate traveller with a taste for exploring new foods. With a gluten-free diet, Claire faces the constant challenge of navigating menus and food labels, especially in foreign countries due to language barriers. Whether double-checking ingredients or asking servers for gluten-free alternatives, Claire is always searching for ways to enjoy her meals.</p>
 
                         <h3 className='text-xl font-bold mb-5'>Secondary Persona: Jackson</h3>
-                        <p className='text-base mb-10'>Jackson is an international student who currently studies digital design at an institution. He enjoys food and strives to find options that cater to his chronic illness. Jackson enjoys nature and socializing with friends striving to live a happy and full life.</p>
+                        <p className='text-base mb-10'>Jackson is an international student who studies digital design at an institution. He enjoys food and strives to find options that cater to his chronic illness. Jackson enjoys nature and socializing with friends striving to live a happy and full life.
+                        </p>
                     </div>
 
                     <div className='flex-auto flex flex-col gap-5 basis-5xl min-w-screen  md:basis-1/3  xl:basis-2/3'>
@@ -321,8 +321,7 @@ const App: React.FC = () => {
 
                     <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
                         <h2 className='text-xl font-bold mb-5'>Colour Palette</h2>
-                        <p className='text-base mb-5'>The name GoldiBite is inspired by the Goldilocks story, specifically the famous line, “This porridge is too hot, this porridge is too cold, this porridge is just right.” Goldibite is designed to eliminate the inconvenience and potential safety risks of travelling for people with food allergies and sensitivities. Just as Goldilocks searched for the ideal porridge, Goldibite aim to help travellers find “the right bite, every time.”</p>
-
+                        
                         <p className='text-base mb-5'>
                             Urgency and Quick Assistance:
                             GoldiBite offers rapid alerts and support during food reaction, ensuring users have the information and tools needed to act swiftly in critical situation.
@@ -407,11 +406,10 @@ const App: React.FC = () => {
                 <div className='bg-[var(--primary-color)]  w-full m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row text-gray-950'>
                     <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
                         <h2 className='text-xl font-bold mb-5'>Hi-Fi Wireframes</h2>
-                        <p className='text-base mb-5'>As our team move forward in developing GoldiBite, we’re excited to share our latest progress through hi-fi wireframes. These designs represent our commitment to solving real problems faced by travellers with food allergies or sensitivities.</p>
                         <h3 className='text-xl font-bold  mb-5'>Food product allergen analysis</h3>
                         <p>Packaged food allergen analysis allows user capture the product information from the barcode, and provide the analyst result.</p>
                         <h3 className='text-xl font-bold  mb-5'>resturant's menu allergen analysis</h3>
-                        <p>resturant's menu allergen analysis use the camera capture menu image and provide the result.</p>
+                        <p>This function uses a camera to capture menu image, analysis the image and provide the result.</p>
                     </div>
 
                     <div className='flex-auto flex flex-row flex-wrap gap-10 n basis-5xl md:basis-1/3  xl:basis-2/3 justify-end items-start'>
