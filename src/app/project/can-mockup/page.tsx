@@ -33,9 +33,9 @@ const App: React.FC = () => {
                         </div>
                         <div className='flex-auto flex flex-col gap-5 basis-5xl min-w-screen  md:basis-1/3  xl:basis-2/3 m-5'>
                             <Image
-                                src="/project/project3/can-mockup.png"
-                                width={4744}
-                                height={3162}
+                                src="/project/project3/mockup2.png"
+                                width={1600}
+                                height={800}
                                 layout='responsive'
                                 alt="Can Mockup"
                                 className='max-h-screen object-contain'

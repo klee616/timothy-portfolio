@@ -187,7 +187,7 @@ const App: React.FC = () => {
             <HeroParallax products={products} />;
             <section className='w-screen min-h-screen bg-[var(--primary-color)] flex pt-20 z-50 flex-auto flex flex-col p-20  pb-10'>
                 <div className='bg-[var(--primary-color)]  w-full m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl justify-center md:flex-row  text-gray-950'>
-                    <div className='flex-auto  basis-md  md:basis-1/3 xl:basis-1/3'>
+                    <div className='flex-auto  basis-md  md:basis-1/3 xl:basis-1/3 gap-2'>
                         <h1 className='text-2xl mb-2 font-bold'>Goldibite - The right bite every time</h1>
                         <p className='text-base mb-10'>GoldiBite is an AI-powered app designed to assist individuals with food allergies and sensitivities by providing a comprehensive database to manage food safety concerns while travelling. It aims to eliminate the inconvenience and potential safety risks associated with varying ingredient information and regulations worldwide.</p>
                         <div className='flex-col flex justify-around gap-2 p-3 w-full max-w-xs border-2 rounded-md border-[var(--second-color)] bg-[#457b9d] text-white'>
@@ -208,6 +208,11 @@ const App: React.FC = () => {
                                     Visual Studio<br />
                                     GitHub<br />
                                 </span></div>
+
+                        </div>
+                        
+                        <div className='mt-5 w-full max-w-xs '>
+                            <a href="https://github.com/Michelle2317/GoldiBite" className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full w-full block text-center'>Visit on GitHub</a>
                         </div>
 
                     </div>
@@ -519,39 +524,39 @@ const App: React.FC = () => {
                     </div>
                 </div>
 
-<div className='bg-[var(--primary-color)]  w-screen m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row text-gray-950'>
-    <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
-        <h3 className='text-xl font-bold  mb-5'>Promotional Story Video</h3>
-        <p> </p>
-    </div>
+                <div className='bg-[var(--primary-color)]  w-screen m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row text-gray-950'>
+                    <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
+                        <h3 className='text-xl font-bold  mb-5'>Promotional Story Video</h3>
+                        <p> </p>
+                    </div>
 
-    <div className='flex-auto flex flex-row flex-wrap gap-10 n basis-5xl md:basis-1/3  xl:basis-2/3 justify-end'>
-        <iframe
-            width="960"
-            height="540"
-            src="https://www.youtube.com/embed/uf32iSEPRRA?si=YKrmegtn_NO3w1Y-"
-            title="Goldibite promotional video"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-        ></iframe>
-
-
-    </div>
-</div>
+                    <div className='flex-auto flex flex-row flex-wrap gap-10 n basis-5xl md:basis-1/3  xl:basis-2/3 justify-end'>
+                        <iframe
+                            width="960"
+                            height="540"
+                            src="https://www.youtube.com/embed/uf32iSEPRRA?si=YKrmegtn_NO3w1Y-"
+                            title="Goldibite promotional video"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                        ></iframe>
 
 
+                    </div>
+                </div>
 
-<div className='bg-[var(--primary-color)]  w-screen m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row text-gray-950'>
+
+
+                <div className='bg-[var(--primary-color)]  w-screen m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row text-gray-950'>
                     <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
                         <h3 className='text-xl font-bold  mb-5'> Promotional Materials</h3>
                         <p> </p>
                     </div>
 
                     <div className='flex-auto flex flex-row flex-wrap gap-10 n basis-5xl md:basis-1/3  xl:basis-2/3 justify-end'>
-                     
-                    <Image
+
+                        <Image
                             src="/casestudy/goldibite/Leaflet-1.png"
                             width={3039}
                             height={1938}
@@ -559,12 +564,12 @@ const App: React.FC = () => {
                             className=' object-contain shadow-xl max-h-screen '
                         />
                         <Image
-                        src="/casestudy/goldibite/Leaflet-2.png"
-                        width={3039}
-                        height={1938}
-                        alt=""
-                        className=' object-contain shadow-xl max-h-screen '
-                    />
+                            src="/casestudy/goldibite/Leaflet-2.png"
+                            width={3039}
+                            height={1938}
+                            alt=""
+                            className=' object-contain shadow-xl max-h-screen '
+                        />
 
                     </div>
                 </div>
