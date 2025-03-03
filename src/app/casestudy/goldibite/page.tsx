@@ -11,7 +11,7 @@ import { ImgComparison } from "@/components/ui/imgComparison";
 
 const App: React.FC = () => {
 
-    const products:{title:string, link:string, thumbnail:string}[] = [
+    const products: { title: string, link: string, thumbnail: string }[] = [
         {
             title: "Login Process 1 ",
             link: "",
@@ -27,7 +27,7 @@ const App: React.FC = () => {
             link: "",
             thumbnail: "/casestudy/goldibite/wireframe/login/login-3.png",
         },
-    
+
         {
             title: "Login Process 4",
             link: "",
@@ -43,7 +43,7 @@ const App: React.FC = () => {
             link: "",
             thumbnail: "/casestudy/goldibite/wireframe/login/login-6.png",
         },
-    
+
         {
             title: "Analysis Process 1",
             link: "",
@@ -69,7 +69,7 @@ const App: React.FC = () => {
             link: "",
             thumbnail: "/casestudy/goldibite/wireframe/analysis/resturantmenuresultdetail.png",
         },
-    
+
         {
             title: "Scanner Result",
             link: "",
@@ -115,7 +115,7 @@ const App: React.FC = () => {
             link: "",
             thumbnail: "/casestudy/goldibite/wireframe/guide/guide-8.png",
         },
-    
+
         {
             title: "Guide 9",
             link: "",
@@ -131,7 +131,7 @@ const App: React.FC = () => {
             link: "",
             thumbnail: "/casestudy/goldibite/wireframe/guide/guide-11.png",
         },
-    
+
         {
             title: "Guide 12",
             link: "",
@@ -163,7 +163,7 @@ const App: React.FC = () => {
             link: "",
             thumbnail: "/casestudy/goldibite/wireframe/login/login-3.png",
         },
-    
+
         {
             title: "Login Process 10",
             link: "",
@@ -179,7 +179,7 @@ const App: React.FC = () => {
             link: "",
             thumbnail: "/casestudy/goldibite/wireframe/login/login-6.png",
         },
-    
+
     ];
     return (
         <>
@@ -321,7 +321,7 @@ const App: React.FC = () => {
 
                     <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
                         <h2 className='text-xl font-bold mb-5'>Colour Palette</h2>
-                        
+
                         <p className='text-base mb-5'>
                             Urgency and Quick Assistance:
                             GoldiBite offers rapid alerts and support during food reaction, ensuring users have the information and tools needed to act swiftly in critical situation.
@@ -414,7 +414,11 @@ const App: React.FC = () => {
 
                     <div className='flex-auto flex flex-row flex-wrap gap-10 n basis-5xl md:basis-1/3  xl:basis-2/3 justify-end items-start'>
 
-                        <ImgComparison image1='/casestudy/goldibite/wireframe/analysis/hifi-analysis.png' image2='/casestudy/goldibite/wireframe/analysis/lofi-analysis.png' />
+                        <ImgComparison
+                            image1='/casestudy/goldibite/wireframe/analysis/hifi-analysis.png'
+                            image2='/casestudy/goldibite/wireframe/analysis/lofi-analysis.png'
+                            leftText='Hifi'
+                            rightText='Hifi' />
 
                     </div>
                 </div>
@@ -429,11 +433,13 @@ const App: React.FC = () => {
                     </div>
 
                     <div className='flex-auto flex flex-row flex-wrap gap-10 n basis-5xl md:basis-1/3  xl:basis-2/3 justify-start'>
-                    <ImgComparison 
-                    image1='/casestudy/goldibite/wireframe/onbroading/hifi-onbroading.png' 
-                    image2='/casestudy/goldibite/wireframe/onbroading/lofi-onbroading.png' />
+                        <ImgComparison
+                            image1='/casestudy/goldibite/wireframe/onbroading/hifi-onbroading.png'
+                            image2='/casestudy/goldibite/wireframe/onbroading/lofi-onbroading.png'
+                            leftText='Hifi'
+                            rightText='Hifi' />
 
-                       
+
                     </div>
                 </div>
 
@@ -447,90 +453,124 @@ const App: React.FC = () => {
                     </div>
 
                     <div className='flex-auto flex flex-row flex-wrap gap-10 n basis-5xl md:basis-1/3  xl:basis-2/3 justify-end'>
-                    <ImgComparison 
-                    image1='/casestudy/goldibite/wireframe/login/hifi-login.png' 
-                    image2='/casestudy/goldibite/wireframe/login/lofi-login.png' />                       
+                        <ImgComparison
+                            image1='/casestudy/goldibite/wireframe/login/hifi-login.png'
+                            image2='/casestudy/goldibite/wireframe/login/lofi-login.png'
+                            leftText='Hifi'
+                            rightText='Hifi' />
                     </div>
                 </div>
 
-                
+
 
                 <div className='bg-[var(--primary-color)]  w-screen m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row-reverse text-gray-950'>
                     <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
                         <h3 className='text-xl font-bold  mb-5'>Guides Section</h3>
                         <p>
-                        The guides section provides travellers with essential information on managing allergies, offering tailored tips for both adults and children. The guides have a variety of tips and information to help travellers prevent potential allergic situations and educate them about accidental ingestion of allergens. In each guide, Goldibite included clear, step-by-step instructions to help travellers act confidently and appropriately based on their specific needs.
+                            The guides section provides travellers with essential information on managing allergies, offering tailored tips for both adults and children. The guides have a variety of tips and information to help travellers prevent potential allergic situations and educate them about accidental ingestion of allergens. In each guide, Goldibite included clear, step-by-step instructions to help travellers act confidently and appropriately based on their specific needs.
                         </p>
                     </div>
 
                     <div className='flex-auto flex flex-row flex-wrap gap-10 n basis-5xl md:basis-1/3  xl:basis-2/3 justify-end'>
-                    <ImgComparison 
-                    image1='/casestudy/goldibite/wireframe/guide/hifi-guide.png' 
-                    image2='/casestudy/goldibite/wireframe/guide/lofi-guide.png' />                       
+                        <ImgComparison
+                            image1='/casestudy/goldibite/wireframe/guide/hifi-guide.png'
+                            image2='/casestudy/goldibite/wireframe/guide/lofi-guide.png'
+                            leftText='Hifi'
+                            rightText='Hifi' />
                     </div>
                 </div>
 
-                
+
                 <div className='bg-[var(--primary-color)]  w-screen m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row text-gray-950'>
                     <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
                         <h3 className='text-xl font-bold  mb-5'>Setting Section</h3>
                         <p>
-                        It enables travellers to personalize their app experience, including options for profile management, language, location, notifications, and allergy preferences. These settings allow users to tailor the app to their specific needs, enhancing usability, accessibility, and safety.
+                            It enables travellers to personalize their app experience, including options for profile management, language, location, notifications, and allergy preferences. These settings allow users to tailor the app to their specific needs, enhancing usability, accessibility, and safety.
                         </p>
                     </div>
 
                     <div className='flex-auto flex flex-row flex-wrap gap-10 n basis-5xl md:basis-1/3  xl:basis-2/3 justify-end'>
-                    <ImgComparison 
-                    image1='/casestudy/goldibite/wireframe/setting/hifi-setting.png' 
-                    image2='/casestudy/goldibite/wireframe/setting/lofi-setting.png' />                       
+                        <ImgComparison
+                            image1='/casestudy/goldibite/wireframe/setting/hifi-setting.png'
+                            image2='/casestudy/goldibite/wireframe/setting/lofi-setting.png'
+                            leftText='Hifi'
+                            rightText='Hifi' />
                     </div>
                 </div>
 
 
-                
+
                 <div className='bg-[var(--primary-color)]  w-screen m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row-reverse text-gray-950'>
                     <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
                         <h3 className='text-xl font-bold  mb-5'>Testing Progress</h3>
                         <p>
-                        Testing stage is significant to ensure Goldibite functionality stable and enhance user experience. GitHub issue is a task manager used in Goldibite project for reporting and requesting new features.
+                            Testing stage is significant to ensure Goldibite functionality stable and enhance user experience. GitHub issue is a task manager used in Goldibite project for reporting and requesting new features.
                         </p>
                     </div>
 
                     <div className='flex-auto flex flex-row flex-wrap gap-10 n basis-5xl md:basis-1/3  xl:basis-2/3 justify-end'>
-                    <Image
+                        <Image
                             src="/casestudy/goldibite/Debug-workflow.png"
                             width={3312}
                             height={2016}
                             alt="Color contrast checker"
                             className=' object-contain shadow-xl max-h-screen '
-                        />            
+                        />
                     </div>
                 </div>
 
-                <div className='bg-[var(--primary-color)]  w-screen m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row text-gray-950'>
+<div className='bg-[var(--primary-color)]  w-screen m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row text-gray-950'>
+    <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
+        <h3 className='text-xl font-bold  mb-5'>Promotional Story Video</h3>
+        <p> </p>
+    </div>
+
+    <div className='flex-auto flex flex-row flex-wrap gap-10 n basis-5xl md:basis-1/3  xl:basis-2/3 justify-end'>
+        <iframe
+            width="960"
+            height="540"
+            src="https://www.youtube.com/embed/uf32iSEPRRA?si=YKrmegtn_NO3w1Y-"
+            title="Goldibite promotional video"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+        ></iframe>
+
+
+    </div>
+</div>
+
+
+
+<div className='bg-[var(--primary-color)]  w-screen m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row text-gray-950'>
                     <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
-                        <h3 className='text-xl font-bold  mb-5'>Promotional Story Video</h3>
+                        <h3 className='text-xl font-bold  mb-5'> Promotional Materials</h3>
                         <p> </p>
                     </div>
 
                     <div className='flex-auto flex flex-row flex-wrap gap-10 n basis-5xl md:basis-1/3  xl:basis-2/3 justify-end'>
-                    <iframe 
-    width="960" 
-    height="540" 
-    src="https://www.youtube.com/embed/uf32iSEPRRA?si=YKrmegtn_NO3w1Y-" 
-    title="Goldibite promotional video" 
-    frameBorder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    referrerPolicy="strict-origin-when-cross-origin" 
-    allowFullScreen
-></iframe>
+                     
+                    <Image
+                            src="/casestudy/goldibite/Leaflet-1.png"
+                            width={3039}
+                            height={1938}
+                            alt=""
+                            className=' object-contain shadow-xl max-h-screen '
+                        />
+                        <Image
+                        src="/casestudy/goldibite/Leaflet-2.png"
+                        width={3039}
+                        height={1938}
+                        alt=""
+                        className=' object-contain shadow-xl max-h-screen '
+                    />
 
-                    
-                      </div>
-                </div> 
+                    </div>
+                </div>
 
 
-                
+
             </section>
             <Footer />
         </>
@@ -541,15 +581,15 @@ export default App;
 
 export const metadata = {
     title: {
-      absolute: 'Project - Goldibite ',
+        absolute: 'Project - Goldibite ',
     },
     keywords: ['bcit d3 showcase', 'Goldibite', 'BCIT showcase'],
     authors: [{ name: 'Kam Shing Lee, Timothy', url: 'https://www.thetimothylee.com' }],
     creator: 'Timothy Lee',
     publisher: 'Timothy Lee',
     formatDetection: {
-      email: false,
-      address: false,
-      telephone: false,
+        email: false,
+        address: false,
+        telephone: false,
     },
-  }
+}

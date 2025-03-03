@@ -251,7 +251,7 @@ const App: React.FC<Props> = ({ }) => {
                     <div className={`min-h-screen flex content-center items-center  max-w-lg text-white ${styles.contentMarker} -translate-y-[120px]`} data-marker-content="project4">
                         <div>
                             <Image
-                                src="/project/project34/cover.png"
+                                src="/project/project4/cover.png"
                                 width={800}
                                 height={600}
                                 alt=''
