@@ -4,7 +4,7 @@ import React from 'react';
 import HeaderMenu from '@/components/HeaderMenu'
 import { useRouter } from 'next/navigation'
 import Image from 'next/image';
-
+import MenuItem from "../HeaderMenu/MenuItem"
 interface Props {
 
 }
@@ -14,6 +14,7 @@ const App: React.FC<Props> = () => {
   const router = useRouter();
   return (
     <>
+      
       <header className=' z-[999] w-full md:fixed md:flex md:justify-between md:top-4 md:bg-transparent md:pl-10 md:pr-10'>
         <div className='w-full md:max-w-7xl md:w-full flex justify-between items-center md:shadow-xl pl-5 pr-5  md:pl-10 md:pr-10 md:border-white md:border-4 md:rounded-full md:bg-[var(--second-color)]'>
           <Image
@@ -22,7 +23,7 @@ const App: React.FC<Props> = () => {
             height={75}
             alt="Timothy's portfilio"
             onClick={() => router.push('/')}
-            className='cursor-pointer object-contain size-[100px] mr-2 md:mr-0 md:size-[100px]'
+            className='cursor-pointer object-contain size-[75px] mr-2 md:mr-0 md:size-[50px]  xl:size-[75px]'
           />
           <div className={`${styles.menuContainer} hidden md:block`}>
             <HeaderMenu />
@@ -36,7 +37,8 @@ const App: React.FC<Props> = () => {
           </div>
         </div>
       </header>
-     
+
+
     </>
 
 

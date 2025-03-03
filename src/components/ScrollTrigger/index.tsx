@@ -25,7 +25,7 @@ const App: React.FC<Props> = ({ }) => {
     useEffect(() => {
 
 
-        const bgColor:any = {goldibite:"#f3a405", project1:"#000000", project2:"#7AB2E1", project3:"#880016"}
+        const bgColor:any = {goldibite:"#f3a405", project1:"#000000", project2:"#7AB2E1", project3:"#880016", project4:"#f3a405"}
 
         gsap.defaults({ overwrite: 'auto' });
 
@@ -164,6 +164,14 @@ const App: React.FC<Props> = ({ }) => {
                         alt=''
                         className={styles.image}
                     />
+                    <Image
+                        id='project4'
+                        src="/project/project4/cover.png"
+                        width={800}
+                        height={600}
+                        alt=''
+                        className={styles.image}
+                    />
 
 
                 </div>
@@ -236,6 +244,25 @@ const App: React.FC<Props> = ({ }) => {
                             <p className='text-lg'>GaffiGo is a new brand that offers a variety of beverages aimed at young people. This project involves creating a template for a series of real coffee beverages, including Caramel Latte, Black Coffee, and Vanilla Latte flavors.</p>
 
                             <LearnMoreButton callback={()=>{router.push('/project/can-mockup')}} />
+                        </div>
+                    </div>
+
+                    
+                    <div className={`min-h-screen flex content-center items-center  max-w-lg text-white ${styles.contentMarker} -translate-y-[120px]`} data-marker-content="project4">
+                        <div>
+                            <Image
+                                src="/project/project34/cover.png"
+                                width={800}
+                                height={600}
+                                alt=''
+                                className={styles.image}
+                            />
+                            <h3 className='text-2xl mb-8'> Coffee Machine Graphic</h3>
+                            <p className='text-lg'>
+                                The project uses Adobe Illustrator to duplicate the coffee machine shape.
+                            </p>
+
+                            <LearnMoreButton callback={()=>{router.push('/project/coffee-machine')}} />
                         </div>
                     </div>
 
