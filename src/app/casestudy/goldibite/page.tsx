@@ -212,7 +212,7 @@ const App: React.FC = () => {
                         </div>
                         
                         <div className='mt-5 w-full max-w-xs '>
-                            <a href="https://github.com/Michelle2317/GoldiBite" className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full w-full block text-center'>Visit on GitHub</a>
+                            <a href="https://github.com/Michelle2317/GoldiBite" target='_blank' className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full w-full block text-center'>Visit on GitHub</a>
                         </div>
 
                     </div>
@@ -437,7 +437,7 @@ const App: React.FC = () => {
                         </p>
                     </div>
 
-                    <div className='flex-auto flex flex-row flex-wrap gap-10 n basis-5xl md:basis-1/3  xl:basis-2/3 justify-start'>
+                    <div className='flex-auto flex flex-row flex-wrap gap-10 n basis-5xl md:basis-1/3  xl:basis-2/3 justify-end items-start'>
                         <ImgComparison
                             image1='/casestudy/goldibite/wireframe/onbroading/hifi-onbroading.png'
                             image2='/casestudy/goldibite/wireframe/onbroading/lofi-onbroading.png'
@@ -476,6 +476,7 @@ const App: React.FC = () => {
                         </p>
                     </div>
 
+
                     <div className='flex-auto flex flex-row flex-wrap gap-10 n basis-5xl md:basis-1/3  xl:basis-2/3 justify-end'>
                         <ImgComparison
                             image1='/casestudy/goldibite/wireframe/guide/hifi-guide.png'
@@ -493,6 +494,7 @@ const App: React.FC = () => {
                             It enables travellers to personalize their app experience, including options for profile management, language, location, notifications, and allergy preferences. These settings allow users to tailor the app to their specific needs, enhancing usability, accessibility, and safety.
                         </p>
                     </div>
+
 
                     <div className='flex-auto flex flex-row flex-wrap gap-10 n basis-5xl md:basis-1/3  xl:basis-2/3 justify-end'>
                         <ImgComparison
@@ -527,7 +529,7 @@ const App: React.FC = () => {
                 <div className='bg-[var(--primary-color)]  w-screen m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row text-gray-950'>
                     <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
                         <h3 className='text-xl font-bold  mb-5'>Promotional Story Video</h3>
-                        <p> </p>
+                        <p>Capturing the essence of GoldiBite in a short video was crucial for promoting the app. We highlighted key features, such as allergen detection, nutrition tracking, and menu translation, to show users how GoldiBite simplifies safe food choices. The video’s engaging visuals and informative content helped drive user engagement and interest.</p>
                     </div>
 
                     <div className='flex-auto flex flex-row flex-wrap gap-10 n basis-5xl md:basis-1/3  xl:basis-2/3 justify-end'>

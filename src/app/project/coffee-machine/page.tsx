@@ -62,7 +62,7 @@ export const metadata = {
     title: {
         absolute: 'The Can’s mockup - Caffi Go',
     },
-    keywords: ['Showcase of Adobe Photoshop\' CC ', 'Adobe Indesign\'s Showcase', 'Poster Showcase', 'BCIT D3'],
+    keywords: ['Showcase of Adobe Photoshop\' CC ', 'Poster Showcase', 'BCIT D3'],
     authors: [{ name: 'Kam Shing Lee, Timothy', url: 'https://www.thetimothylee.com' }],
     creator: 'Timothy Lee',
     publisher: 'Timothy Lee',
