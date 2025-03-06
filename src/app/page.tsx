@@ -23,10 +23,11 @@ export default function Home() {
 }
 export const metadata = {
   title: {
-    absolute: 'Timothy Lee\'s Portfilio ',
+    absolute: "Timothy Lee's Portfilio ",
   },
   keywords: ['bcit d3 portfolio', 'd3 portfolio showcase', 'bcit student portfolio'],
   authors: [{ name: 'Kam Shing Lee, Timothy', url: 'https://www.thetimothylee.com' }],
+  Description: "Hi, I'm Kam Shing Leem, Timothy, This is my portfolio website to share my project.",
   creator: 'Timothy Lee',
   publisher: 'Timothy Lee',
   formatDetection: {
