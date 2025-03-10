@@ -42,7 +42,8 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           More About Me
         </h2>
         <p className="text-neutral-700 dark:text-neutral-300 text-lg  md:text-base max-w-sm">
-        I am an experienced software developer with proven application development skills and a successful track record of contributing to team projects.  Possess excellent time management and self-management skills, consistently delivering results even under pressure.
+        With 10 years of experience, I am enthusiastic about UX/UI design and web development offerings. I have various skill sets from Design tools to Development skills, including Adobe Creative tools, Node.js, JavaScript, and database management.
+
         </p>
 
 
