@@ -7,16 +7,16 @@ import { useRef } from "react"
 export default function GsapEffect({ children }: { children: React.ReactNode }) {
 
     gsap.registerPlugin(useGSAP, ScrollTrigger);
-
+    const sectionRef = useRef<HTMLDivElement>(null);
     useGSAP(() => {
         // gsap code here...
         gsap.to(".section", { scrollTrigger: '.section', y: 0, opacity: 1, scale:1, direction: 1, duration: 0.25 }); // <-- automatically reverted
 
-    }) // <-- scope for selector text (optional)
+    }, { scope: sectionRef }) // <-- scope for selector text (optional)
 
     return (<>
-        <div>
-            <div className='section opacity-5 scale-75 -translate-y-[-100px]'>
+        <div ref={sectionRef as React.RefObject<HTMLDivElement>}>
+            <div className='section opacity-5 scale-75 -translate-y-[-100px] '>
                 {children}
             </div>
         </div></>)
