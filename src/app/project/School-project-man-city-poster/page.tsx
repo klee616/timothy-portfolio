@@ -3,6 +3,7 @@ import React from 'react';
 import Image from "next/image";
 import TopHeader from "@/components/TopHeader"
 import Footer from "@/components/Footer";
+import GsapEffect from '@/template/gsapEffect';
 
 const App: React.FC = () => {
     return (
@@ -43,35 +44,38 @@ const App: React.FC = () => {
                     </div>
                 </div>
                 <div className='flex-auto flex flex-col gap-5 basis-5xl w-full 2xl:w-[1280px] mb-[5rem] '>
-                    <Image
-                        src="/project/project2/poster-1.png"
-                        width={2635}
-                        height={3375}
-                        layout='responsive'
-                        alt="Man City Team Project"
-                        className='max-h-screen object-contain '
-                    />
-                    <Image
-                        src="/project/project2/poster-2.png"
-                        width={2635}
-                        height={3375}
-                        layout='responsive'
-                        alt="Man City - John Stones"
-                        className='max-h-screen object-contain '
-                    />
-                    <Image
-                        src="/project/project2/poster-3.png"
-                        width={2635}
-                        height={3375}
-                        layout='responsive'
-                        alt="Man City - Erling Haaland"
-                        className='max-h-screen object-contain '
-                    />
+                    <GsapEffect>
+                        <Image
+                            src="/project/project2/poster-1.png"
+                            width={2635}
+                            height={3375}
+                            layout='responsive'
+                            alt="Man City Team Project"
+                            className='max-h-screen object-contain '
+                        />
+                    </GsapEffect>
+                    <GsapEffect>
+                        <Image
+                            src="/project/project2/poster-2.png"
+                            width={2635}
+                            height={3375}
+                            layout='responsive'
+                            alt="Man City - John Stones"
+                            className='max-h-screen object-contain '
+                        />
+                    </GsapEffect>
+                    <GsapEffect>
+                        <Image
+                            src="/project/project2/poster-3.png"
+                            width={2635}
+                            height={3375}
+                            layout='responsive'
+                            alt="Man City - Erling Haaland"
+                            className='max-h-screen object-contain '
+                        />
+                    </GsapEffect>
                 </div>
             </section>
-
-
-
             <Footer />
         </>
     )

@@ -1,4 +1,5 @@
 //@ts-ignore
+"use client"
 import React from 'react';
 
 import styles from "./goldibite.module.css"
@@ -8,179 +9,19 @@ import Footer from "@/components/Footer";
 import { HeroParallax } from "@/components/ui/hero-parallax";
 import { ImgComparisonSlider } from '@img-comparison-slider/react';
 import { ImgComparison } from "@/components/ui/imgComparison";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+import { useRef } from "react"
+import SectionTemplate from './template'
+import goldibiteImage from "@/data/goldbite.json"
+import GoldibiteSection from "@/components/GoldibiteSection/template"
 
 const App: React.FC = () => {
 
-    const products: { title: string, link: string, thumbnail: string }[] = [
-        {
-            title: "Login Process 1 ",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/login/login-1.png",
-        },
-        {
-            title: "Login Process 2",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/login/login-2.png",
-        },
-        {
-            title: "Login Process 3",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/login/login-3.png",
-        },
+    const products: { title: string, link: string, thumbnail: string }[] = goldibiteImage;
 
-        {
-            title: "Login Process 4",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/login/login-4.png",
-        },
-        {
-            title: "Login Process 5",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/login/login-5.png",
-        },
-        {
-            title: "Login Process 6",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/login/login-6.png",
-        },
 
-        {
-            title: "Analysis Process 1",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/analysis/barcodescanner.jpg",
-        },
-        {
-            title: "Home Page",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/analysis/homepage.jpg",
-        },
-        {
-            title: "Menu Result",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/analysis/menuresult.png",
-        },
-        {
-            title: "Restaurant menu 1 ",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/analysis/resturantmenu.png",
-        },
-        {
-            title: "Restaurant menu 2",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/analysis/resturantmenuresultdetail.png",
-        },
-
-        {
-            title: "Scanner Result",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/analysis/scannerresult.png",
-        },
-        {
-            title: "Guide 1",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/guide/guide-1.png",
-        },
-        {
-            title: "Guide 2",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/guide/guide-2.png",
-        },
-        {
-            title: "Guide 3",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/guide/guide-3.png",
-        },
-        {
-            title: "Guide 4",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/guide/guide-4.png",
-        },
-        {
-            title: "Guide 5",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/guide/guide-5.png",
-        },
-        {
-            title: "Guide 6",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/guide/guide-6.png",
-        },
-        {
-            title: "Guide 7",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/guide/guide-7.png",
-        },
-        {
-            title: "Guide 8",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/guide/guide-8.png",
-        },
-
-        {
-            title: "Guide 9",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/guide/guide-9.png",
-        },
-        {
-            title: "Guide 10",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/guide/guide-10.png",
-        },
-        {
-            title: "Guide 11",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/guide/guide-11.png",
-        },
-
-        {
-            title: "Guide 12",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/guide/guide-12.png",
-        },
-        {
-            title: "Guide 13",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/guide/guide-13.png",
-        },
-        {
-            title: "Guide 14",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/guide/guide-14.png",
-        },
-
-        {
-            title: "Login Process 7 ",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/login/login-1.png",
-        },
-        {
-            title: "Login Process 8",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/login/login-2.png",
-        },
-        {
-            title: "Login Process 9",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/login/login-3.png",
-        },
-
-        {
-            title: "Login Process 10",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/login/login-4.png",
-        },
-        {
-            title: "Login Process 11",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/login/login-5.png",
-        },
-        {
-            title: "Login Process 12",
-            link: "",
-            thumbnail: "/casestudy/goldibite/wireframe/login/login-6.png",
-        },
-
-    ];
     return (
         <>
             <TopHeader />
@@ -210,7 +51,7 @@ const App: React.FC = () => {
                                 </span></div>
 
                         </div>
-                        
+
                         <div className='mt-5 w-full max-w-xs '>
                             <a href="https://github.com/Michelle2317/GoldiBite" target='_blank' className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full w-full block text-center'>Visit on GitHub</a>
                         </div>
@@ -228,28 +69,30 @@ const App: React.FC = () => {
                     </div>
                 </div>
                 {/* Problem and solution */}
-                <div className='bg-[var(--primary-color)]  w-full m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl justify-center md:flex-row  text-gray-950'>
+                <GoldibiteSection >
+                    <div className='section opacity-5 scale-75 -translate-y-[-100px]  bg-[var(--primary-color)]  w-full m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl justify-center md:flex-row  text-gray-950'>
 
 
-                    <div className='flex-auto basis-md md:basis-1/3 xl:basis-1/2 text-gray-950'>
-                        <h2 className='text-xl font-bold mb-5'>The Global Challenge of Food Allergies and Travelling</h2>
-                        <p className='text-base mb-5'>Eating out with food allergies is more challenging than many realize. A study by Dalhousie University found that only 27.7% of individuals with food conditions believe menus properly indicate allergens. Alarmingly, 46% have experienced allergic reactions at restaurants, with 25.5% facing multiple incidents.</p>
+                        <div className='flex-auto basis-md md:basis-1/3 xl:basis-1/2 text-gray-950'>
+                            <h2 className='text-xl font-bold mb-5'>The Global Challenge of Food Allergies and Travelling</h2>
+                            <p className='text-base mb-5'>Eating out with food allergies is more challenging than many realize. A study by Dalhousie University found that only 27.7% of individuals with food conditions believe menus properly indicate allergens. Alarmingly, 46% have experienced allergic reactions at restaurants, with 25.5% facing multiple incidents.</p>
+                        </div>
+
+                        <div className='flex-auto basis-md md:basis-1/3 xl:basis-1/2 text-gray-950'>
+                            <h2 className='text-xl font-bold mb-5'>GoldiBite designed to address this problem</h2>
+                            <ul className='text-base mb-5'>
+                                <li>Providing a database of food products with allergen information.</li>
+                                <li>Translating menus and food labels for safe choices.</li>
+                                <li>Offering emergency resources for allergic reactions.</li>
+                            </ul>
+                            <p className='text-base mb-5'>
+                                Food is a universal joy, and no one should have to fear it. GoldiBite ensures you can confidently find The Right Bite, Every Time.
+                            </p>
+                        </div>
                     </div>
-
-                    <div className='flex-auto basis-md md:basis-1/3 xl:basis-1/2 text-gray-950'>
-                        <h2 className='text-xl font-bold mb-5'>GoldiBite designed to address this problem</h2>
-                        <ul className='text-base mb-5'>
-                            <li>Providing a database of food products with allergen information.</li>
-                            <li>Translating menus and food labels for safe choices.</li>
-                            <li>Offering emergency resources for allergic reactions.</li>
-                        </ul>
-                        <p className='text-base mb-5'>
-                            Food is a universal joy, and no one should have to fear it. GoldiBite ensures you can confidently find The Right Bite, Every Time.
-                        </p>
-                    </div>
-                </div>
-
-                <div className='bg-[var(--primary-color)]  w-full m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl justify-center md:flex-row-reverse  text-gray-950'>
+                </GoldibiteSection>
+                <GoldibiteSection >
+                <div className=' section opacity-5 scale-75  -translate-y-[-100px] bg-[var(--primary-color)]  w-full m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl justify-center md:flex-row-reverse  text-gray-950'>
 
                     <div className='flex-auto basis-md md:basis-1/3 xl:basis-1/3 text-gray-950'>
                         <h2 className='text-xl font-bold mb-5'>User Persona</h2>
@@ -282,6 +125,8 @@ const App: React.FC = () => {
                         />
                     </div>
                 </div>
+                </GoldibiteSection>
+                <GoldibiteSection >
 
                 <div className='bg-[var(--primary-color)]  w-full m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl justify-center md:flex-row  text-gray-950'>
                     <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
@@ -322,6 +167,8 @@ const App: React.FC = () => {
 
                     </div>
                 </div>
+                </GoldibiteSection>
+                <GoldibiteSection >
                 <div className='bg-[var(--primary-color)]  w-full m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row-reverse  text-gray-950'>
 
                     <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
@@ -365,8 +212,10 @@ const App: React.FC = () => {
                         />
                     </div>
                 </div>
+                </GoldibiteSection>
 
 
+                <GoldibiteSection >
                 <div className='bg-[var(--primary-color)]  w-full m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row text-gray-950'>
 
                     <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
@@ -386,7 +235,8 @@ const App: React.FC = () => {
                         />
                     </div>
                 </div>
-
+                </GoldibiteSection>
+                <GoldibiteSection >
                 <div className='bg-[var(--primary-color)]  w-full m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row-reverse text-gray-950'>
 
                     <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
@@ -406,8 +256,8 @@ const App: React.FC = () => {
                         />
                     </div>
                 </div>
-
-
+                </GoldibiteSection>
+                <GoldibiteSection>
                 <div className='bg-[var(--primary-color)]  w-full m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row text-gray-950'>
                     <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
                         <h2 className='text-xl font-bold mb-5'>Hi-Fi Wireframes</h2>
@@ -427,7 +277,8 @@ const App: React.FC = () => {
 
                     </div>
                 </div>
-
+                </GoldibiteSection>
+                <GoldibiteSection>
                 <div className='bg-[var(--primary-color)]  w-screen m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row-reverse text-gray-950'>
                     <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
 
@@ -447,6 +298,8 @@ const App: React.FC = () => {
 
                     </div>
                 </div>
+                </GoldibiteSection>
+                <GoldibiteSection>
 
 
                 <div className='bg-[var(--primary-color)]  w-screen m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row text-gray-950'>
@@ -465,6 +318,8 @@ const App: React.FC = () => {
                             rightText='LoFi' />
                     </div>
                 </div>
+                </GoldibiteSection>
+                <GoldibiteSection>
 
 
 
@@ -486,6 +341,8 @@ const App: React.FC = () => {
                     </div>
                 </div>
 
+                </GoldibiteSection>
+                <GoldibiteSection>
 
                 <div className='bg-[var(--primary-color)]  w-screen m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row text-gray-950'>
                     <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
@@ -505,6 +362,8 @@ const App: React.FC = () => {
                     </div>
                 </div>
 
+                </GoldibiteSection>
+                <GoldibiteSection>
 
 
                 <div className='bg-[var(--primary-color)]  w-screen m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row-reverse text-gray-950'>
@@ -525,6 +384,8 @@ const App: React.FC = () => {
                         />
                     </div>
                 </div>
+                </GoldibiteSection>
+                <GoldibiteSection>
 
                 <div className='bg-[var(--primary-color)]  w-screen m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row text-gray-950'>
                     <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
@@ -547,6 +408,8 @@ const App: React.FC = () => {
 
                     </div>
                 </div>
+                </GoldibiteSection>
+                <GoldibiteSection>
 
 
 
@@ -575,6 +438,7 @@ const App: React.FC = () => {
 
                     </div>
                 </div>
+                </GoldibiteSection>
 
 
 
@@ -586,17 +450,17 @@ const App: React.FC = () => {
 
 export default App;
 
-export const metadata = {
-    title: {
-        absolute: 'Project - Goldibite ',
-    },
-    keywords: ['bcit d3 showcase', 'Goldibite', 'BCIT showcase'],
-    authors: [{ name: 'Kam Shing Lee, Timothy', url: 'https://www.thetimothylee.com' }],
-    creator: 'Timothy Lee',
-    publisher: 'Timothy Lee',
-    formatDetection: {
-        email: false,
-        address: false,
-        telephone: false,
-    },
-}
+// export const metadata = {
+//     title: {
+//         absolute: 'Project - Goldibite ',
+//     },
+//     keywords: ['bcit d3 showcase', 'Goldibite', 'BCIT showcase'],
+//     authors: [{ name: 'Kam Shing Lee, Timothy', url: 'https://www.thetimothylee.com' }],
+//     creator: 'Timothy Lee',
+//     publisher: 'Timothy Lee',
+//     formatDetection: {
+//         email: false,
+//         address: false,
+//         telephone: false,
+//     },
+// }

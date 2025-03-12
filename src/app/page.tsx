@@ -1,4 +1,4 @@
- // @ts-nocheck 
+// @ts-nocheck 
 import Image from "next/image";
 import TopHeader from '@/components/TopHeader'
 import Introduction from '@/components/Introduction'
@@ -9,16 +9,17 @@ import Footer from '@/components/Footer'
 import journeyData from '@/data/journey.json'
 import Parallax from '@/components/Parallax'
 import ScrollTrigger from "@/components/ScrollTrigger"
+import GsapEffect from '@/template/gsapEffect'
 
 export default function Home() {
 
   return (
     <>
-        <TopHeader />
-        <Introduction />
-        <ScrollTrigger />
-        <TimelineResume journeyData={journeyData}/>
-        <Footer />
+      <TopHeader />
+      <Introduction />
+      <ScrollTrigger />
+      <GsapEffect><TimelineResume journeyData={journeyData} /></GsapEffect>
+      <Footer />
     </>
   );
 }

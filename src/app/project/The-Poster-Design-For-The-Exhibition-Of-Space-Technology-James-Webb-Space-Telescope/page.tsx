@@ -3,6 +3,7 @@ import React from 'react';
 import Image from "next/image";
 import TopHeader from "@/components/TopHeader"
 import Footer from "@/components/Footer";
+import GsapEffect from '@/template/gsapEffect';
 
 const App: React.FC = () => {
     return (
@@ -44,30 +45,36 @@ const App: React.FC = () => {
                 </div>
 
                 <div className='flex-auto flex flex-col gap-5 basis-5xl w-full 2xl:w-[1280px] mb-[5rem] '>
-                    <Image
-                        src="/project/project1/image4.png"
-                        width={600}
-                        height={400}
-                        layout='responsive'
-                        alt="Mockup 1"
-                        className='max-h-screen  h-[70vh] object-contain  max-xl  2xl:w-[1280px]'
-                    />
-                    <Image
-                        src="/project/project1/image2.jpg"
-                        width={600}
-                        height={400}
-                        layout='responsive'
-                        alt="The Poster Design for The Exhibition of Space Technology - James Webb Space Telescope"
-                        className='max-h-screen h-[70vh] object-contain  max-xl  2xl:w-[1280px]'
-                    />
-                    <Image
-                        src="/project/project1/image3.png"
-                        width={600}
-                        height={400}
-                        layout='responsive'
-                        alt="Mockup 2"
-                        className='max-h-screen h-[70vh] object-contain  max-xl  2xl:w-[1280px]'
-                    />
+                    <GsapEffect>
+                        <Image
+                            src="/project/project1/image4.png"
+                            width={600}
+                            height={400}
+                            layout='responsive'
+                            alt="Mockup 1"
+                            className='max-h-screen  h-[70vh] object-contain  max-xl  2xl:w-[1280px]'
+                        />
+                    </GsapEffect>
+                    <GsapEffect>
+                        <Image
+                            src="/project/project1/image2.jpg"
+                            width={600}
+                            height={400}
+                            layout='responsive'
+                            alt="The Poster Design for The Exhibition of Space Technology - James Webb Space Telescope"
+                            className='max-h-screen h-[70vh] object-contain  max-xl  2xl:w-[1280px]'
+                        />
+                    </GsapEffect>
+                    <GsapEffect>
+                        <Image
+                            src="/project/project1/image3.png"
+                            width={600}
+                            height={400}
+                            layout='responsive'
+                            alt="Mockup 2"
+                            className='max-h-screen h-[70vh] object-contain  max-xl  2xl:w-[1280px]'
+                        />
+                    </GsapEffect>
                 </div>
             </section>
             <Footer />
