@@ -2,18 +2,11 @@
 "use client"
 import React from 'react';
 
-import styles from "./goldibite.module.css"
 import Image from "next/image";
 import TopHeader from "@/components/TopHeader"
 import Footer from "@/components/Footer";
 import { HeroParallax } from "@/components/ui/hero-parallax";
-import { ImgComparisonSlider } from '@img-comparison-slider/react';
 import { ImgComparison } from "@/components/ui/imgComparison";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
-import { useRef } from "react"
-import SectionTemplate from './template'
 import goldibiteImage from "@/data/goldbite.json"
 import GoldibiteSection from "@/components/GoldibiteSection/template"
 
