@@ -3,7 +3,7 @@
 import React from 'react';
 
 import Image from "next/image";
-import TopHeader from "@/components/TopHeader"
+import Menu from "@/components/Menu"
 import Footer from "@/components/Footer";
 import { HeroParallax } from "@/components/ui/hero-parallax";
 import { ImgComparison } from "@/components/ui/imgComparison";
@@ -17,7 +17,7 @@ const App: React.FC = () => {
 
     return (
         <>
-            <TopHeader />
+            <Menu />
             <HeroParallax products={products} />;
             <section className='w-screen min-h-screen bg-[var(--primary-color)] flex pt-20 z-50 flex-auto flex flex-col p-20  pb-10'>
                 <div className='bg-[var(--primary-color)]  w-full m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl justify-center md:flex-row  text-gray-950'>

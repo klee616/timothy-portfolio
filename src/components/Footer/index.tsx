@@ -39,15 +39,6 @@ const App: React.FC<Props> = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.figma.com/@timothylee4" target='_blank'>
-                                <Image src='/icons/figma.png'
-                                    height={50}
-                                    width={50}
-                                    alt='Figma'
-                                />
-                            </a>
-                        </li>
-                        <li>
                             <a href="/KamShing_Lee_Resume.pdf" download="KamShing_Lee_Resume.pdf">
                                 <Image src='/icons/resume.png'
                                     height={50}

@@ -10,12 +10,13 @@ import journeyData from '@/data/journey.json'
 import Parallax from '@/components/Parallax'
 import ScrollTrigger from "@/components/ScrollTrigger"
 import GsapEffect from '@/template/gsapEffect'
+import Memu from '@/components/Menu'
 
 export default function Home() {
 
   return (
     <>
-      <TopHeader />
+      <Memu />
       <Introduction />
       <ScrollTrigger />
       <GsapEffect><TimelineResume journeyData={journeyData} /></GsapEffect>
