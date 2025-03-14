@@ -57,7 +57,7 @@ const Menu = ({ }: {}) => {
           }, [isMenuOpen]);
     
     return (<>
-        <div className="menu-container" ref={container}>
+        <div className="menu-container block md:hidden" ref={container} >
           <div className="menu-bar bg-[var(--second-color)] " >
             <div className="menu-logo">
               <Link href={"/"}>
@@ -136,8 +136,6 @@ const Menu = ({ }: {}) => {
                                     width={50}
                                     alt='Resume'
                                 /> </a>
-
-
                   </div>
                   <div className="menu-info-col">
                     <p>shing0618@gmail.com</p>
