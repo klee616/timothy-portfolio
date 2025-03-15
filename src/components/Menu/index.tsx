@@ -1,4 +1,4 @@
-"use client"
+"use client";  
 
 import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
@@ -6,7 +6,6 @@ import "./menu.css";
 import { gsap } from "gsap/gsap-core";
 import { useGSAP } from "@gsap/react";
 import Image from "next/image";
-import { useRouter } from "next/router"; 
 
 const menuLinks = [
     { path: "/", label: "Home" },
@@ -18,7 +17,6 @@ const menuLinks = [
 const Menu = ({ }: {}) => {
     const container = useRef<HTMLDivElement>(null);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const router = useRouter();
     /** GASP */
     const tl = useRef<gsap.core.Timeline | null>(null);
 
@@ -69,7 +67,6 @@ const Menu = ({ }: {}) => {
                         width={75}
                         height={75}
                         alt="Timothy's portfilio"
-                        onClick={() => router.push('/')}
                         className='cursor-pointer object-contain size-[75px] mr-2 md:mr-0 md:size-[75px] xl:size-[100px]'
                       />
               </Link>
@@ -86,7 +83,6 @@ const Menu = ({ }: {}) => {
                         width={75}
                         height={75}
                         alt="Timothy's portfilio"
-                        onClick={() => router.push('/')}
                         className='cursor-pointer object-contain size-[75px] mr-2 md:mr-0 md:size-[75px] xl:size-[100px]'
                       />
                   </Link>

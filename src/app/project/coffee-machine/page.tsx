@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from "next/image";
 import Menu from "@/components/Menu"
+import TopHeader from "@/components/TopHeader"
 import Footer from "@/components/Footer";
 import { ImgComparison } from "@/components/ui/imgComparison";
 import { useRouter } from "next/router";
@@ -8,6 +9,7 @@ import { useRouter } from "next/router";
 const App: React.FC = () => {
     return (
         <>
+            <TopHeader />
             <Menu />
 
             <section className='w-screen min-h-screen bg-[var(--primary-color)]  gap-[3rem]  items-center flex flex-col pt-20 z-50 text-gray-950 pl-5 pr-5 md:pl-10 md:pr-10 xl:pl-0 xl:pr-0'>
@@ -44,8 +46,8 @@ const App: React.FC = () => {
                 </div>
                 <div className='flex-auto flex flex-col gap-5 basis-5xl w-full 2xl:w-[900px] mb-[5rem] '>
                     <ImgComparison
-                    leftText='Original'
-                    rightText='Graphic'
+                        leftText='Original'
+                        rightText='Graphic'
                         image2='/project/project4/graphic.png'
                         image1='/project/project4/original.png' />
 
