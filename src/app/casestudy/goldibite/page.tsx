@@ -9,7 +9,7 @@ import { HeroParallax } from "@/components/ui/hero-parallax";
 import { ImgComparison } from "@/components/ui/imgComparison";
 import goldibiteImage from "@/data/goldbite.json"
 import GoldibiteSection from "@/components/GoldibiteSection/template"
-
+import { useRouter } from "next/router";
 const App: React.FC = () => {
 
     const products: { title: string, link: string, thumbnail: string }[] = goldibiteImage;

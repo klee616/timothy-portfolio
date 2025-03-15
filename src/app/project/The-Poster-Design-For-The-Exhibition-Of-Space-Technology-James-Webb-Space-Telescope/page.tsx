@@ -4,6 +4,7 @@ import Image from "next/image";
 import Menu from "@/components/Menu"
 import Footer from "@/components/Footer";
 import GsapEffect from '@/template/gsapEffect';
+import { useRouter } from "next/router";
 
 const App: React.FC = () => {
     return (
@@ -85,17 +86,17 @@ const App: React.FC = () => {
 export default App;
 
 
-export const metadata = {
-    title: {
-        absolute: 'The Poster Design for The Exhibition of Space Technology - James Webb Space Telescope ',
-    },
-    keywords: ['Showcase of Adobe Photoshop\' CC ', 'Adobe Indesign\'s Showcase', 'Poster Showcase', 'BCIT D3'],
-    authors: [{ name: 'Kam Shing Lee, Timothy', url: 'https://www.thetimothylee.com' }],
-    creator: 'Timothy Lee',
-    publisher: 'Timothy Lee',
-    formatDetection: {
-        email: false,
-        address: false,
-        telephone: false,
-    },
-}
+// export const metadata = {
+//     title: {
+//         absolute: 'The Poster Design for The Exhibition of Space Technology - James Webb Space Telescope ',
+//     },
+//     keywords: ['Showcase of Adobe Photoshop\' CC ', 'Adobe Indesign\'s Showcase', 'Poster Showcase', 'BCIT D3'],
+//     authors: [{ name: 'Kam Shing Lee, Timothy', url: 'https://www.thetimothylee.com' }],
+//     creator: 'Timothy Lee',
+//     publisher: 'Timothy Lee',
+//     formatDetection: {
+//         email: false,
+//         address: false,
+//         telephone: false,
+//     },
+// }

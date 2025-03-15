@@ -9,6 +9,7 @@ import { HeroParallax } from "@/components/ui/hero-parallax";
 import { ImgComparison } from "@/components/ui/imgComparison";
 import goldibiteImage from "@/data/goldbite.json"
 import GoldibiteSection from "@/components/GoldibiteSection/template"
+import { useRouter } from "next/router";
 
 const App: React.FC = () => {
 
@@ -440,17 +441,17 @@ const App: React.FC = () => {
 
 export default App;
 
-export const metadata = {
-    title: {
-        absolute: 'Warehous receiving System',
-    },
-    keywords: ['Staffordshire University', 'Warehous receiving System', 'Information System'],
-    authors: [{ name: 'Kam Shing Lee, Timothy', url: 'https://www.thetimothylee.com' }],
-    creator: 'Timothy Lee',
-    publisher: 'Timothy Lee',
-    formatDetection: {
-        email: false,
-        address: false,
-        telephone: false,
-    },
-}
+// export const metadata = {
+//     title: {
+//         absolute: 'Warehous receiving System',
+//     },
+//     keywords: ['Staffordshire University', 'Warehous receiving System', 'Information System'],
+//     authors: [{ name: 'Kam Shing Lee, Timothy', url: 'https://www.thetimothylee.com' }],
+//     creator: 'Timothy Lee',
+//     publisher: 'Timothy Lee',
+//     formatDetection: {
+//         email: false,
+//         address: false,
+//         telephone: false,
+//     },
+// }

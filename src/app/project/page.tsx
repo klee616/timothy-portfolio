@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "./project.module.css";
 import TopHeader from "@/components/TopHeader"
 import Footer from "@/components/Footer";
+import { useRouter } from "next/router";
 
 const App: React.FC = () => {
     return (

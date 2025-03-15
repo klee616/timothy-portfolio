@@ -11,6 +11,7 @@ import Parallax from '@/components/Parallax'
 import ScrollTrigger from "@/components/ScrollTrigger"
 import GsapEffect from '@/template/gsapEffect'
 import Memu from '@/components/Menu'
+import { useRouter } from "next/router";
 
 export default function Home() {
 

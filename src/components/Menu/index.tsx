@@ -6,6 +6,7 @@ import "./menu.css";
 import { gsap } from "gsap/gsap-core";
 import { useGSAP } from "@gsap/react";
 import Image from "next/image";
+import { useRouter } from "next/router"; 
 
 const menuLinks = [
     { path: "/", label: "Home" },
@@ -15,11 +16,11 @@ const menuLinks = [
 ]
 
 const Menu = ({ }: {}) => {
-    const container = useRef();
+    const container = useRef<HTMLDivElement>(null);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+    const router = useRouter();
     /** GASP */
-    const tl = useRef();
+    const tl = useRef<gsap.core.Timeline | null>(null);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -49,11 +50,13 @@ const Menu = ({ }: {}) => {
     
 
         useEffect(() => {
+          if (tl.current) { 
             if (isMenuOpen) {
-              tl.current.play();
+                tl.current.play();
             } else {
-              tl.current.reverse();
+                tl.current.reverse();
             }
+        }
           }, [isMenuOpen]);
     
     return (<>

@@ -22,7 +22,7 @@
 .menu-overlay-bar a,
 .menu-info-col a,
 .menu-close p {
-  color: #000;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -62,6 +62,7 @@
 
 .menu-link-item {
   width: max-content;
+  height: max-content;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
@@ -74,7 +75,7 @@
   font-size: 80px;
   font-weight: 400;
   letter-spacing: -0.02em;
-  line-height: 85%;
+  /* line-height: 85%; */
 }
 
 .menu-info {
