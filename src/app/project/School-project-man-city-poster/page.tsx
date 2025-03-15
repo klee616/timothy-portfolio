@@ -11,14 +11,14 @@ const App: React.FC = () => {
         <>
             <TopHeader />
             <Menu />
-            <section className='w-screen min-h-screen bg-[var(--primary-color)]  gap-[3rem]  items-center flex flex-col pt-20 z-50 text-gray-950 pl-5 pr-5 md:pl-10 md:pr-10 xl:pl-0 xl:pr-0'>
-                <div className=' w-screen m-auto flex flex-col  mt-20 z-50 gap-10 max-w-7xl justify-center md:flex-row text-gray-950'>
-                    <div className='w-full m-auto flex flex-row flex-nowrap'>
+            <section className='w-screen min-h-screen bg-[var(--primary-color)] flex pt-20 z-50 flex-auto flex flex-col p-20  pb-10'>
+                <div className='bg-[var(--primary-color)]  w-full m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl justify-center md:flex-row  text-gray-950'>
+                    <div className='flex-auto w-full  basis-md  md:basis-1/3 xl:basis-1/3 gap-2'>
                         <div className='flex-auto  basis-md md:basis-1/3 xl:basis-1/3  text-gray-950'>
                             <h1 className='text-2xl mb-2 font-bold'>Man City Football Club Team’s Poster Design</h1>
                             <p className='text-base mb-10'>Manchester City has been recognized as one of the most popular football clubs in the world, with fans spanning across the globe. The purpose of this project is to create a template that promotes the team's energy and dynamism, designed for display on signboards and as a poster available for purchase on their website.</p>
                             <p className='text-base mb-10'>The design concept centers around using the brand's signature color as the primary element to reinforce its identity, while the boat symbol represents its rich history. Curved elements add a sense of movement and energy to the poster. The images are carefully selected from in-game captures and enhanced with filters to ensure a cohesive and visually appealing design.</p>
-                            <div className='flex-col flex justify-around gap-2 p-3 w-full max-w-xs border-2 rounded-md border-[var(--second-color)] bg-[#457b9d]  text-white'>
+                            <div className='flex-col flex justify-around gap-2 p-3 w-full md:max-w-xs border-2 rounded-md border-[var(--second-color)] bg-[#457b9d]  text-white'>
                                 <div className='flex-row flex justify-between'>
                                     <span className='font-bold'>Type: </span>
                                     <span>Individual</span>

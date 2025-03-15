@@ -21,13 +21,13 @@ const App: React.FC = () => {
     padding: 1rem;
     border: 3px solid #6b6b6b;
  */}
-            <section className='w-screen min-h-screen bg-[var(--primary-color)] flex pt-20 z-50'>
-                <div className='bg-[var(--primary-color)] max-w-7xl w-screen m-auto flex flex-row flex-nowrap mt-20 z-50 gap-10 p-5'>
-                    <div className='flex-auto max-w-xl text-white'>
+            <section className='w-screen min-h-screen bg-[var(--primary-color)] flex pt-20 z-50 flex-auto flex flex-col p-20  pb-10'>
+                <div className='bg-[var(--primary-color)]  w-full m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl justify-center md:flex-row  text-gray-950'>
+                    <div className='flex-auto w-full  basis-md  md:basis-1/3 xl:basis-1/3 gap-2'>
                         <h1 className='text-2xl mb-2 font-bold'>The Poster Design for The Exhibition of Space Technology - James Webb Space Telescope</h1>
                         <p className='text-base mb-10'>The project involves designing a poster to engage the audience for the James Webb Space Telescope exhibition. The poster is required to be adaptable for display on various devices, accommodating both portrait and landscape orientations while maintaining a consistent style.</p>
                         <p className='text-base mb-10'>The poster uses black as the main color to align the space topic. also, the white font color with a black background has a strong contrast to accentuate the topic, catching the audience's attention.</p>
-                        <div className='flex-col flex justify-around gap-2 p-3 w-full max-w-xs border-2 rounded-md border-[var(--second-color)] bg-[#457b9d]'>
+                        <div className='flex-col flex justify-around gap-2 p-3 w-full md:max-w-xs border-2 rounded-md border-[var(--second-color)] bg-[#457b9d]'>
                             <div className='flex-row flex justify-between'>
                                 <span className='font-bold'>Type: </span>
                                 <span>Individual</span>

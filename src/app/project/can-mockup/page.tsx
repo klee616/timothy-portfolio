@@ -13,14 +13,14 @@ const App: React.FC = () => {
             <TopHeader />
             <Menu />
 
-            <section className='w-screen min-h-screen bg-[var(--primary-color)]  gap-[3rem]  items-center flex flex-col pt-20 z-50 text-gray-950 pl-5 pr-5 md:pl-10 md:pr-10 xl:pl-0 xl:pr-0'>
-                <div className=' w-screen m-auto flex flex-col  mt-20 z-50 gap-10 max-w-7xl justify-center md:flex-row text-gray-950'>
-                    <div className='w-full m-auto flex flex-row flex-nowrap'>
+            <section className='w-screen min-h-screen bg-[var(--primary-color)] flex pt-20 z-50 flex-auto flex flex-col p-20  pb-10'>
+                <div className='bg-[var(--primary-color)]  w-full m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl justify-center md:flex-row  text-gray-950'>
+                    <div className='flex-auto w-full  basis-md  md:basis-1/3 xl:basis-1/3 gap-2'>
                         <div className='flex-auto  basis-md md:basis-1/3 xl:basis-1/3  text-gray-950'>
                             <h1 className='text-2xl mb-2 font-bold'>The Can’s mockup - Caffi Go</h1>
                             <p className='text-base mb-10'>The logo features a cup of hot coffee with the brand name printed inside a circular design. The steaming coffee cup symbolizes freshness and authenticity, representing a beverage made from real coffee beans for an enjoyable experience.</p>
                             <p className='text-base mb-10'>Additionally, the design can incorporate different color schemes and icons to distinguish flavors while maintaining a consistent template. The color scheme is based on the characteristics of each flavor, and the icons include elements that visually represent those flavors.</p>
-                            <div className='flex-col flex justify-around gap-2 p-3 w-full max-w-xs border-2 rounded-md border-[var(--second-color)] bg-[#457b9d]  text-white'>
+                            <div className='flex-col flex justify-around gap-2 p-3 w-full md:max-w-xs border-2 rounded-md border-[var(--second-color)] bg-[#457b9d]  text-white'>
                                 <div className='flex-row flex justify-between'>
                                     <span className='font-bold'>Type: </span>
                                     <span>Individual</span>
