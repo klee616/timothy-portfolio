@@ -5,15 +5,16 @@ import styles from "./imgComparison.module.css";
 import React from "react";
 
 
- export const ImgComparison = ({ image1 ,image2, leftText = 'HiFi', rightText = 'FoFi'  }:{
+ export const ImgComparison = ({ image1 ,image2, leftText = 'HiFi', rightText = 'FoFi', className= ''  }:{
     image1:string,
     image2:string,
     leftText:string,
-    rightText:string
+    rightText:string,
+    className:string
  }  ) => 
     {
     return <>
-        <ImgComparisonSlider className={`slider-with-animated-handle ${styles.colouredSlider}`}>
+        <ImgComparisonSlider className={`slider-with-animated-handle ${styles.colouredSlider} ${className} `}>
             <figure slot='first' className='m-0'>
                 <img src={image1} />
                 <figcaption className='bg-white border border-gray-400 rounded-xl text-[#2e3452] opacity-80 p-3 absolute top-1/2 transform -translate-y-1/2 leading-none left-3'>{leftText}</figcaption>

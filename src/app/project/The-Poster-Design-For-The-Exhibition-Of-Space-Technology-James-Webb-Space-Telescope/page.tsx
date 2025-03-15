@@ -14,7 +14,7 @@ const App: React.FC = () => {
         <Menu />
             <section className='w-screen min-h-screen bg-[var(--primary-color)] flex pt-20 z-50 flex-auto flex flex-col p-20  pb-10'>
                 <div className='bg-[var(--primary-color)]  w-full m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl justify-center md:flex-row  text-gray-950'>
-                    <div className='flex-auto w-full  basis-md  md:basis-1/3 xl:basis-1/3 gap-2'>
+                <div className='flex-auto w-full flex flex-col md:flex-row basis-md  md:basis-1/3 xl:basis-1/3 gap-2'>
                         <div className='flex-auto  basis-md md:basis-1/3 xl:basis-1/3  text-gray-950'>
                             <h1 className='text-2xl mb-2 font-bold'>The Poster Design for The Exhibition of Space Technology - James Webb Space Telescope</h1>
                             <p className='text-base mb-10'>The project involves designing a poster to engage the audience for the James Webb Space Telescope exhibition. The poster is required to be adaptable for display on various devices, accommodating both portrait and landscape orientations while maintaining a consistent style.</p>
@@ -47,7 +47,7 @@ const App: React.FC = () => {
                     </div>
                 </div>
 
-                <div className='flex-auto flex flex-col gap-5 basis-5xl w-full 2xl:w-[1280px] mb-[5rem] '>
+                <div className='flex-auto flex flex-col gap-5 basis-5xl w-full 2xl:w-[1280px] mb-[5rem] self-center mt-10'>
                     <GsapEffect>
                         <Image
                             src="/project/project1/image4.png"

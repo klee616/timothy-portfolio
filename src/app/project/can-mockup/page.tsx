@@ -15,7 +15,7 @@ const App: React.FC = () => {
 
             <section className='w-screen min-h-screen bg-[var(--primary-color)] flex pt-20 z-50 flex-auto flex flex-col p-20  pb-10'>
                 <div className='bg-[var(--primary-color)]  w-full m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl justify-center md:flex-row  text-gray-950'>
-                    <div className='flex-auto w-full  basis-md  md:basis-1/3 xl:basis-1/3 gap-2'>
+                    <div className='flex-auto w-full flex flex-col md:flex-row basis-md  md:basis-1/3 xl:basis-1/3 gap-2'>
                         <div className='flex-auto  basis-md md:basis-1/3 xl:basis-1/3  text-gray-950'>
                             <h1 className='text-2xl mb-2 font-bold'>The Can’s mockup - Caffi Go</h1>
                             <p className='text-base mb-10'>The logo features a cup of hot coffee with the brand name printed inside a circular design. The steaming coffee cup symbolizes freshness and authenticity, representing a beverage made from real coffee beans for an enjoyable experience.</p>
@@ -35,7 +35,7 @@ const App: React.FC = () => {
                                     </span></div>
                             </div>
                         </div>
-                        <div className='flex-auto flex flex-col gap-5 basis-5xl min-w-screen  md:basis-1/3  xl:basis-2/3 m-5'>
+                        <div className='flex-auto flex flex-col gap-5 basis-5xl min-w-screen  md:basis-1/3  xl:basis-2/3 m-5 '>
                             <Image
                                 src="/project/project3/mockup2.png"
                                 width={1600}
@@ -47,7 +47,7 @@ const App: React.FC = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex-auto flex flex-col gap-5 basis-5xl w-full 2xl:w-[1280px] mb-[5rem] '>
+                <div className='flex-auto flex flex-col gap-5 basis-5xl w-full 2xl:w-[1280px] mb-[5rem] self-center mt-10'>
                     <GsapEffect>
                         <Image
                             src="/project/project3/blackCoffeeFlavour.png"
