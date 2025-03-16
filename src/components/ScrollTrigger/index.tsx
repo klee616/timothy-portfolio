@@ -25,7 +25,7 @@ const App: React.FC<Props> = ({ }) => {
     useEffect(() => {
 
 
-        const bgColor: any = { goldibite: "#f3a405", project1: "#000000", project2: "#7AB2E1", project3: "#880016", project4: "#f3a405" }
+        const bgColor: any = { goldibite: "#f3a405", project1: "#000000", project2: "#7AB2E1", project3: "#880016", project4: "#f3a405", project5:"#FFC53A" }
 
         gsap.defaults({ overwrite: 'auto' });
 
@@ -255,7 +255,7 @@ const App: React.FC<Props> = ({ }) => {
                         </div>
                     </div>
 
-                    <div className={`min-h-screen flex content-center items-center  max-w-lg text-white ${styles.contentMarker} -translate-y-[120px]`} data-marker-content="project4">
+                    <div className={`min-h-screen flex content-center items-center  max-w-lg text-white ${styles.contentMarker} -translate-y-[120px]`} data-marker-content="project5">
                         <div>
                             <Image
                         src="/casestudy/pocket-pals/mockup-image1.png"
