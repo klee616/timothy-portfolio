@@ -25,7 +25,7 @@ const App: React.FC<Props> = ({ }) => {
     useEffect(() => {
 
 
-        const bgColor:any = {goldibite:"#f3a405", project1:"#000000", project2:"#7AB2E1", project3:"#880016", project4:"#f3a405"}
+        const bgColor: any = { goldibite: "#f3a405", project1: "#000000", project2: "#7AB2E1", project3: "#880016", project4: "#f3a405" }
 
         gsap.defaults({ overwrite: 'auto' });
 
@@ -54,10 +54,10 @@ const App: React.FC<Props> = ({ }) => {
 
             if (marker.content.tagName === "IMG") {
                 gsap.set(marker.content, { transformOrigin: "center" });
-              
-        console.log(marker.content.id)
+
+                console.log(marker.content.id)
                 marker.content.enter = function () {
-                    gsap.to(`.${styles.contentContainer}`, { duration: 0.3, autoAlpha: 1, backgroundColor: bgColor[marker.content.id]} )
+                    gsap.to(`.${styles.contentContainer}`, { duration: 0.3, autoAlpha: 1, backgroundColor: bgColor[marker.content.id] })
                     //gsap.fromTo(marker.content, { autoAlpha: 0, rotateY: -30 }, { duration: 0.3, autoAlpha: 1, rotateY: 0 });
                     gsap.fromTo(marker.content, { boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', border: '1rem solid #fff', width: '60%', autoAlpha: 0, rotate: -40 }, { duration: 0.3, autoAlpha: 1, rotate: -10 });
                 }
@@ -165,6 +165,14 @@ const App: React.FC<Props> = ({ }) => {
                         className={styles.image}
                     />
                     <Image
+                        id='project5'
+                        src="/casestudy/pocket-pals/mockup-image1.png"
+                        width={800}
+                        height={600}
+                        alt='Pocket Pals'
+                        className={styles.image}
+                    />
+                    <Image
                         id='project4'
                         src="/project/project4/cover.png"
                         width={800}
@@ -226,7 +234,7 @@ const App: React.FC<Props> = ({ }) => {
                             <h3 className='text-2xl mb-8'>Man City Poster Design</h3>
                             <p className='text-lg'>Manchester City has been recognized as one of the most popular football clubs in the world, with fans spanning across the globe. The purpose of this project is to create a template that promotes the team's energy and dynamism, designed for display on signboards and as a poster available for purchase on their website.</p>
 
-                            <LearnMoreButton callback={()=> router.push('/project/School-project-man-city-poster')} />
+                            <LearnMoreButton callback={() => router.push('/project/School-project-man-city-poster')} />
                         </div>
                     </div>
 
@@ -243,11 +251,28 @@ const App: React.FC<Props> = ({ }) => {
                             <h3 className='text-2xl mb-8'> Caffi Go's Can Mockup</h3>
                             <p className='text-lg'>GaffiGo is a new brand that offers a variety of beverages aimed at young people. This project involves creating a template for a series of real coffee beverages, including Caramel Latte, Black Coffee, and Vanilla Latte flavors.</p>
 
-                            <LearnMoreButton callback={()=>{router.push('/project/can-mockup')}} />
+                            <LearnMoreButton callback={() => { router.push('/project/can-mockup') }} />
                         </div>
                     </div>
 
-                    
+                    <div className={`min-h-screen flex content-center items-center  max-w-lg text-white ${styles.contentMarker} -translate-y-[120px]`} data-marker-content="project4">
+                        <div>
+                            <Image
+                        src="/casestudy/pocket-pals/mockup-image1.png"
+                                width={800}
+                                height={600}
+                                alt=''
+                                className={styles.image}
+                            />
+                            <h3 className='text-2xl mb-8'> Pocket Pals</h3>
+                            <p className='text-lg'>
+                            Pocket Pals sparks curiosity in children and makes learning enjoyable. Instead of conventional games and articles, the client wanted engaging and accessible content. This vision was realized through linked articles combined with a mix-and-match game, blending education with play. Vibrant colors, playful icons, and soft edges created a welcoming and user-friendly app. Simple layouts, large buttons, and subtle animations ensured accessibility for kids. Every element—from storytelling to research—came together to form a cohesive and inclusive experience, reflecting the client’s goal of inspiring young imaginations.
+                            </p>
+
+                            <LearnMoreButton callback={() => { router.push('/casestudy/pocket-pals') }} />
+                        </div>
+                    </div>
+
                     <div className={`min-h-screen flex content-center items-center  max-w-lg text-white ${styles.contentMarker} -translate-y-[120px]`} data-marker-content="project4">
                         <div>
                             <Image
@@ -262,7 +287,7 @@ const App: React.FC<Props> = ({ }) => {
                                 The project uses Adobe Illustrator to duplicate the coffee machine shape.
                             </p>
 
-                            <LearnMoreButton callback={()=>{router.push('/project/coffee-machine')}} />
+                            <LearnMoreButton callback={() => { router.push('/project/coffee-machine') }} />
                         </div>
                     </div>
 

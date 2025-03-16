@@ -10,7 +10,7 @@ import React from "react";
     image2:string,
     leftText:string,
     rightText:string,
-    className:string
+    className?:string
  }  ) => 
     {
     return <>

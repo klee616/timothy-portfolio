@@ -267,7 +267,8 @@ const App: React.FC = () => {
                                 image1='/casestudy/goldibite/wireframe/analysis/hifi-analysis.png'
                                 image2='/casestudy/goldibite/wireframe/analysis/lofi-analysis.png'
                                 leftText='Hifi'
-                                rightText='LoFi' />
+                                rightText='LoFi'
+                                className=' none' />
 
                         </div>
                     </div>
@@ -287,7 +288,8 @@ const App: React.FC = () => {
                                 image1='/casestudy/goldibite/wireframe/onbroading/hifi-onbroading.png'
                                 image2='/casestudy/goldibite/wireframe/onbroading/lofi-onbroading.png'
                                 leftText='Hifi'
-                                rightText='LoFi' />
+                                rightText='LoFi'
+                                className='' />
 
 
                         </div>
@@ -309,7 +311,8 @@ const App: React.FC = () => {
                                 image1='/casestudy/goldibite/wireframe/login/hifi-login.png'
                                 image2='/casestudy/goldibite/wireframe/login/lofi-login.png'
                                 leftText='Hifi'
-                                rightText='LoFi' />
+                                rightText='LoFi'
+                                className='' />
                         </div>
                     </div>
                 </GoldibiteSection>
@@ -331,7 +334,8 @@ const App: React.FC = () => {
                                 image1='/casestudy/goldibite/wireframe/guide/hifi-guide.png'
                                 image2='/casestudy/goldibite/wireframe/guide/lofi-guide.png'
                                 leftText='Hifi'
-                                rightText='LoFi' />
+                                rightText='LoFi'
+                                className='' />
                         </div>
                     </div>
 
@@ -352,7 +356,8 @@ const App: React.FC = () => {
                                 image1='/casestudy/goldibite/wireframe/setting/hifi-setting.png'
                                 image2='/casestudy/goldibite/wireframe/setting/lofi-setting.png'
                                 leftText='Hifi'
-                                rightText='LoFi' />
+                                rightText='LoFi'
+                                className='' />
                         </div>
                     </div>
 
