@@ -421,7 +421,7 @@ const App: React.FC = () => {
                         <div className='flex-auto flex flex-row flex-wrap gap-10 n basis-5xl md:basis-1/3  xl:basis-2/3 justify-end'>
 
                             <Image
-                                src="/casestudy/goldibite/Leaflet.png"
+                                src="/casestudy/goldibite/leaflet.png"
                                 width={1920}
                                 height={1280}
                                 alt=""
