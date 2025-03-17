@@ -421,16 +421,9 @@ const App: React.FC = () => {
                         <div className='flex-auto flex flex-row flex-wrap gap-10 n basis-5xl md:basis-1/3  xl:basis-2/3 justify-end'>
 
                             <Image
-                                src="/casestudy/goldibite/Leaflet-1.png"
-                                width={3039}
-                                height={1938}
-                                alt=""
-                                className=' object-contain shadow-xl max-h-screen '
-                            />
-                            <Image
-                                src="/casestudy/goldibite/Leaflet-2.png"
-                                width={3039}
-                                height={1938}
+                                src="/casestudy/goldibite/Leaflet.png"
+                                width={1920}
+                                height={1280}
                                 alt=""
                                 className=' object-contain shadow-xl max-h-screen '
                             />

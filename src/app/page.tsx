@@ -18,7 +18,6 @@ export default function Home() {
   return (
     <>
       <TopHeader />
-      <Memu/>
       <Introduction />
       <ScrollTrigger />
       <GsapEffect><TimelineResume journeyData={journeyData} /></GsapEffect>
