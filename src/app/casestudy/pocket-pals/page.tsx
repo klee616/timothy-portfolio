@@ -24,7 +24,7 @@ const App: React.FC = () => {
                 <div className='bg-[var(--primary-color)]  w-full m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl justify-center md:flex-row  text-gray-950'>
                     <div className='flex-auto w-full  basis-md  md:basis-1/3 xl:basis-1/3 gap-2'>
                         <h1 className='text-2xl mb-2 font-bold'>Pocket Pals - An animal Learning App For Kids</h1>
-                        <p className='text-base mb-10'>Pocket Pals sparks curiosity in children and makes learning enjoyable. Instead of conventional games and articles, the client wanted engaging and accessible content. This vision was realized through linked articles combined with a mix-and-match game, blending education with play. Vibrant colors, playful icons, and soft edges created a welcoming and user-friendly app. Simple layouts, large buttons, and subtle animations ensured accessibility for kids. Every element—from storytelling to research—came together to form a cohesive and inclusive experience, reflecting the client’s goal of inspiring young imaginations.</p>
+                        <p className='text-base mb-10'>Pocket Pals sparks curiosity in children and makes learning fun. Rather than traditional games and articles, the client envisioned engaging and accessible content. This vision was brought to life through linked articles combined with a mix-and-match game, blending education with play. Vibrant colors, playful icons, and soft edges created a welcoming, user-friendly app. Simple layouts, large buttons, and subtle animations ensured accessibility for kids. Every element—from storytelling to research—came together to form a cohesive, inclusive experience, reflecting the client’s goal of inspiring young imaginations.</p>
                         <div className='flex-col flex justify-around gap-2 p-3 w-full md:max-w-xs border-2 rounded-md border-[var(--second-color)] bg-[#457b9d] text-white'>
                             <div className='flex-row flex justify-between'>
                                 <span className='font-bold'>Type: </span>
@@ -68,7 +68,7 @@ const App: React.FC = () => {
 
                         <div className='flex-auto basis-md md:basis-1/3 xl:basis-1/3 text-gray-950'>
                             <h2 className='text-xl font-bold mb-5'>Color Selection</h2>
-                            <p className='text-base mb-5'>The Pocket pals used 5 colors, there are Fringy Flower, Green Pea, Sunglow, and Mango Tango. </p>
+                            <p className='text-base mb-5'>Pocket Pals uses four colors: Fringy Flower, Green Pea, Sunglow, and Mango Tango. </p>
                         </div>
 
 
@@ -92,7 +92,7 @@ const App: React.FC = () => {
 
                         <div className='flex-auto flex flex-col gap-5 basis-5xl min-w-screen  md:basis-1/3  xl:basis-2/3'>
                             <h2 className='text-xl font-bold mb-5'>Ttypography</h2>
-                            <p>Pocket pals choose Sarabun as a primary front to enchance user experience, The fort style display at the box.</p>
+                            <p>Pocket Pals chose Sarabun as the primary font to enhance the user experience. The font style is displayed in the box.</p>
                         </div>
 
                         <div className='flex-auto flex flex-row flex-wrap gap-10 n basis-5xl md:basis-1/3  xl:basis-2/3 justify-start'>
