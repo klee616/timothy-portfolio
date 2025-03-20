@@ -24,7 +24,7 @@ const App: React.FC = () => {
                 <div className='bg-[var(--primary-color)]  w-full m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl justify-center md:flex-row  text-gray-950'>
                     <div className='flex-auto w-full  basis-md  md:basis-1/3 xl:basis-1/3 gap-2'>
                         <h1 className='text-2xl mb-2 font-bold'>Goldibite - The right bite every time</h1>
-                        <p className='text-base mb-10'>GoldiBite is an AI-powered app designed to assist individuals with food allergies and sensitivities by providing a comprehensive database to manage food safety concerns while travelling. It aims to eliminate the inconvenience and potential safety risks associated with varying ingredient information and regulations worldwide.</p>
+                        <p className='text-base mb-10'>GoldiBite is an AI-powered app designed to assist individuals with food allergies and sensitivities by providing a comprehensive database for managing food safety concerns while traveling. It aims to eliminate the inconvenience and potential safety risks posed by inconsistent ingredient information and regulations worldwide.</p>
                         <div className='flex-col flex justify-around gap-2 p-3 w-full md:max-w-xs border-2 rounded-md border-[var(--second-color)] bg-[#457b9d] text-white'>
                             <div className='flex-row flex justify-between'>
                                 <span className='font-bold'>Type: </span>
@@ -69,7 +69,7 @@ const App: React.FC = () => {
 
                         <div className='flex-auto basis-md md:basis-1/3 xl:basis-1/2 text-gray-950'>
                             <h2 className='text-xl font-bold mb-5'>The Global Challenge of Food Allergies and Travelling</h2>
-                            <p className='text-base mb-5'>Eating out with food allergies is more challenging than many realize. A study by Dalhousie University found that only 27.7% of individuals with food conditions believe menus properly indicate allergens. Alarmingly, 46% have experienced allergic reactions at restaurants, with 25.5% facing multiple incidents.</p>
+                            <p className='text-base mb-5'>Eating out with food allergies is more challenging than many realize. A study by Dalhousie University found that only 27.7% of individuals with food allergies believe menus properly indicate allergens. Alarmingly, 46% have experienced allergic reactions at restaurants, with 25.5% encountering multiple incidents.</p>
                         </div>
 
                         <div className='flex-auto basis-md md:basis-1/3 xl:basis-1/2 text-gray-950'>
@@ -80,7 +80,7 @@ const App: React.FC = () => {
                                 <li>Offering emergency resources for allergic reactions.</li>
                             </ul>
                             <p className='text-base mb-5'>
-                                Food is a universal joy, and no one should have to fear it. GoldiBite ensures you can confidently find The Right Bite, Every Time.
+                            Food is a universal joy—no one should have to fear it. GoldiBite helps you confidently find the right bite, every time. 
                             </p>
                         </div>
                     </div>
@@ -90,13 +90,13 @@ const App: React.FC = () => {
 
                         <div className='flex-auto basis-md md:basis-1/3 xl:basis-1/3 text-gray-950'>
                             <h2 className='text-xl font-bold mb-5'>User Persona</h2>
-                            <p className='text-base mb-5'>An effective design starts with understanding travellers. Below, we've developed two key user personas: Claire and Jackson.</p>
-                            <p className='text-base mb-10'>Using detailed surveys and in-depth research, user personas were developed to capture the needs, goals, and challenges of the target audience. This deeper understanding of the target audience allows for the creation of more specific solutions that effectively address their specific concerns.</p>
+                            <p className='text-base mb-5'>Effective design begins with understanding travelers. Below, we present two key user personas: Claire and Jackson.</p>
+                            <p className='text-base mb-10'>Through detailed surveys and in-depth research, user personas were developed to capture the needs, goals, and challenges of the target audience. This deeper understanding enables the creation of targeted solutions that effectively address their concerns.</p>
                             <h3 className='text-xl font-bold  mb-5'>Primary Persona: Claire</h3>
-                            <p className='text-base mb-10'>Claire Martin is a 28-year-old marketing coordinator from Lyon, France. She is a passionate traveller with a taste for exploring new foods. With a gluten-free diet, Claire faces the constant challenge of navigating menus and food labels, especially in foreign countries due to language barriers. Whether double-checking ingredients or asking servers for gluten-free alternatives, Claire is always searching for ways to enjoy her meals.</p>
+                            <p className='text-base mb-10'>Claire Martin, a 28-year-old marketing coordinator from Lyon, France, is a passionate traveler with a love for exploring new foods. Following a gluten-free diet, she constantly struggles to navigate menus and food labels, especially in foreign countries where language barriers add to the challenge. Whether double-checking ingredients or asking servers for gluten-free options, Claire is always looking for ways to enjoy her meals with confidence.</p>
 
                             <h3 className='text-xl font-bold mb-5'>Secondary Persona: Jackson</h3>
-                            <p className='text-base mb-10'>Jackson is an international student who studies digital design at an institution. He enjoys food and strives to find options that cater to his chronic illness. Jackson enjoys nature and socializing with friends striving to live a happy and full life.
+                            <p className='text-base mb-10'>Jackson is an international student studying digital design. He loves food and constantly seeks options that accommodate his chronic illness. Passionate about nature and socializing with friends, Jackson strives to live a happy and fulfilling life.
                             </p>
                         </div>
 
@@ -125,7 +125,7 @@ const App: React.FC = () => {
                     <div className='bg-[var(--primary-color)]  w-full m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl justify-center md:flex-row  text-gray-950'>
                         <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
                             <h2 className='text-xl font-bold mb-5'>Brand and Logo Design</h2>
-                            <p className='text-base mb-5'>The name GoldiBite is inspired by the Goldilocks story, specifically the famous line, “This porridge is too hot, this porridge is too cold, this porridge is just right.” Goldibite is designed to eliminate the inconvenience and potential safety risks of travelling for people with food allergies and sensitivities. Just as Goldilocks searched for the ideal porridge, Goldibite aim to help travellers find “the right bite, every time.”</p>
+                            <p className='text-base mb-5'>The name GoldiBite is inspired by the Goldilocks story, specifically the famous line: “This porridge is too hot, this porridge is too cold, this porridge is just right.” GoldiBite is designed to eliminate the inconvenience and safety risks of traveling for people with food allergies and sensitivities. Just as Goldilocks searched for the perfect porridge, GoldiBite aims to help travelers find “the right bite, every time.”</p>
 
                         </div>
 
@@ -170,28 +170,26 @@ const App: React.FC = () => {
 
                             <p className='text-base mb-5'>
                                 Urgency and Quick Assistance:
-                                GoldiBite offers rapid alerts and support during food reaction, ensuring users have the information and tools needed to act swiftly in critical situation.
+                                GoldiBite provides rapid alerts and support during food reactions, ensuring users have the information and tools needed to act swiftly in critical situations.
                             </p>
                             <p className='text-base mb-5'>
                                 Balance and Awareness:
-                                GoldiBite integrate safety into every aspect, from allergen warnings to emergency instructions, ensuring users can make healthy choices without compromise.
+                                GoldiBite integrates safety into every aspect, from allergen warnings to emergency instructions, ensuring users can make healthy choices without compromise.
 
                             </p>
                             <p className='text-base mb-5'>
                                 Warmth and Urgency:
-                                The deeper orange has a grounded tone, ideal for important notifications or actions that require attention, such as alerts for allergens.
+                                The deeper orange provides a grounded tone, making it ideal for important notifications or actions that require attention, such as allergen alerts.
 
                             </p>
                             <p className='text-base mb-5'>
-                                These green colours represents health, vitality, and wellness. It suggests fresh, natural ingredients and wholes some living aligning with the values of GoldiBite. Evokes "natural" and "fresh" foods encouraging users to explore healthier options while staying mindful of allergens.
-
+                            These green colors represent health, vitality, and wellness. They suggest fresh, natural ingredients and wholesome living, aligning with the values of GoldiBite. The color evokes "natural" and "fresh" foods, encouraging users to explore healthier options while staying mindful of allergens.
                             </p>
                             <p className='text-base mb-5'>
-                                Teal is widely recognized as the official color for food allergy awareness. By incorporating it into your brand, you align your app with the global community working to promote awareness and support for people managing food.
-
+                            Teal is widely recognized as the official color for food allergy awareness. By incorporating it into your brand, you align your app with the global community dedicated to promoting awareness and supporting individuals managing food allergies.
                             </p>
                             <p className='text-base mb-5'>
-                                Also represent that GoldiBite is safe space for people with such allergies and bring calmness and reassurance.
+                            It also represents that GoldiBite is a safe space for individuals with food allergies, bringing calmness and reassurance.
                             </p>
 
                         </div>
@@ -214,7 +212,7 @@ const App: React.FC = () => {
 
                         <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
                             <h2 className='text-xl font-bold mb-5'>Colour Contrast Checker</h2>
-                            <p className='text-base mb-5'>By prioritizing accessibility and colour contrast in GoldiBite design, GoldiBite fostering an inclusive environment where everyone can safely navigate their food options.</p>
+                            <p className='text-base mb-5'>By prioritizing accessibility and color contrast in its design, GoldiBite fosters an inclusive environment where everyone can safely navigate their food options.</p>
 
 
                         </div>
@@ -235,7 +233,7 @@ const App: React.FC = () => {
 
                         <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
                             <h2 className='text-xl font-bold mb-5'>System flow Design (Happy path)</h2>
-                            <p className='text-base mb-5'>This happy path was created based on the finding, and this happy path includes 2 marjo functionalities, there are food screener, and resturant menu analysis.</p>
+                            <p className='text-base mb-5'>This happy path was created based on the findings and includes two major functionalities: the food screener and restaurant menu analysis.</p>
 
 
                         </div>
@@ -256,9 +254,9 @@ const App: React.FC = () => {
                         <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
                             <h2 className='text-xl font-bold mb-5'>Hi-Fi Wireframes</h2>
                             <h3 className='text-xl font-bold  mb-5'>Food product allergen analysis</h3>
-                            <p>Packaged food allergen analysis allows user capture the product information from the barcode, and provide the analyst result.</p>
+                            <p>Packaged food allergen analysis allows users to capture product information from the barcode and provides an analysis result.</p>
                             <h3 className='text-xl font-bold  mb-5'>resturant's menu allergen analysis</h3>
-                            <p>This function uses a camera to capture menu image, analysis the image and provide the result.</p>
+                            <p>This function uses the camera to capture a menu image, analyzes the image, and provides the result.</p>
                         </div>
 
                         <div className='flex-auto flex flex-row flex-wrap gap-10 n basis-5xl md:basis-1/3  xl:basis-2/3 justify-end items-start'>
@@ -279,7 +277,7 @@ const App: React.FC = () => {
 
                             <h3 className='text-xl font-bold  mb-5'>On broading Process</h3>
                             <p>
-                                These onboarding screens introduce travellers to the app's features, familiarizing them with its functionality.
+                            These onboarding screens introduce travelers to the app's features, helping them familiarize themselves with its functionality.
                             </p>
                         </div>
 
@@ -302,7 +300,7 @@ const App: React.FC = () => {
                         <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
                             <h3 className='text-xl font-bold  mb-5'>Login and Setup Account Process</h3>
                             <p>
-                                The login process is streamlined with options to log in via email or Google, making access quick and simple. Travellers are guided through steps to personalize the app to their specific needs, including customizing allergens to ensure features are tailored to their unique requirements.
+                            The login process is streamlined with options to log in via email or Google, making access quick and easy. Travelers are guided through steps to personalize the app according to their specific needs, including customizing allergens to ensure features are tailored to their unique requirements.
                             </p>
                         </div>
 
@@ -324,7 +322,7 @@ const App: React.FC = () => {
                         <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
                             <h3 className='text-xl font-bold  mb-5'>Guides Section</h3>
                             <p>
-                                The guides section provides travellers with essential information on managing allergies, offering tailored tips for both adults and children. The guides have a variety of tips and information to help travellers prevent potential allergic situations and educate them about accidental ingestion of allergens. In each guide, Goldibite included clear, step-by-step instructions to help travellers act confidently and appropriately based on their specific needs.
+                            The Guides section provides travelers with essential information on managing allergies, offering tailored tips for both adults and children. The guides include a variety of tips and information to help travelers prevent potential allergic reactions and educate them about the risks of accidental ingestion of allergens. Each guide features clear, step-by-step instructions to help travelers act confidently and appropriately based on their specific needs.
                             </p>
                         </div>
 
@@ -346,7 +344,7 @@ const App: React.FC = () => {
                         <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
                             <h3 className='text-xl font-bold  mb-5'>Setting Section</h3>
                             <p>
-                                It enables travellers to personalize their app experience, including options for profile management, language, location, notifications, and allergy preferences. These settings allow users to tailor the app to their specific needs, enhancing usability, accessibility, and safety.
+                            It enables travelers to personalize their app experience, including options for profile management, language, location, notifications, and allergy preferences. These settings allow users to customize the app to their specific needs, enhancing usability, accessibility, and safety.
                             </p>
                         </div>
 
@@ -369,7 +367,7 @@ const App: React.FC = () => {
                         <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
                             <h3 className='text-xl font-bold  mb-5'>Testing Progress</h3>
                             <p>
-                                Testing stage is significant to ensure Goldibite functionality stable and enhance user experience. GitHub issue is a task manager used in Goldibite project for reporting and requesting new features.
+                            The testing stage is crucial to ensure GoldiBite's functionality is stable and to enhance the user experience. GitHub Issues is a task manager used in the GoldiBite project for reporting bugs and requesting new features.
                             </p>
                         </div>
 
@@ -389,7 +387,7 @@ const App: React.FC = () => {
                     <div className='bg-[var(--primary-color)]  w-screen m-auto flex flex-col flex-nowrap mt-20 z-50 gap-10 max-w-7xl  md:flex-row text-gray-950'>
                         <div className='flex-auto basis-md  md:basis-1/3 xl:basis-1/3 text-gray-950'>
                             <h3 className='text-xl font-bold  mb-5'>Promotional Story Video</h3>
-                            <p>Capturing the essence of GoldiBite in a short video was crucial for promoting the app. We highlighted key features, such as allergen detection, nutrition tracking, and menu translation, to show users how GoldiBite simplifies safe food choices. The video’s engaging visuals and informative content helped drive user engagement and interest.</p>
+                            <p>Capturing the essence of GoldiBite in a short video was crucial for promoting the app. We highlighted key features, such as allergen detection, nutrition tracking, and menu translation, to demonstrate how GoldiBite simplifies safe food choices. The video’s engaging visuals and informative content helped drive user engagement and interest.</p>
                         </div>
 
                         <div className='flex-auto flex flex-row flex-wrap gap-10 n basis-5xl md:basis-1/3  xl:basis-2/3 justify-end'>

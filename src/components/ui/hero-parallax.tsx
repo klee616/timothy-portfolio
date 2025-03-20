@@ -108,7 +108,7 @@ export const Header = () => {
         Goldibite <br /> The right bite every time
       </h1>
       <p className="max-w-2xl text-base md:text-xl lg:-text-xl  2xl:text-2xl mt-8 dark:text-neutral-200">
-      GoldiBite is an AI-powered app designed to assist individuals with food allergies and sensitivities by providing a comprehensive database to manage food safety concerns while travelling. It aims to eliminate the inconvenience and potential safety risks associated with varying ingredient information and regulations worldwide.
+      GoldiBite is an AI-powered app designed to assist individuals with food allergies and sensitivities by providing a comprehensive database to help manage food safety concerns while traveling. It aims to eliminate the inconvenience and potential safety risks associated with varying ingredient information and regulations worldwide.
       </p>
     </div>
   );
