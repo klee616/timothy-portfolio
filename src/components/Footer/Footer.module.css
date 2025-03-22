@@ -39,7 +39,7 @@
     width: 50px;
 }
 
-.contantContainer{
+.contentContainer{
     display: flex;
     flex-direction: row-reverse;
     padding: 3rem;
