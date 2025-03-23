@@ -1,10 +1,37 @@
+"use client"
 import React from "react";
 import Image from "next/image";
+import gsap from 'gsap';
+import { useEffect, useState, useRef } from "react";
+import {useGSAP} from '@gsap/react';
+
 interface Props {
 
 }
 
 const App: React.FC<Props> = () => {
+
+    gsap.registerPlugin(useGSAP);
+
+    const container = useRef<HTMLDivElement>(null);
+
+    const [imageShow, setImageShow] = useState(0);
+
+    useGSAP(() => {
+        gsap.fromTo(
+            ".personal-image", 
+            { opacity: 0, scale: 0.8, rotate: -20 }, 
+            { opacity: 1, scale: 1, rotate: 0, duration: 1, ease: "power2.out" }
+        );
+    }, { scope: container, dependencies: [imageShow] });
+    
+
+    useEffect(() => {
+        const time = setInterval(() => {
+            setImageShow(prev => prev + 1);
+        }, 3000);
+        return () => clearInterval(time); // Cleanup interval
+    }, []);
 
     return (<>
         <div className=" h-screen flex items-center justify-center w-full  px-4  text-gray-950 bg-[var(--primary-color)] m-auto max-w-[1440px]">
@@ -16,10 +43,10 @@ const App: React.FC<Props> = () => {
                     Full Stack Developer and Graphic Designer
                 </p>
             </div>
-            <div className="flex-1 h-screen content-center" >
-            <Image src="/images/image1.JPEG" width={400} height={800}  alt="trees" className=" object-cover  object-center rounded-full h-150 w-150" />
-            <Image src="/images/image2.JPEG" width={400} height={800} alt="trees" className="h=[50vh] cover  object-center rounded-full h-150 w-150" />
-            <Image src="/images/image3.JPEG" width={400} height={800} alt="trees" className="h=[50vh] cover  object-center rounded-full h-150 w-150" />
+            <div className="flex-1 h-screen content-center" ref={container} >
+            <Image src="/images/image1.JPEG" width={400} height={800}  alt="trees" className={`personal-image h-[50vh] object-cover  object-center rounded-full h-150 w-150 box-shadow: var(--shadow-lg)  ${imageShow % 3 === 0 ? '' : 'hidden'}`} />
+            <Image src="/images/image2.JPEG" width={400} height={800} alt="trees" className={`personal-image h-[50vh]  object-cover  object-center rounded-full h-150 w-150 box-shadow: var(--shadow-lg) ${imageShow % 3 === 1 ? '' : 'hidden'}`} />
+            <Image src="/images/image3.JPEG" width={400} height={800} alt="trees" className={`personal-image h-[50vh]  object-covef  object-center rounded-full h-150 w-150 box-shadow: var(--shadow-lg) ${imageShow % 3 === 2 ? '' : 'hidden'}`} />
             </div>
         </div>
         {/* <BackgroundLines className={`${styles.introductionContainer} h-full flex items-center justify-center w-full  flex-col px-4  text-gray-950 bg-[var(--primary-color)]`}>

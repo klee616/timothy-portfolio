@@ -25,7 +25,15 @@ const App: React.FC<Props> = (journeyData) => {
             {
                 title: d.title,
                 content: (
-                    <ResumeContent key={i} position={d.position} company={d.company} location={d.location} duties={d.duties} logo={d.logo}/>
+                    <ResumeContent
+                     key={i} 
+                     position={d.position} 
+                     company={d.company} 
+                     location={d.location} 
+                     duties={d.duties} 
+                     logo={typeof d.logo === "string" ? { path: d.logo, width: 100, height: 50 } : d.logo}  />
+                     
+
                 )
             }
         );
