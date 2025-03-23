@@ -45,7 +45,7 @@ const App: React.FC<Props> = () => {
             </div>
             <div className="flex-1 h-screen content-center" ref={container} >
             <Image src="/images/image1.JPEG" width={400} height={800}  alt="trees" className={`personal-image h-[50vh] object-cover  object-center rounded-full h-150 w-150 box-shadow: var(--shadow-lg)  ${imageShow % 3 === 0 ? '' : 'hidden'}`} />
-            <Image src="/images/image2.JPEG" width={400} height={800} alt="trees" className={`personal-image h-[50vh]  object-cover  object-center rounded-full h-150 w-150 box-shadow: var(--shadow-lg) ${imageShow % 3 === 1 ? '' : 'hidden'}`} />
+            <Image src="/images/image2.JPEG" width={400} height={800} alt="trees" className={`personal-image h-[50vh]  object-cover  object-center rounded-full h-150 w-150 box-shadow: var(--shadow-lg)box-shadow: var(--shadow-lg); ${imageShow % 3 === 1 ? '' : 'hidden'}`} />
             <Image src="/images/image3.JPEG" width={400} height={800} alt="trees" className={`personal-image h-[50vh]  object-covef  object-center rounded-full h-150 w-150 box-shadow: var(--shadow-lg) ${imageShow % 3 === 2 ? '' : 'hidden'}`} />
             </div>
         </div>

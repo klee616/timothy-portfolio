@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotating Wheel Album</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/EasePack.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Flip.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .perspective { perspective: 1000px; }
+    .wheel {
+      transform-style: preserve-3d;
+      animation: rotateWheel 10s linear infinite;
+    }
+    .album-item {
+      position: absolute;
+      width: 600px;
+      height: 430px;
+      border: 2px solid white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ff5733;
+      color: white;
+      font-weight: bold;
+      transform-origin: center;
+    }
+  </style>
+</head>
+<body class="flex justify-center items-center min-h-screen bg-gray-900">
+
+  <div class="relative w-[800px] h-[800px] perspective">
+    <div class="wheel absolute w-[600px] h-[600px] rounded-full border-4 border-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
+      
+      <!-- Album Items -->
+      <div class="album-item">1</div>
+      <div class="album-item">2</div>
+      <div class="album-item">3</div>
+      <div class="album-item">4</div>
+      <div class="album-item">5</div>
+
+    </div>
+  </div>
+
+  <script>
+    gsap.registerPlugin(MotionPathPlugin);
+
+    const items = document.querySelectorAll(".album-item");
+    const radius = 400;
+    const totalItems = items.length;
+    const angleStep = 360 / totalItems;
+
+    items.forEach((item, index) => {
+      const angle = index * angleStep;
+      gsap.set(item, {
+        transform: `rotateY(${angle}deg) translateZ(${radius}px)`
+      });
+    });
+
+    gsap.to(".wheel", {
+      rotationY: 360,
+      duration: 25,
+      repeat: -1,
+      ease: "linear"
+    });
+  </script>
+
+</body>
+</html>
