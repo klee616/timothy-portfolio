@@ -2,7 +2,7 @@
 //import Image from "next/image";
 import TopHeader from '@/components/TopHeader'
 //import Introduction from '@/components/Introduction'
-import Introduction from '@/components/Introduction_new'
+import Introduction_new from '@/components/Introduction_new';
 import TimelineResume from '@/components/TimelineResume'
 //import ProjectList from '@/components/ProjectList'
 import Footer from '@/components/Footer'
@@ -35,7 +35,7 @@ export default function Home() {
   return (
     <>
       <TopHeader />
-      <Introduction />
+      <Introduction_new />
       <ScrollTrigger />
       <GsapEffect><TimelineResume journeyData={journeyData} /></GsapEffect>
       <Footer />
