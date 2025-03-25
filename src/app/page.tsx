@@ -1,5 +1,4 @@
 // @ts-nocheck 
-"use client"
 //import Image from "next/image";
 import TopHeader from '@/components/TopHeader'
 //import Introduction from '@/components/Introduction'
